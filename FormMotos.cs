@@ -202,13 +202,16 @@ namespace ManejoInventariosBD
         private void runQuery()
         {
             string texto = comboBox2.Text;
-            string query = "INSERT INTO `prueba`(`Id`, `Holamundo`) VALUES ('2','hola')";
-            string MySqlConnectionString = "datasource=127.0.0.1;port=3306;username=root;password=;database=patiosd1c";
+            string query = "INSERT INTO `prueba`(`Id`, `Holamundo`) VALUES ('36','"+comboBox2.Text+"')";
+            string MySqlConnectionString = "datasource=127.0.0.1;port=3306;username=root;password=;Database=patiosd1c";
             MySqlConnection databaseConnection = new MySqlConnection(MySqlConnectionString);
-            MySqlCommand commandDatabase = new MySqlCommand(query,databaseConnection);
+            MySqlCommand commandDatabase = databaseConnection.CreateCommand();
+            commandDatabase.CommandText = query;
+            databaseConnection.Open();
+            commandDatabase.ExecuteNonQuery();
+            databaseConnection.Close();
 
-
-            commandDatabase.CommandTimeout = 60;
+            /*
             try
             {
                 databaseConnection.Open();
@@ -218,6 +221,7 @@ namespace ManejoInventariosBD
             {
                 MessageBox.Show("Query Error: " + e.Message);
             }
+            MySqlDataReader reader = commandDatabase.ExecuteReader();*/
         }
         
 

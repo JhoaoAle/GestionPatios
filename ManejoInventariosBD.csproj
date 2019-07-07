@@ -55,6 +55,7 @@
     <Compile Include="ChooseInsertType.Designer.cs">
       <DependentUpon>ChooseInsertType.cs</DependentUpon>
     </Compile>
+    <Compile Include="Class1.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
