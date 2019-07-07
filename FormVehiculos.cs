@@ -12,7 +12,7 @@ namespace ManejoInventariosBD
         {
             InitializeComponent();
             this.tipo = tipo;
-            label72.Text = tipo;
+            
 
 
            //Esto es un cambio

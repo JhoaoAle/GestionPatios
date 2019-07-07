@@ -362,7 +362,6 @@ namespace ManejoInventariosBD
             this.label70 = new System.Windows.Forms.Label();
             this.label71 = new System.Windows.Forms.Label();
             this.textBox10 = new System.Windows.Forms.TextBox();
-            this.label72 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -4499,21 +4498,11 @@ namespace ManejoInventariosBD
             this.textBox10.Size = new System.Drawing.Size(100, 20);
             this.textBox10.TabIndex = 66;
             // 
-            // label72
-            // 
-            this.label72.AutoSize = true;
-            this.label72.Location = new System.Drawing.Point(434, 184);
-            this.label72.Name = "label72";
-            this.label72.Size = new System.Drawing.Size(41, 13);
-            this.label72.TabIndex = 67;
-            this.label72.Text = "label72";
-            // 
             // FormVehiculos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(838, 903);
-            this.Controls.Add(this.label72);
             this.Controls.Add(this.textBox10);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label63);
@@ -4984,6 +4973,5 @@ namespace ManejoInventariosBD
         private System.Windows.Forms.Label label70;
         private System.Windows.Forms.Label label71;
         private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.Label label72;
     }
 }
