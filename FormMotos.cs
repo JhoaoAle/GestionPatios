@@ -7,13 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using MySql.Data.MySqlClient;
 namespace ManejoInventariosBD
 {
     public partial class FormMotos : Form
     {
         public int rdbChecked;
         private bool fail;
+        private bool cond1;
+        private bool cond2;
+        private bool cond3;
+
         string tipo;
         public FormMotos(string tipo)
         {
@@ -118,27 +122,27 @@ namespace ManejoInventariosBD
                 ))
             {
                 MessageBox.Show("Registros incompletos, intente nuevamente");
-                fail = true;
+                cond1 = true;
             }
             else
-                fail = false;
+                cond1 = false;
 
             if (comboBox1.Text != "Patios" && comboBox1.Text != "Accidente")
             {
                 MessageBox.Show("Motivo de ingreso no valido, intente nuevamente");
-                fail = true;
+                cond2 = true;
             }
             else
-                fail = false;
+                cond2 = false;
 
             if (comboBox2.Text != "Policía" && comboBox2.Text != "Transito" && comboBox2.Text != "Policia de Tránsito y Transporte" && comboBox2.Text != "Juzgado" && comboBox2.Text != "Fiscalía" && comboBox2.Text != "Otro")
             {
                 MessageBox.Show("Autoridad que ingresa no valida, intente nuevamente");
                 
-                fail = true;
+                cond3 = true;
             }
             else
-                fail = false;
+                cond3 = false;
             int parsedValue;
 
             
@@ -170,12 +174,20 @@ namespace ManejoInventariosBD
                     MessageBox.Show("No ha ingresado información adicional del propietario");
                     fail = true;
                 }
+                else
+                {
+                    textBox2.Text = "";
+                    textBox3.Text = "";
+                    textBox4.Text = "";
+                }
             }
 
 
-            if (fail == false)
+            if (fail == false && cond1==false && cond2 == false && cond3 == false)
             {
+                runQuery();
                 MessageBox.Show("Registro exitoso");
+                
                 Form4 f = new Form4();
                 this.Dispose();
                 f.Show();
@@ -187,6 +199,26 @@ namespace ManejoInventariosBD
 
         }
 
+        private void runQuery()
+        {
+            string texto = comboBox2.Text;
+            string query = "INSERT INTO `prueba`(`Id`, `Holamundo`) VALUES ('2','hola')";
+            string MySqlConnectionString = "datasource=127.0.0.1;port=3306;username=root;password=;database=patiosd1c";
+            MySqlConnection databaseConnection = new MySqlConnection(MySqlConnectionString);
+            MySqlCommand commandDatabase = new MySqlCommand(query,databaseConnection);
+
+
+            commandDatabase.CommandTimeout = 60;
+            try
+            {
+                databaseConnection.Open();
+
+                
+            }catch(Exception e)
+            {
+                MessageBox.Show("Query Error: " + e.Message);
+            }
+        }
         
 
         private void Button2_Click(object sender, EventArgs e)
