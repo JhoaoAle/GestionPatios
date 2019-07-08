@@ -428,6 +428,240 @@ namespace ManejoInventariosBD
                 if (this.radioButton95.Checked == true)
                     cochereg.SetVPDelDer("N/V");
 
+                //A partir de aqui no están corregidas
+                if (this.radioButton186.Checked == true)
+                    cochereg.SetVPDelDer("B");
+                if (this.radioButton187.Checked == true)
+                    cochereg.SetVPDelDer("R");
+                if (this.radioButton188.Checked == true)
+                    cochereg.SetVPDelDer("M");
+                if (this.radioButton189.Checked == true)
+                    cochereg.SetVPDelDer("N/A");
+                if (this.radioButton190.Checked == true)
+                    cochereg.SetVPDelDer("N/V");
+
+                if (this.radioButton181.Checked == true)
+                    cochereg.SetVPDelDer("B");
+                if (this.radioButton182.Checked == true)
+                    cochereg.SetVPDelDer("R");
+                if (this.radioButton183.Checked == true)
+                    cochereg.SetVPDelDer("M");
+                if (this.radioButton184.Checked == true)
+                    cochereg.SetVPDelDer("N/A");
+                if (this.radioButton185.Checked == true)
+                    cochereg.SetVPDelDer("N/V");
+
+                if (this.radioButton176.Checked == true)
+                    cochereg.SetVPDelDer("B");
+                if (this.radioButton177.Checked == true)
+                    cochereg.SetVPDelDer("R");
+                if (this.radioButton178.Checked == true)
+                    cochereg.SetVPDelDer("M");
+                if (this.radioButton179.Checked == true)
+                    cochereg.SetVPDelDer("N/A");
+                if (this.radioButton180.Checked == true)
+                    cochereg.SetVPDelDer("N/V");
+
+                if (this.radioButton171.Checked == true)
+                    cochereg.SetVPDelDer("B");
+                if (this.radioButton172.Checked == true)
+                    cochereg.SetVPDelDer("R");
+                if (this.radioButton173.Checked == true)
+                    cochereg.SetVPDelDer("M");
+                if (this.radioButton174.Checked == true)
+                    cochereg.SetVPDelDer("N/A");
+                if (this.radioButton175.Checked == true)
+                    cochereg.SetVPDelDer("N/V");
+
+                if (this.radioButton166.Checked == true)
+                    cochereg.SetVPDelDer("B");
+                if (this.radioButton167.Checked == true)
+                    cochereg.SetVPDelDer("R");
+                if (this.radioButton168.Checked == true)
+                    cochereg.SetVPDelDer("M");
+                if (this.radioButton169.Checked == true)
+                    cochereg.SetVPDelDer("N/A");
+                if (this.radioButton170.Checked == true)
+                    cochereg.SetVPDelDer("N/V");
+
+                if (this.radioButton161.Checked == true)
+                    cochereg.SetVPDelDer("B");
+                if (this.radioButton162.Checked == true)
+                    cochereg.SetVPDelDer("R");
+                if (this.radioButton163.Checked == true)
+                    cochereg.SetVPDelDer("M");
+                if (this.radioButton164.Checked == true)
+                    cochereg.SetVPDelDer("N/A");
+                if (this.radioButton165.Checked == true)
+                    cochereg.SetVPDelDer("N/V");
+
+                if (this.radioButton156.Checked == true)
+                    cochereg.SetVPDelDer("B");
+                if (this.radioButton157.Checked == true)
+                    cochereg.SetVPDelDer("R");
+                if (this.radioButton158.Checked == true)
+                    cochereg.SetVPDelDer("M");
+                if (this.radioButton159.Checked == true)
+                    cochereg.SetVPDelDer("N/A");
+                if (this.radioButton160.Checked == true)
+                    cochereg.SetVPDelDer("N/V");
+
+                if (this.radioButton151.Checked == true)
+                    cochereg.SetVPDelDer("B");
+                if (this.radioButton152.Checked == true)
+                    cochereg.SetVPDelDer("R");
+                if (this.radioButton153.Checked == true)
+                    cochereg.SetVPDelDer("M");
+                if (this.radioButton154.Checked == true)
+                    cochereg.SetVPDelDer("N/A");
+                if (this.radioButton155.Checked == true)
+                    cochereg.SetVPDelDer("N/V");
+
+                if (this.radioButton146.Checked == true)
+                    cochereg.SetVPDelDer("B");
+                if (this.radioButton147.Checked == true)
+                    cochereg.SetVPDelDer("R");
+                if (this.radioButton148.Checked == true)
+                    cochereg.SetVPDelDer("M");
+                if (this.radioButton149.Checked == true)
+                    cochereg.SetVPDelDer("N/A");
+                if (this.radioButton150.Checked == true)
+                    cochereg.SetVPDelDer("N/V");
+
+                if (this.radioButton141.Checked == true)
+                    cochereg.SetVPDelDer("B");
+                if (this.radioButton142.Checked == true)
+                    cochereg.SetVPDelDer("R");
+                if (this.radioButton143.Checked == true)
+                    cochereg.SetVPDelDer("M");
+                if (this.radioButton144.Checked == true)
+                    cochereg.SetVPDelDer("N/A");
+                if (this.radioButton145.Checked == true)
+                    cochereg.SetVPDelDer("N/V");
+
+                if (this.radioButton136.Checked == true)
+                    cochereg.SetVPDelDer("B");
+                if (this.radioButton137.Checked == true)
+                    cochereg.SetVPDelDer("R");
+                if (this.radioButton138.Checked == true)
+                    cochereg.SetVPDelDer("M");
+                if (this.radioButton139.Checked == true)
+                    cochereg.SetVPDelDer("N/A");
+                if (this.radioButton140.Checked == true)
+                    cochereg.SetVPDelDer("N/V");
+
+                if (this.radioButton131.Checked == true)
+                    cochereg.SetVPDelDer("B");
+                if (this.radioButton132.Checked == true)
+                    cochereg.SetVPDelDer("R");
+                if (this.radioButton133.Checked == true)
+                    cochereg.SetVPDelDer("M");
+                if (this.radioButton134.Checked == true)
+                    cochereg.SetVPDelDer("N/A");
+                if (this.radioButton135.Checked == true)
+                    cochereg.SetVPDelDer("N/V");
+
+                if (this.radioButton126.Checked == true)
+                    cochereg.SetVPDelDer("B");
+                if (this.radioButton127.Checked == true)
+                    cochereg.SetVPDelDer("R");
+                if (this.radioButton128.Checked == true)
+                    cochereg.SetVPDelDer("M");
+                if (this.radioButton129.Checked == true)
+                    cochereg.SetVPDelDer("N/A");
+                if (this.radioButton130.Checked == true)
+                    cochereg.SetVPDelDer("N/V");
+
+                if (this.radioButton121.Checked == true)
+                    cochereg.SetVPDelDer("B");
+                if (this.radioButton122.Checked == true)
+                    cochereg.SetVPDelDer("R");
+                if (this.radioButton123.Checked == true)
+                    cochereg.SetVPDelDer("M");
+                if (this.radioButton124.Checked == true)
+                    cochereg.SetVPDelDer("N/A");
+                if (this.radioButton125.Checked == true)
+                    cochereg.SetVPDelDer("N/V");
+
+                if (this.radioButton116.Checked == true)
+                    cochereg.SetVPDelDer("B");
+                if (this.radioButton117.Checked == true)
+                    cochereg.SetVPDelDer("R");
+                if (this.radioButton118.Checked == true)
+                    cochereg.SetVPDelDer("M");
+                if (this.radioButton119.Checked == true)
+                    cochereg.SetVPDelDer("N/A");
+                if (this.radioButton120.Checked == true)
+                    cochereg.SetVPDelDer("N/V");
+
+                if (this.radioButton111.Checked == true)
+                    cochereg.SetVPDelDer("B");
+                if (this.radioButton112.Checked == true)
+                    cochereg.SetVPDelDer("R");
+                if (this.radioButton113.Checked == true)
+                    cochereg.SetVPDelDer("M");
+                if (this.radioButton114.Checked == true)
+                    cochereg.SetVPDelDer("N/A");
+                if (this.radioButton115.Checked == true)
+                    cochereg.SetVPDelDer("N/V");
+
+                if (this.radioButton106.Checked == true)
+                    cochereg.SetVPDelDer("B");
+                if (this.radioButton107.Checked == true)
+                    cochereg.SetVPDelDer("R");
+                if (this.radioButton108.Checked == true)
+                    cochereg.SetVPDelDer("M");
+                if (this.radioButton109.Checked == true)
+                    cochereg.SetVPDelDer("N/A");
+                if (this.radioButton110.Checked == true)
+                    cochereg.SetVPDelDer("N/V");
+
+                if (this.radioButton101.Checked == true)
+                    cochereg.SetVPDelDer("B");
+                if (this.radioButton102.Checked == true)
+                    cochereg.SetVPDelDer("R");
+                if (this.radioButton103.Checked == true)
+                    cochereg.SetVPDelDer("M");
+                if (this.radioButton104.Checked == true)
+                    cochereg.SetVPDelDer("N/A");
+                if (this.radioButton105.Checked == true)
+                    cochereg.SetVPDelDer("N/V");
+
+                if (this.radioButton96.Checked == true)
+                    cochereg.SetVPDelDer("B");
+                if (this.radioButton97.Checked == true)
+                    cochereg.SetVPDelDer("R");
+                if (this.radioButton98.Checked == true)
+                    cochereg.SetVPDelDer("M");
+                if (this.radioButton99.Checked == true)
+                    cochereg.SetVPDelDer("N/A");
+                if (this.radioButton100.Checked == true)
+                    cochereg.SetVPDelDer("N/V");
+
+                if (this.radioButton205.Checked == true)
+                    cochereg.SetVPDelDer("B");
+                if (this.radioButton206.Checked == true)
+                    cochereg.SetVPDelDer("R");
+                if (this.radioButton207.Checked == true)
+                    cochereg.SetVPDelDer("M");
+                if (this.radioButton208.Checked == true)
+                    cochereg.SetVPDelDer("N/A");
+                if (this.radioButton209.Checked == true)
+                    cochereg.SetVPDelDer("N/V");
+
+                if (this.radioButton210.Checked == true)
+                    cochereg.SetVPDelDer("B");
+                if (this.radioButton211.Checked == true)
+                    cochereg.SetVPDelDer("R");
+                if (this.radioButton212.Checked == true)
+                    cochereg.SetVPDelDer("M");
+                if (this.radioButton213.Checked == true)
+                    cochereg.SetVPDelDer("N/A");
+                if (this.radioButton214.Checked == true)
+                    cochereg.SetVPDelDer("N/V");
+
+                //IMPORTANTE: Modificar las superiores siguiendo el orden del documento
+
                 //De aquí hacia abajo todo funciona
                 runQueryVeh();
                 
