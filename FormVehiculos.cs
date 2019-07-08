@@ -1,12 +1,29 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
 using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
+using ManejoInventariosBD;
 
 namespace ManejoInventariosBD
 {
     public partial class FormVehiculos : Form
     {
-        private bool fail;
+        private bool bool1;
+        private bool p1;
+        private bool p2;
+        private bool p3;
+        private bool p4;
+        private bool p5;
+        private bool p6;
+        private bool p7;
+   
+
         string tipo;
         public FormVehiculos(string tipo)
         {
@@ -15,19 +32,10 @@ namespace ManejoInventariosBD
             
 
 
-           //Esto es un cambio
+            
 
         }
-
-        private void SplitContainer1_Panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void FormVehiculos_Load(object sender, EventArgs e)
-        {
-
-        }
+        Carro cochereg = new Carro();
 
         private void Button4_Click(object sender, EventArgs e)
         {
@@ -69,85 +77,184 @@ namespace ManejoInventariosBD
                 (tableLayoutPanel38.Controls.OfType<RadioButton>().Any(x => x.Checked)) &&
                 (tableLayoutPanel39.Controls.OfType<RadioButton>().Any(x => x.Checked)) &&
                 (tableLayoutPanel40.Controls.OfType<RadioButton>().Any(x => x.Checked)) &&
+                (tableLayoutPanel41.Controls.OfType<RadioButton>().Any(x => x.Checked)) &&
+                (tableLayoutPanel42.Controls.OfType<RadioButton>().Any(x => x.Checked)) &&
 
                 (panel1.Controls.OfType<RadioButton>().Any(x => x.Checked)) && (panel2.Controls.OfType<RadioButton>().Any(x => x.Checked))
                 ))
             {
                 MessageBox.Show("Registros incompletos, intente nuevamente");
-                fail = true;
+                p1 = true;
             }
             else
-                fail = false;
+                p1 = false;
+            int parsedValue;
 
 
-
-            if (comboBox4.Text != "Patios" && comboBox4.Text != "Accidente")
+            if (numpar.Text == "")
             {
-                MessageBox.Show("Motivo de ingreso no valido, intente nuevamente");
+                bool1 = true;
+                MessageBox.Show("No ha insertado un número de parlantes");
+            }
+            if (!int.TryParse(numpar.Text, out parsedValue))
+            {
+                MessageBox.Show("El número de parlantes no acepta caracteres");
+                return;
+            }
+            else
+            {
+                int j = int.Parse(numpar.Text);
+                if (!(j <= 15 && j >= 0))
+                {
+                    MessageBox.Show("No ha insertado un número de parlantes valido");
+                    p5 = true;
+                    return;
+                }
+                else
+                {
+                    bool1 = false;
+                    p5 = false;
+                }
             }
 
-            if (comboBox3.Text != "Policía" && comboBox3.Text != "Transito" && comboBox3.Text != "Policia de Tránsito y Transporte" && comboBox3.Text != "Juzgado" && comboBox3.Text != "Fiscalía" && comboBox3.Text != "Otro")
+
+            if (numlimp.Text == "")
+            {
+                p6 = true;
+                MessageBox.Show("No ha insertado un número de limpiaparabrisas");
+            }
+            if (!int.TryParse(numlimp.Text, out parsedValue))
+            {
+                MessageBox.Show("El número de limpiaparabrisas no acepta caracteres");
+                return;
+            }
+            else
+            {
+                int j = int.Parse(numlimp.Text);
+                if (!(j <= 3 && j >= 0))
+                {
+                    MessageBox.Show("No ha insertado un número de limpiaparabrisas valido");
+                    p7 = true;
+                    return;
+                }
+                else
+                {
+                    p7 = false;
+                    p6 = false;
+                }
+            }
+
+
+
+            if (motivo.Text != "Patios" && motivo.Text != "Accidente")
+            {
+                MessageBox.Show("Motivo de ingreso no valido, intente nuevamente");
+                p1 = true;
+            }
+            else p1 = false;
+
+            if (patioscuenta.Text != "Policía" && patioscuenta.Text != "Transito" && patioscuenta.Text != "Policia de Tránsito y Transporte" && patioscuenta.Text != "Juzgado" && patioscuenta.Text != "Fiscalía" && patioscuenta.Text != "Otro")
             {
                 MessageBox.Show("Autoridad que ingresa no valida, intente nuevamente");
 
-                fail = true;
+                p2 = true;
             }
             else
-                fail = false;
+                p2 = false;
 
-            int parsedValue;
-            
 
-            
-            if (textBox10.Text == "")
+
+
+
+            if (numinvent.Text == "")
             {
-                fail = true;
+                p3 = true;
                 MessageBox.Show("No ha insertado un número de inventario");
-
-
             }
-            else if ((!(int.TryParse(textBox6.Text, out parsedValue))))
+            if (!int.TryParse(numinvent.Text, out parsedValue))
             {
-                int i = int.Parse(textBox10.Text);
-                if (!(i <= 9999 && i >= 1000))
+                MessageBox.Show("El número de inventario no acepta caracteres");
+                return;
+            }
+            else if ((!(int.TryParse(numinvent.Text, out parsedValue))))
+            {
+                int j = int.Parse(numinvent.Text);
+                if (!(j <= 9999 && j >= 1000))
                 {
                     MessageBox.Show("No ha insertado un número de inventario valido");
-                    fail = true;
+                    p4 = true;
                     return;
                 }
             }
             else
-                fail = false;
-
-            if (groupBox2.Visible == true)
             {
-                if (textBox2.Text == "" || textBox3.Text == "" || textBox4.Text == "")
-                {
-                    MessageBox.Show("No ha ingresado información adicional del propietario");
-                    fail = true;
-                }
+                p3 = false;
+                p4 = false;
             }
 
-            if (fail == false)
+
+
+            if (bool1 == false && p1 == false && p2 == false && p3 == false && p4 == false && p5 == false && p6 == false && p7 == false)
             {
+                //De aquí hacia arriba todo funciona
+                if (this.radioButton1.Checked == true)
+                {
+                    cochereg.SetBomDel("B");
+                    
+                }
+                    
+
+
+
+                //De aquí hacia abajo todo funciona
+                runQueryVeh();
+                
                 MessageBox.Show("Registro exitoso");
                 Form4 f = new Form4();
                 this.Dispose();
                 f.Show();
             }
-            
+
+        }
+        private void runQueryVeh()
+        {
+            string texto = comboBox2.Text;
+            string query = "INSERT INTO `prueba`(`Id`, `Holamundo`) VALUES ('" + comboBox2.Text + "')";
+            string MySqlConnectionString = "datasource=127.0.0.1;port=3306;username=root;password=;Database=patiosd1c";
+            MySqlConnection databaseConnection = new MySqlConnection(MySqlConnectionString);
+            MySqlCommand commandDatabase = databaseConnection.CreateCommand();
+            commandDatabase.CommandText = query;
+            databaseConnection.Open();
+            commandDatabase.ExecuteNonQuery();
+            databaseConnection.Close();
+
+            /*
+            try
+            {
+                databaseConnection.Open();
+
+                
+            }catch(Exception e)
+            {
+                MessageBox.Show("Query Error: " + e.Message);
+            }
+            MySqlDataReader reader = commandDatabase.ExecuteReader();*/
         }
 
-        private void Button3_Click(object sender, EventArgs e)
+
+
+
+
+        private void button3_Click(object sender, EventArgs e)
         {
             int parsedValue;
 
-            if (int.TryParse(textBox9.Text, out parsedValue))
+            if (int.TryParse(propietario.Text, out parsedValue))
             {
                 MessageBox.Show("El campo 'Propietario' solo acepta caracteres, intente nuevamente");
                 return;
             }
-            else if (textBox9.Text != "")
+            else if (propietario.Text != "")
             {
                 groupBox2.Visible = true;
 
@@ -165,5 +272,5 @@ namespace ManejoInventariosBD
             f.Show();
         }
     }
-}
+}       
 

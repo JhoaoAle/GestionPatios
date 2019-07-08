@@ -10,19 +10,140 @@ namespace ManejoInventariosBD
     {
         public Carro() { }
 
-        public static string BomDel { get; set; }
-        public static string Persiana { get; set; }
-        public static string FarIzq { get; set; }
-        public static string ParDel { get; set; }
-        public static string EspRetIzq { get; set; }
-        public static string GFDelIzq { get; set; }
-        public static string PDelIzq { get; set; }
-        public static string VPDelIzq { get; set; }
-        public static string VPTraIzq{ get; set; }
-        public static string GFTraIzq { get; set; }
-        public static string ParTra { get; set; }
-        public static string BomTra { get; set; }
-        public static string StopIzq { get; set; }
+        public static string BomDel;
+        public static string Persiana;
+        public static string FarIzq;
+        public static string ParDel;
+        public static string EspRetIzq;
+        public static string GFDelIzq;
+        public static string PDelIzq;
+        public static string VPDelIzq;
+        public void SetBomDel(string x)
+        {
+            BomDel = x;
+        }
+
+        public string GetBomDel()
+        {
+            return BomDel;
+        }
+        
+
+        public void SetPersiana(string x)
+        {
+            Persiana = x;
+        }
+        public string GetPersiana()
+        {
+            return Persiana;
+        }
+
+        public void SetFarIzq(string x)
+        {
+            FarIzq = x;
+        }
+        public string GetFarIzq()
+        {
+            return FarIzq;
+        }
+
+        public void SetParDel(string x)
+        {
+            ParDel = x;
+        }
+        public string GetParDel()
+        {
+            return ParDel;
+        }
+
+        public void SetEsptretIzq(string x)
+        {
+            EspRetIzq = x;
+        }
+        public string GetEspRetIzq()
+        {
+            return EspRetIzq;
+        }
+
+        public void SetGFDelIzq(string x)
+        {
+            GFDelIzq = x;
+        }
+        public string GetGFDelIzq()
+        {
+            return GFDelIzq;
+        }
+
+
+        public void SetPDelIzq(string x)
+        {
+            PDelIzq = x;
+        }
+        public string GetPDelIzq()
+        {
+            return PDelIzq; ;
+        }
+
+        public void SetVPDelIzq(string x)
+        {
+            VPDelIzq = x;
+        }
+        public string GetVPDelIzq()
+        {
+            return VPDelIzq;
+        }
+
+
+        public static string VPTraIzq;
+
+        public void SetVPTraIzq(string x)
+        {
+            VPTraIzq = x;
+        }
+        public string GetVPTraIzq()
+        {
+            return VPDelIzq;
+        }
+
+        public static string GFTraIzq;
+
+        public void SetGFTraIzq(string x)
+        {
+            GFTraIzq = x;
+        }
+        public string GetGFTraIzq()
+        {
+            return GFTraIzq;
+        }
+
+        public static string ParTra;
+        public void SetParTra(string x)
+        {
+            ParTra = x;
+        }
+        public string GetParTra()
+        {
+            return ParTra;
+        }
+        public static string BomTra;
+        public void SetBomTra(string x)
+        {
+            BomTra = x;
+        }
+        public string GetBomTra()
+        {
+            return BomTra;
+        }
+        public static string StopIzq;
+        public void SetStopIzq(string x)
+        {
+            StopIzq = x;
+        }
+        public string GetStopIzq()
+        {
+            return StopIzq;
+        }
+
         public static string PTraDer { get; set; }
         public static string GFTraDer { get; set; }
         public static string PDelDer { get; set; }
@@ -54,5 +175,16 @@ namespace ManejoInventariosBD
         public static Boolean debegrua { get; set; }
         public static Boolean dejallaves { get; set; }
         public static int NumPar { get; set; }
+        public static int NumParlantes { get; set; }
+        
+
+
+
+
+
+
+
+
+
     }
 }

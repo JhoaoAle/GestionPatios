@@ -58,21 +58,21 @@ namespace ManejoInventariosBD
             this.radioButton192 = new System.Windows.Forms.RadioButton();
             this.radioButton191 = new System.Windows.Forms.RadioButton();
             this.label62 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.observaciones = new System.Windows.Forms.TextBox();
             this.label61 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.patioscuenta = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.telefono = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.direccion = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.cedula = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.propietario = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.motivo = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
@@ -80,12 +80,13 @@ namespace ManejoInventariosBD
             this.label8 = new System.Windows.Forms.Label();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel20 = new System.Windows.Forms.TableLayoutPanel();
-            this.radioButton91 = new System.Windows.Forms.RadioButton();
-            this.radioButton92 = new System.Windows.Forms.RadioButton();
-            this.radioButton93 = new System.Windows.Forms.RadioButton();
-            this.radioButton94 = new System.Windows.Forms.RadioButton();
-            this.radioButton95 = new System.Windows.Forms.RadioButton();
+            this.label73 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel42 = new System.Windows.Forms.TableLayoutPanel();
+            this.radioButton200 = new System.Windows.Forms.RadioButton();
+            this.radioButton201 = new System.Windows.Forms.RadioButton();
+            this.radioButton202 = new System.Windows.Forms.RadioButton();
+            this.radioButton203 = new System.Windows.Forms.RadioButton();
+            this.radioButton204 = new System.Windows.Forms.RadioButton();
             this.tableLayoutPanel19 = new System.Windows.Forms.TableLayoutPanel();
             this.radioButton86 = new System.Windows.Forms.RadioButton();
             this.radioButton87 = new System.Windows.Forms.RadioButton();
@@ -220,7 +221,26 @@ namespace ManejoInventariosBD
             this.label32 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel41 = new System.Windows.Forms.TableLayoutPanel();
+            this.radioButton195 = new System.Windows.Forms.RadioButton();
+            this.radioButton196 = new System.Windows.Forms.RadioButton();
+            this.radioButton197 = new System.Windows.Forms.RadioButton();
+            this.radioButton198 = new System.Windows.Forms.RadioButton();
+            this.radioButton199 = new System.Windows.Forms.RadioButton();
+            this.tableLayoutPanel20 = new System.Windows.Forms.TableLayoutPanel();
+            this.radioButton91 = new System.Windows.Forms.RadioButton();
+            this.radioButton92 = new System.Windows.Forms.RadioButton();
+            this.radioButton93 = new System.Windows.Forms.RadioButton();
+            this.radioButton94 = new System.Windows.Forms.RadioButton();
+            this.radioButton95 = new System.Windows.Forms.RadioButton();
+            this.label72 = new System.Windows.Forms.Label();
             this.tableLayoutPanel21 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel45 = new System.Windows.Forms.TableLayoutPanel();
+            this.radioButton210 = new System.Windows.Forms.RadioButton();
+            this.radioButton211 = new System.Windows.Forms.RadioButton();
+            this.radioButton212 = new System.Windows.Forms.RadioButton();
+            this.radioButton213 = new System.Windows.Forms.RadioButton();
+            this.radioButton214 = new System.Windows.Forms.RadioButton();
             this.tableLayoutPanel22 = new System.Windows.Forms.TableLayoutPanel();
             this.radioButton96 = new System.Windows.Forms.RadioButton();
             this.radioButton97 = new System.Windows.Forms.RadioButton();
@@ -351,17 +371,31 @@ namespace ManejoInventariosBD
             this.label48 = new System.Windows.Forms.Label();
             this.label49 = new System.Windows.Forms.Label();
             this.label50 = new System.Windows.Forms.Label();
-            this.label51 = new System.Windows.Forms.Label();
-            this.label52 = new System.Windows.Forms.Label();
             this.label64 = new System.Windows.Forms.Label();
-            this.label65 = new System.Windows.Forms.Label();
-            this.label66 = new System.Windows.Forms.Label();
             this.label67 = new System.Windows.Forms.Label();
-            this.label68 = new System.Windows.Forms.Label();
-            this.label69 = new System.Windows.Forms.Label();
-            this.label70 = new System.Windows.Forms.Label();
             this.label71 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.label68 = new System.Windows.Forms.Label();
+            this.label70 = new System.Windows.Forms.Label();
+            this.label65 = new System.Windows.Forms.Label();
+            this.label69 = new System.Windows.Forms.Label();
+            this.label66 = new System.Windows.Forms.Label();
+            this.label75 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel43 = new System.Windows.Forms.TableLayoutPanel();
+            this.label74 = new System.Windows.Forms.Label();
+            this.numlimp = new System.Windows.Forms.TextBox();
+            this.tableLayoutPanel44 = new System.Windows.Forms.TableLayoutPanel();
+            this.radioButton205 = new System.Windows.Forms.RadioButton();
+            this.radioButton206 = new System.Windows.Forms.RadioButton();
+            this.radioButton207 = new System.Windows.Forms.RadioButton();
+            this.radioButton208 = new System.Windows.Forms.RadioButton();
+            this.radioButton209 = new System.Windows.Forms.RadioButton();
+            this.label51 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel46 = new System.Windows.Forms.TableLayoutPanel();
+            this.numpar = new System.Windows.Forms.TextBox();
+            this.label52 = new System.Windows.Forms.Label();
+            this.numinvent = new System.Windows.Forms.TextBox();
+            this.label76 = new System.Windows.Forms.Label();
+            this.label77 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -371,7 +405,7 @@ namespace ManejoInventariosBD
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
-            this.tableLayoutPanel20.SuspendLayout();
+            this.tableLayoutPanel42.SuspendLayout();
             this.tableLayoutPanel19.SuspendLayout();
             this.tableLayoutPanel18.SuspendLayout();
             this.tableLayoutPanel17.SuspendLayout();
@@ -390,7 +424,10 @@ namespace ManejoInventariosBD
             this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
+            this.tableLayoutPanel41.SuspendLayout();
+            this.tableLayoutPanel20.SuspendLayout();
             this.tableLayoutPanel21.SuspendLayout();
+            this.tableLayoutPanel45.SuspendLayout();
             this.tableLayoutPanel22.SuspendLayout();
             this.tableLayoutPanel23.SuspendLayout();
             this.tableLayoutPanel24.SuspendLayout();
@@ -410,6 +447,9 @@ namespace ManejoInventariosBD
             this.tableLayoutPanel38.SuspendLayout();
             this.tableLayoutPanel39.SuspendLayout();
             this.tableLayoutPanel40.SuspendLayout();
+            this.tableLayoutPanel43.SuspendLayout();
+            this.tableLayoutPanel44.SuspendLayout();
+            this.tableLayoutPanel46.SuspendLayout();
             this.SuspendLayout();
             // 
             // button2
@@ -636,7 +676,7 @@ namespace ManejoInventariosBD
             this.button3.TabIndex = 63;
             this.button3.Text = "Ok";
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.Button3_Click);
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // panel1
             // 
@@ -678,13 +718,13 @@ namespace ManejoInventariosBD
             this.label62.TabIndex = 61;
             this.label62.Text = "Debe grúa: ";
             // 
-            // textBox5
+            // observaciones
             // 
-            this.textBox5.Location = new System.Drawing.Point(168, 784);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(614, 54);
-            this.textBox5.TabIndex = 60;
+            this.observaciones.Location = new System.Drawing.Point(168, 784);
+            this.observaciones.Multiline = true;
+            this.observaciones.Name = "observaciones";
+            this.observaciones.Size = new System.Drawing.Size(614, 54);
+            this.observaciones.TabIndex = 60;
             // 
             // label61
             // 
@@ -695,20 +735,20 @@ namespace ManejoInventariosBD
             this.label61.TabIndex = 59;
             this.label61.Text = "Observaciones:";
             // 
-            // comboBox3
+            // patioscuenta
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
+            this.patioscuenta.FormattingEnabled = true;
+            this.patioscuenta.Items.AddRange(new object[] {
             "Policía",
             "Transito",
             "Policia de Tránsito y Transporte",
             "Juzgado",
             "Fiscalía",
             "Otro"});
-            this.comboBox3.Location = new System.Drawing.Point(185, 101);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(200, 21);
-            this.comboBox3.TabIndex = 58;
+            this.patioscuenta.Location = new System.Drawing.Point(185, 101);
+            this.patioscuenta.Name = "patioscuenta";
+            this.patioscuenta.Size = new System.Drawing.Size(200, 21);
+            this.patioscuenta.TabIndex = 58;
             // 
             // label1
             // 
@@ -721,11 +761,11 @@ namespace ManejoInventariosBD
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.textBox6);
+            this.groupBox2.Controls.Add(this.telefono);
             this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Controls.Add(this.textBox7);
+            this.groupBox2.Controls.Add(this.direccion);
             this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Controls.Add(this.textBox8);
+            this.groupBox2.Controls.Add(this.cedula);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Location = new System.Drawing.Point(458, 62);
             this.groupBox2.Name = "groupBox2";
@@ -735,12 +775,12 @@ namespace ManejoInventariosBD
             this.groupBox2.Text = "Datos Propietario";
             this.groupBox2.Visible = false;
             // 
-            // textBox6
+            // telefono
             // 
-            this.textBox6.Location = new System.Drawing.Point(106, 65);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(159, 20);
-            this.textBox6.TabIndex = 17;
+            this.telefono.Location = new System.Drawing.Point(106, 65);
+            this.telefono.Name = "telefono";
+            this.telefono.Size = new System.Drawing.Size(159, 20);
+            this.telefono.TabIndex = 17;
             // 
             // label2
             // 
@@ -751,12 +791,12 @@ namespace ManejoInventariosBD
             this.label2.TabIndex = 16;
             this.label2.Text = "Tel:";
             // 
-            // textBox7
+            // direccion
             // 
-            this.textBox7.Location = new System.Drawing.Point(106, 42);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(159, 20);
-            this.textBox7.TabIndex = 15;
+            this.direccion.Location = new System.Drawing.Point(106, 42);
+            this.direccion.Name = "direccion";
+            this.direccion.Size = new System.Drawing.Size(159, 20);
+            this.direccion.TabIndex = 15;
             // 
             // label3
             // 
@@ -767,12 +807,12 @@ namespace ManejoInventariosBD
             this.label3.TabIndex = 14;
             this.label3.Text = "Dirección:";
             // 
-            // textBox8
+            // cedula
             // 
-            this.textBox8.Location = new System.Drawing.Point(106, 19);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(159, 20);
-            this.textBox8.TabIndex = 13;
+            this.cedula.Location = new System.Drawing.Point(106, 19);
+            this.cedula.Name = "cedula";
+            this.cedula.Size = new System.Drawing.Size(159, 20);
+            this.cedula.TabIndex = 13;
             // 
             // label4
             // 
@@ -783,12 +823,12 @@ namespace ManejoInventariosBD
             this.label4.TabIndex = 12;
             this.label4.Text = "CC: ";
             // 
-            // textBox9
+            // propietario
             // 
-            this.textBox9.Location = new System.Drawing.Point(185, 71);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(176, 20);
-            this.textBox9.TabIndex = 55;
+            this.propietario.Location = new System.Drawing.Point(185, 71);
+            this.propietario.Name = "propietario";
+            this.propietario.Size = new System.Drawing.Size(176, 20);
+            this.propietario.TabIndex = 55;
             // 
             // label5
             // 
@@ -809,16 +849,16 @@ namespace ManejoInventariosBD
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.Button4_Click);
             // 
-            // comboBox4
+            // motivo
             // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
+            this.motivo.FormattingEnabled = true;
+            this.motivo.Items.AddRange(new object[] {
             "Patios",
             "Accidente"});
-            this.comboBox4.Location = new System.Drawing.Point(523, 32);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(121, 21);
-            this.comboBox4.TabIndex = 52;
+            this.motivo.Location = new System.Drawing.Point(523, 32);
+            this.motivo.Name = "motivo";
+            this.motivo.Size = new System.Drawing.Size(121, 21);
+            this.motivo.TabIndex = 52;
             // 
             // label6
             // 
@@ -865,18 +905,17 @@ namespace ManejoInventariosBD
             // 
             // splitContainer1
             // 
-            this.splitContainer1.Location = new System.Drawing.Point(17, 203);
+            this.splitContainer1.Location = new System.Drawing.Point(17, 193);
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
             // 
             this.splitContainer1.Panel1.Controls.Add(this.tableLayoutPanel1);
-            this.splitContainer1.Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.SplitContainer1_Panel1_Paint);
             // 
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.tableLayoutPanel21);
-            this.splitContainer1.Size = new System.Drawing.Size(799, 555);
+            this.splitContainer1.Size = new System.Drawing.Size(799, 585);
             this.splitContainer1.SplitterDistance = 407;
             this.splitContainer1.TabIndex = 46;
             // 
@@ -889,7 +928,8 @@ namespace ManejoInventariosBD
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 22F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 36F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 36F));
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel20, 1, 20);
+            this.tableLayoutPanel1.Controls.Add(this.label73, 0, 22);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel42, 1, 20);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel19, 1, 19);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel18, 1, 18);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel17, 1, 17);
@@ -934,9 +974,12 @@ namespace ManejoInventariosBD
             this.tableLayoutPanel1.Controls.Add(this.label32, 0, 19);
             this.tableLayoutPanel1.Controls.Add(this.label33, 0, 20);
             this.tableLayoutPanel1.Controls.Add(this.label34, 5, 1);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel41, 1, 21);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel20, 1, 22);
+            this.tableLayoutPanel1.Controls.Add(this.label72, 0, 21);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 21;
+            this.tableLayoutPanel1.RowCount = 24;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
@@ -958,84 +1001,98 @@ namespace ManejoInventariosBD
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(354, 522);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(354, 569);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
-            // tableLayoutPanel20
+            // label73
             // 
-            this.tableLayoutPanel20.ColumnCount = 5;
-            this.tableLayoutPanel1.SetColumnSpan(this.tableLayoutPanel20, 5);
-            this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 19F));
-            this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 22F));
-            this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 22F));
-            this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 36F));
-            this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 33F));
-            this.tableLayoutPanel20.Controls.Add(this.radioButton91, 0, 0);
-            this.tableLayoutPanel20.Controls.Add(this.radioButton92, 1, 0);
-            this.tableLayoutPanel20.Controls.Add(this.radioButton93, 2, 0);
-            this.tableLayoutPanel20.Controls.Add(this.radioButton94, 3, 0);
-            this.tableLayoutPanel20.Controls.Add(this.radioButton95, 4, 0);
-            this.tableLayoutPanel20.Location = new System.Drawing.Point(219, 498);
-            this.tableLayoutPanel20.Name = "tableLayoutPanel20";
-            this.tableLayoutPanel20.RowCount = 1;
-            this.tableLayoutPanel20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel20.Size = new System.Drawing.Size(132, 19);
-            this.tableLayoutPanel20.TabIndex = 4;
+            this.label73.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label73.AutoSize = true;
+            this.label73.Location = new System.Drawing.Point(30, 551);
+            this.label73.Name = "label73";
+            this.label73.Size = new System.Drawing.Size(155, 13);
+            this.label73.TabIndex = 52;
+            this.label73.Text = "Vidrio puerta delantera derecha";
+            this.label73.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // radioButton91
+            // tableLayoutPanel42
             // 
-            this.radioButton91.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.radioButton91.AutoSize = true;
-            this.radioButton91.Location = new System.Drawing.Point(3, 3);
-            this.radioButton91.Name = "radioButton91";
-            this.radioButton91.Size = new System.Drawing.Size(13, 13);
-            this.radioButton91.TabIndex = 12;
-            this.radioButton91.TabStop = true;
-            this.radioButton91.UseVisualStyleBackColor = true;
+            this.tableLayoutPanel42.ColumnCount = 5;
+            this.tableLayoutPanel1.SetColumnSpan(this.tableLayoutPanel42, 5);
+            this.tableLayoutPanel42.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 19F));
+            this.tableLayoutPanel42.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 22F));
+            this.tableLayoutPanel42.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 22F));
+            this.tableLayoutPanel42.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 36F));
+            this.tableLayoutPanel42.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 33F));
+            this.tableLayoutPanel42.Controls.Add(this.radioButton200, 0, 0);
+            this.tableLayoutPanel42.Controls.Add(this.radioButton201, 1, 0);
+            this.tableLayoutPanel42.Controls.Add(this.radioButton202, 2, 0);
+            this.tableLayoutPanel42.Controls.Add(this.radioButton203, 3, 0);
+            this.tableLayoutPanel42.Controls.Add(this.radioButton204, 4, 0);
+            this.tableLayoutPanel42.Location = new System.Drawing.Point(219, 498);
+            this.tableLayoutPanel42.Name = "tableLayoutPanel42";
+            this.tableLayoutPanel42.RowCount = 1;
+            this.tableLayoutPanel42.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel42.Size = new System.Drawing.Size(132, 19);
+            this.tableLayoutPanel42.TabIndex = 49;
             // 
-            // radioButton92
+            // radioButton200
             // 
-            this.radioButton92.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.radioButton92.AutoSize = true;
-            this.radioButton92.Location = new System.Drawing.Point(23, 3);
-            this.radioButton92.Name = "radioButton92";
-            this.radioButton92.Size = new System.Drawing.Size(14, 13);
-            this.radioButton92.TabIndex = 13;
-            this.radioButton92.TabStop = true;
-            this.radioButton92.UseVisualStyleBackColor = true;
+            this.radioButton200.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.radioButton200.AutoSize = true;
+            this.radioButton200.Location = new System.Drawing.Point(3, 3);
+            this.radioButton200.Name = "radioButton200";
+            this.radioButton200.Size = new System.Drawing.Size(13, 13);
+            this.radioButton200.TabIndex = 12;
+            this.radioButton200.TabStop = true;
+            this.radioButton200.UseVisualStyleBackColor = true;
             // 
-            // radioButton93
+            // radioButton201
             // 
-            this.radioButton93.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.radioButton93.AutoSize = true;
-            this.radioButton93.Location = new System.Drawing.Point(45, 3);
-            this.radioButton93.Name = "radioButton93";
-            this.radioButton93.Size = new System.Drawing.Size(14, 13);
-            this.radioButton93.TabIndex = 14;
-            this.radioButton93.TabStop = true;
-            this.radioButton93.UseVisualStyleBackColor = true;
+            this.radioButton201.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.radioButton201.AutoSize = true;
+            this.radioButton201.Location = new System.Drawing.Point(23, 3);
+            this.radioButton201.Name = "radioButton201";
+            this.radioButton201.Size = new System.Drawing.Size(14, 13);
+            this.radioButton201.TabIndex = 13;
+            this.radioButton201.TabStop = true;
+            this.radioButton201.UseVisualStyleBackColor = true;
             // 
-            // radioButton94
+            // radioButton202
             // 
-            this.radioButton94.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.radioButton94.AutoSize = true;
-            this.radioButton94.Location = new System.Drawing.Point(74, 3);
-            this.radioButton94.Name = "radioButton94";
-            this.radioButton94.Size = new System.Drawing.Size(14, 13);
-            this.radioButton94.TabIndex = 15;
-            this.radioButton94.TabStop = true;
-            this.radioButton94.UseVisualStyleBackColor = true;
+            this.radioButton202.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.radioButton202.AutoSize = true;
+            this.radioButton202.Location = new System.Drawing.Point(45, 3);
+            this.radioButton202.Name = "radioButton202";
+            this.radioButton202.Size = new System.Drawing.Size(14, 13);
+            this.radioButton202.TabIndex = 14;
+            this.radioButton202.TabStop = true;
+            this.radioButton202.UseVisualStyleBackColor = true;
             // 
-            // radioButton95
+            // radioButton203
             // 
-            this.radioButton95.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.radioButton95.AutoSize = true;
-            this.radioButton95.Location = new System.Drawing.Point(108, 3);
-            this.radioButton95.Name = "radioButton95";
-            this.radioButton95.Size = new System.Drawing.Size(14, 13);
-            this.radioButton95.TabIndex = 16;
-            this.radioButton95.TabStop = true;
-            this.radioButton95.UseVisualStyleBackColor = true;
+            this.radioButton203.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.radioButton203.AutoSize = true;
+            this.radioButton203.Location = new System.Drawing.Point(74, 3);
+            this.radioButton203.Name = "radioButton203";
+            this.radioButton203.Size = new System.Drawing.Size(14, 13);
+            this.radioButton203.TabIndex = 15;
+            this.radioButton203.TabStop = true;
+            this.radioButton203.UseVisualStyleBackColor = true;
+            // 
+            // radioButton204
+            // 
+            this.radioButton204.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.radioButton204.AutoSize = true;
+            this.radioButton204.Location = new System.Drawing.Point(108, 3);
+            this.radioButton204.Name = "radioButton204";
+            this.radioButton204.Size = new System.Drawing.Size(14, 13);
+            this.radioButton204.TabIndex = 16;
+            this.radioButton204.TabStop = true;
+            this.radioButton204.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel19
             // 
@@ -1055,6 +1112,7 @@ namespace ManejoInventariosBD
             this.tableLayoutPanel19.Name = "tableLayoutPanel19";
             this.tableLayoutPanel19.RowCount = 1;
             this.tableLayoutPanel19.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel19.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 19F));
             this.tableLayoutPanel19.Size = new System.Drawing.Size(132, 19);
             this.tableLayoutPanel19.TabIndex = 4;
             // 
@@ -2471,209 +2529,209 @@ namespace ManejoInventariosBD
             // 
             this.label15.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(90, 51);
+            this.label15.Location = new System.Drawing.Point(63, 51);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(36, 13);
+            this.label15.Size = new System.Drawing.Size(90, 13);
             this.label15.TabIndex = 6;
-            this.label15.Text = "Farola";
+            this.label15.Text = "Bomper delantero";
             this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label16
             // 
             this.label16.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(76, 76);
+            this.label16.Location = new System.Drawing.Point(84, 76);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(63, 13);
+            this.label16.Size = new System.Drawing.Size(48, 13);
             this.label16.TabIndex = 11;
-            this.label16.Text = "Exploradora";
+            this.label16.Text = "Persiana";
             this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label17
             // 
             this.label17.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(83, 101);
+            this.label17.Location = new System.Drawing.Point(67, 101);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(49, 13);
+            this.label17.Size = new System.Drawing.Size(81, 13);
             this.label17.TabIndex = 20;
-            this.label17.Text = "Carenaje";
+            this.label17.Text = "Farola izquierda";
             this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label18
             // 
             this.label18.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(95, 126);
+            this.label18.Location = new System.Drawing.Point(56, 126);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(25, 13);
+            this.label18.Size = new System.Drawing.Size(103, 13);
             this.label18.TabIndex = 25;
-            this.label18.Text = "Pito";
+            this.label18.Text = "Parabrisas delantero";
             this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label19
             // 
             this.label19.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(48, 151);
+            this.label19.Location = new System.Drawing.Point(43, 151);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(119, 13);
+            this.label19.Size = new System.Drawing.Size(130, 13);
             this.label19.TabIndex = 26;
-            this.label19.Text = "Guarda Barro Delantero";
+            this.label19.Text = "Espejo retrovisor izquierdo";
             this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label20
             // 
             this.label20.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(68, 176);
+            this.label20.Location = new System.Drawing.Point(26, 176);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(79, 13);
+            this.label20.Size = new System.Drawing.Size(164, 13);
             this.label20.TabIndex = 27;
-            this.label20.Text = "Freno de Disco";
+            this.label20.Text = "Guarda fango delantero izquierdo";
             this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label21
             // 
             this.label21.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(86, 201);
+            this.label21.Location = new System.Drawing.Point(43, 201);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(43, 13);
+            this.label21.Size = new System.Drawing.Size(130, 13);
             this.label21.TabIndex = 28;
-            this.label21.Text = "Tablero";
+            this.label21.Text = "Puerta delantera izquierda";
             this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label22
             // 
             this.label22.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(30, 226);
+            this.label22.Location = new System.Drawing.Point(49, 226);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(155, 13);
+            this.label22.Size = new System.Drawing.Size(118, 13);
             this.label22.TabIndex = 29;
-            this.label22.Text = "Direccional Delantera Izquierda";
+            this.label22.Text = "Puerta trasera izquierda";
             this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label23
             // 
             this.label23.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(65, 251);
+            this.label23.Location = new System.Drawing.Point(29, 251);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(85, 13);
+            this.label23.Size = new System.Drawing.Size(158, 13);
             this.label23.TabIndex = 30;
-            this.label23.Text = "Espejo Izquierdo";
+            this.label23.Text = "Vidrio puerta delantera izquierda";
             this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label24
             // 
             this.label24.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(41, 276);
+            this.label24.Location = new System.Drawing.Point(35, 276);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(134, 13);
+            this.label24.Size = new System.Drawing.Size(146, 13);
             this.label24.TabIndex = 31;
-            this.label24.Text = "Mango Dirección Izquierdo";
+            this.label24.Text = "Vidrio puerta trasera izquierda";
             this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label25
             // 
             this.label25.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(56, 301);
+            this.label25.Location = new System.Drawing.Point(32, 301);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(103, 13);
+            this.label25.Size = new System.Drawing.Size(152, 13);
             this.label25.TabIndex = 32;
-            this.label25.Text = "Manigueta Izquierda";
+            this.label25.Text = "Guarda fango trasero izquierdo";
             this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label26
             // 
             this.label26.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(33, 326);
+            this.label26.Location = new System.Drawing.Point(62, 326);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(149, 13);
+            this.label26.Size = new System.Drawing.Size(91, 13);
             this.label26.TabIndex = 33;
-            this.label26.Text = "Protector Manigueta Izquierda";
+            this.label26.Text = "Parabrisas trasero";
             this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label27
             // 
             this.label27.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(31, 351);
+            this.label27.Location = new System.Drawing.Point(69, 351);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(153, 13);
+            this.label27.Size = new System.Drawing.Size(78, 13);
             this.label27.TabIndex = 34;
-            this.label27.Text = "Direccional Delantera Derecha";
+            this.label27.Text = "Bomper trasero";
             this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label28
             // 
             this.label28.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(66, 376);
+            this.label28.Location = new System.Drawing.Point(71, 376);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(83, 13);
+            this.label28.Size = new System.Drawing.Size(74, 13);
             this.label28.TabIndex = 35;
-            this.label28.Text = "Espejo Derecho";
+            this.label28.Text = "Stop izquierdo";
             this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label29
             // 
             this.label29.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(42, 401);
+            this.label29.Location = new System.Drawing.Point(65, 401);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(132, 13);
+            this.label29.Size = new System.Drawing.Size(86, 13);
             this.label29.TabIndex = 36;
-            this.label29.Text = "Mango Dirección Derecho";
+            this.label29.Text = "Luz freno auxiliar";
             this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label30
             // 
             this.label30.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(42, 426);
+            this.label30.Location = new System.Drawing.Point(54, 426);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(131, 13);
+            this.label30.Size = new System.Drawing.Size(108, 13);
             this.label30.TabIndex = 37;
-            this.label30.Text = "Manigueta Freno Derecho";
+            this.label30.Text = "Exploradoras traseras";
             this.label30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label31
             // 
             this.label31.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(19, 451);
+            this.label31.Location = new System.Drawing.Point(72, 451);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(177, 13);
+            this.label31.Size = new System.Drawing.Size(71, 13);
             this.label31.TabIndex = 38;
-            this.label31.Text = "Protector Manigueta Freno Derecho";
+            this.label31.Text = "Stop derecho";
             this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label32
             // 
             this.label32.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(56, 476);
+            this.label32.Location = new System.Drawing.Point(50, 476);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(104, 13);
+            this.label32.Size = new System.Drawing.Size(115, 13);
             this.label32.TabIndex = 39;
-            this.label32.Text = "Tanque Combustible";
+            this.label32.Text = "Puerta trasera derecha";
             this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label33
             // 
             this.label33.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(42, 502);
+            this.label33.Location = new System.Drawing.Point(33, 501);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(132, 13);
+            this.label33.Size = new System.Drawing.Size(149, 13);
             this.label33.TabIndex = 40;
-            this.label33.Text = "Tapa Tanque Combustible";
+            this.label33.Text = "Guarda fango trasero derecho";
             this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label34
@@ -2686,6 +2744,170 @@ namespace ManejoInventariosBD
             this.label34.TabIndex = 47;
             this.label34.Text = "N/V";
             // 
+            // tableLayoutPanel41
+            // 
+            this.tableLayoutPanel41.ColumnCount = 5;
+            this.tableLayoutPanel1.SetColumnSpan(this.tableLayoutPanel41, 5);
+            this.tableLayoutPanel41.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 19F));
+            this.tableLayoutPanel41.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 22F));
+            this.tableLayoutPanel41.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 22F));
+            this.tableLayoutPanel41.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 36F));
+            this.tableLayoutPanel41.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 33F));
+            this.tableLayoutPanel41.Controls.Add(this.radioButton195, 0, 0);
+            this.tableLayoutPanel41.Controls.Add(this.radioButton196, 1, 0);
+            this.tableLayoutPanel41.Controls.Add(this.radioButton197, 2, 0);
+            this.tableLayoutPanel41.Controls.Add(this.radioButton198, 3, 0);
+            this.tableLayoutPanel41.Controls.Add(this.radioButton199, 4, 0);
+            this.tableLayoutPanel41.Location = new System.Drawing.Point(219, 523);
+            this.tableLayoutPanel41.Name = "tableLayoutPanel41";
+            this.tableLayoutPanel41.RowCount = 1;
+            this.tableLayoutPanel41.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel41.Size = new System.Drawing.Size(132, 19);
+            this.tableLayoutPanel41.TabIndex = 48;
+            // 
+            // radioButton195
+            // 
+            this.radioButton195.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.radioButton195.AutoSize = true;
+            this.radioButton195.Location = new System.Drawing.Point(3, 3);
+            this.radioButton195.Name = "radioButton195";
+            this.radioButton195.Size = new System.Drawing.Size(13, 13);
+            this.radioButton195.TabIndex = 12;
+            this.radioButton195.TabStop = true;
+            this.radioButton195.UseVisualStyleBackColor = true;
+            // 
+            // radioButton196
+            // 
+            this.radioButton196.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.radioButton196.AutoSize = true;
+            this.radioButton196.Location = new System.Drawing.Point(23, 3);
+            this.radioButton196.Name = "radioButton196";
+            this.radioButton196.Size = new System.Drawing.Size(14, 13);
+            this.radioButton196.TabIndex = 13;
+            this.radioButton196.TabStop = true;
+            this.radioButton196.UseVisualStyleBackColor = true;
+            // 
+            // radioButton197
+            // 
+            this.radioButton197.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.radioButton197.AutoSize = true;
+            this.radioButton197.Location = new System.Drawing.Point(45, 3);
+            this.radioButton197.Name = "radioButton197";
+            this.radioButton197.Size = new System.Drawing.Size(14, 13);
+            this.radioButton197.TabIndex = 14;
+            this.radioButton197.TabStop = true;
+            this.radioButton197.UseVisualStyleBackColor = true;
+            // 
+            // radioButton198
+            // 
+            this.radioButton198.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.radioButton198.AutoSize = true;
+            this.radioButton198.Location = new System.Drawing.Point(74, 3);
+            this.radioButton198.Name = "radioButton198";
+            this.radioButton198.Size = new System.Drawing.Size(14, 13);
+            this.radioButton198.TabIndex = 15;
+            this.radioButton198.TabStop = true;
+            this.radioButton198.UseVisualStyleBackColor = true;
+            // 
+            // radioButton199
+            // 
+            this.radioButton199.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.radioButton199.AutoSize = true;
+            this.radioButton199.Location = new System.Drawing.Point(108, 3);
+            this.radioButton199.Name = "radioButton199";
+            this.radioButton199.Size = new System.Drawing.Size(14, 13);
+            this.radioButton199.TabIndex = 16;
+            this.radioButton199.TabStop = true;
+            this.radioButton199.UseVisualStyleBackColor = true;
+            // 
+            // tableLayoutPanel20
+            // 
+            this.tableLayoutPanel20.ColumnCount = 5;
+            this.tableLayoutPanel1.SetColumnSpan(this.tableLayoutPanel20, 5);
+            this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 19F));
+            this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 22F));
+            this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 22F));
+            this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 36F));
+            this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 33F));
+            this.tableLayoutPanel20.Controls.Add(this.radioButton91, 0, 0);
+            this.tableLayoutPanel20.Controls.Add(this.radioButton92, 1, 0);
+            this.tableLayoutPanel20.Controls.Add(this.radioButton93, 2, 0);
+            this.tableLayoutPanel20.Controls.Add(this.radioButton94, 3, 0);
+            this.tableLayoutPanel20.Controls.Add(this.radioButton95, 4, 0);
+            this.tableLayoutPanel20.Location = new System.Drawing.Point(219, 548);
+            this.tableLayoutPanel20.Name = "tableLayoutPanel20";
+            this.tableLayoutPanel20.RowCount = 1;
+            this.tableLayoutPanel20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 19F));
+            this.tableLayoutPanel20.Size = new System.Drawing.Size(132, 19);
+            this.tableLayoutPanel20.TabIndex = 4;
+            // 
+            // radioButton91
+            // 
+            this.radioButton91.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.radioButton91.AutoSize = true;
+            this.radioButton91.Location = new System.Drawing.Point(3, 3);
+            this.radioButton91.Name = "radioButton91";
+            this.radioButton91.Size = new System.Drawing.Size(13, 13);
+            this.radioButton91.TabIndex = 12;
+            this.radioButton91.TabStop = true;
+            this.radioButton91.UseVisualStyleBackColor = true;
+            // 
+            // radioButton92
+            // 
+            this.radioButton92.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.radioButton92.AutoSize = true;
+            this.radioButton92.Location = new System.Drawing.Point(23, 3);
+            this.radioButton92.Name = "radioButton92";
+            this.radioButton92.Size = new System.Drawing.Size(14, 13);
+            this.radioButton92.TabIndex = 13;
+            this.radioButton92.TabStop = true;
+            this.radioButton92.UseVisualStyleBackColor = true;
+            // 
+            // radioButton93
+            // 
+            this.radioButton93.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.radioButton93.AutoSize = true;
+            this.radioButton93.Location = new System.Drawing.Point(45, 3);
+            this.radioButton93.Name = "radioButton93";
+            this.radioButton93.Size = new System.Drawing.Size(14, 13);
+            this.radioButton93.TabIndex = 14;
+            this.radioButton93.TabStop = true;
+            this.radioButton93.UseVisualStyleBackColor = true;
+            // 
+            // radioButton94
+            // 
+            this.radioButton94.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.radioButton94.AutoSize = true;
+            this.radioButton94.Location = new System.Drawing.Point(74, 3);
+            this.radioButton94.Name = "radioButton94";
+            this.radioButton94.Size = new System.Drawing.Size(14, 13);
+            this.radioButton94.TabIndex = 15;
+            this.radioButton94.TabStop = true;
+            this.radioButton94.UseVisualStyleBackColor = true;
+            // 
+            // radioButton95
+            // 
+            this.radioButton95.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.radioButton95.AutoSize = true;
+            this.radioButton95.Location = new System.Drawing.Point(108, 3);
+            this.radioButton95.Name = "radioButton95";
+            this.radioButton95.Size = new System.Drawing.Size(14, 13);
+            this.radioButton95.TabIndex = 16;
+            this.radioButton95.TabStop = true;
+            this.radioButton95.UseVisualStyleBackColor = true;
+            // 
+            // label72
+            // 
+            this.label72.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label72.AutoSize = true;
+            this.label72.Location = new System.Drawing.Point(44, 526);
+            this.label72.Name = "label72";
+            this.label72.Size = new System.Drawing.Size(127, 13);
+            this.label72.TabIndex = 51;
+            this.label72.Text = "Puerta delantera derecha";
+            this.label72.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // tableLayoutPanel21
             // 
             this.tableLayoutPanel21.ColumnCount = 6;
@@ -2695,6 +2917,7 @@ namespace ManejoInventariosBD
             this.tableLayoutPanel21.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 22F));
             this.tableLayoutPanel21.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 36F));
             this.tableLayoutPanel21.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 36F));
+            this.tableLayoutPanel21.Controls.Add(this.tableLayoutPanel45, 1, 22);
             this.tableLayoutPanel21.Controls.Add(this.tableLayoutPanel22, 1, 20);
             this.tableLayoutPanel21.Controls.Add(this.tableLayoutPanel23, 1, 19);
             this.tableLayoutPanel21.Controls.Add(this.tableLayoutPanel24, 1, 18);
@@ -2730,19 +2953,22 @@ namespace ManejoInventariosBD
             this.tableLayoutPanel21.Controls.Add(this.label48, 0, 9);
             this.tableLayoutPanel21.Controls.Add(this.label49, 0, 10);
             this.tableLayoutPanel21.Controls.Add(this.label50, 0, 11);
-            this.tableLayoutPanel21.Controls.Add(this.label51, 0, 12);
-            this.tableLayoutPanel21.Controls.Add(this.label52, 0, 13);
             this.tableLayoutPanel21.Controls.Add(this.label64, 0, 14);
-            this.tableLayoutPanel21.Controls.Add(this.label65, 0, 15);
-            this.tableLayoutPanel21.Controls.Add(this.label66, 0, 16);
             this.tableLayoutPanel21.Controls.Add(this.label67, 0, 17);
-            this.tableLayoutPanel21.Controls.Add(this.label68, 0, 18);
-            this.tableLayoutPanel21.Controls.Add(this.label69, 0, 19);
-            this.tableLayoutPanel21.Controls.Add(this.label70, 0, 20);
             this.tableLayoutPanel21.Controls.Add(this.label71, 5, 1);
-            this.tableLayoutPanel21.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel21.Controls.Add(this.label68, 0, 20);
+            this.tableLayoutPanel21.Controls.Add(this.label70, 0, 15);
+            this.tableLayoutPanel21.Controls.Add(this.label65, 0, 18);
+            this.tableLayoutPanel21.Controls.Add(this.label69, 0, 16);
+            this.tableLayoutPanel21.Controls.Add(this.label66, 0, 19);
+            this.tableLayoutPanel21.Controls.Add(this.label75, 0, 22);
+            this.tableLayoutPanel21.Controls.Add(this.tableLayoutPanel43, 0, 21);
+            this.tableLayoutPanel21.Controls.Add(this.tableLayoutPanel44, 1, 21);
+            this.tableLayoutPanel21.Controls.Add(this.label51, 0, 13);
+            this.tableLayoutPanel21.Controls.Add(this.tableLayoutPanel46, 0, 12);
+            this.tableLayoutPanel21.Location = new System.Drawing.Point(13, 0);
             this.tableLayoutPanel21.Name = "tableLayoutPanel21";
-            this.tableLayoutPanel21.RowCount = 21;
+            this.tableLayoutPanel21.RowCount = 24;
             this.tableLayoutPanel21.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tableLayoutPanel21.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel21.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
@@ -2755,6 +2981,8 @@ namespace ManejoInventariosBD
             this.tableLayoutPanel21.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tableLayoutPanel21.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tableLayoutPanel21.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanel21.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 29F));
+            this.tableLayoutPanel21.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
             this.tableLayoutPanel21.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tableLayoutPanel21.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tableLayoutPanel21.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
@@ -2762,10 +2990,87 @@ namespace ManejoInventariosBD
             this.tableLayoutPanel21.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tableLayoutPanel21.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tableLayoutPanel21.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel21.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel21.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel21.Size = new System.Drawing.Size(354, 522);
+            this.tableLayoutPanel21.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel21.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 27F));
+            this.tableLayoutPanel21.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21F));
+            this.tableLayoutPanel21.Size = new System.Drawing.Size(354, 585);
             this.tableLayoutPanel21.TabIndex = 1;
+            // 
+            // tableLayoutPanel45
+            // 
+            this.tableLayoutPanel45.ColumnCount = 5;
+            this.tableLayoutPanel21.SetColumnSpan(this.tableLayoutPanel45, 5);
+            this.tableLayoutPanel45.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 19F));
+            this.tableLayoutPanel45.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 22F));
+            this.tableLayoutPanel45.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 22F));
+            this.tableLayoutPanel45.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 36F));
+            this.tableLayoutPanel45.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 33F));
+            this.tableLayoutPanel45.Controls.Add(this.radioButton210, 0, 0);
+            this.tableLayoutPanel45.Controls.Add(this.radioButton211, 1, 0);
+            this.tableLayoutPanel45.Controls.Add(this.radioButton212, 2, 0);
+            this.tableLayoutPanel45.Controls.Add(this.radioButton213, 3, 0);
+            this.tableLayoutPanel45.Controls.Add(this.radioButton214, 4, 0);
+            this.tableLayoutPanel45.Location = new System.Drawing.Point(219, 558);
+            this.tableLayoutPanel45.Name = "tableLayoutPanel45";
+            this.tableLayoutPanel45.RowCount = 1;
+            this.tableLayoutPanel45.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel45.Size = new System.Drawing.Size(132, 19);
+            this.tableLayoutPanel45.TabIndex = 52;
+            // 
+            // radioButton210
+            // 
+            this.radioButton210.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.radioButton210.AutoSize = true;
+            this.radioButton210.Location = new System.Drawing.Point(3, 3);
+            this.radioButton210.Name = "radioButton210";
+            this.radioButton210.Size = new System.Drawing.Size(13, 13);
+            this.radioButton210.TabIndex = 12;
+            this.radioButton210.TabStop = true;
+            this.radioButton210.UseVisualStyleBackColor = true;
+            // 
+            // radioButton211
+            // 
+            this.radioButton211.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.radioButton211.AutoSize = true;
+            this.radioButton211.Location = new System.Drawing.Point(23, 3);
+            this.radioButton211.Name = "radioButton211";
+            this.radioButton211.Size = new System.Drawing.Size(14, 13);
+            this.radioButton211.TabIndex = 13;
+            this.radioButton211.TabStop = true;
+            this.radioButton211.UseVisualStyleBackColor = true;
+            // 
+            // radioButton212
+            // 
+            this.radioButton212.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.radioButton212.AutoSize = true;
+            this.radioButton212.Location = new System.Drawing.Point(45, 3);
+            this.radioButton212.Name = "radioButton212";
+            this.radioButton212.Size = new System.Drawing.Size(14, 13);
+            this.radioButton212.TabIndex = 14;
+            this.radioButton212.TabStop = true;
+            this.radioButton212.UseVisualStyleBackColor = true;
+            // 
+            // radioButton213
+            // 
+            this.radioButton213.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.radioButton213.AutoSize = true;
+            this.radioButton213.Location = new System.Drawing.Point(74, 3);
+            this.radioButton213.Name = "radioButton213";
+            this.radioButton213.Size = new System.Drawing.Size(14, 13);
+            this.radioButton213.TabIndex = 15;
+            this.radioButton213.TabStop = true;
+            this.radioButton213.UseVisualStyleBackColor = true;
+            // 
+            // radioButton214
+            // 
+            this.radioButton214.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.radioButton214.AutoSize = true;
+            this.radioButton214.Location = new System.Drawing.Point(108, 3);
+            this.radioButton214.Name = "radioButton214";
+            this.radioButton214.Size = new System.Drawing.Size(14, 13);
+            this.radioButton214.TabIndex = 16;
+            this.radioButton214.TabStop = true;
+            this.radioButton214.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel22
             // 
@@ -2781,7 +3086,7 @@ namespace ManejoInventariosBD
             this.tableLayoutPanel22.Controls.Add(this.radioButton98, 2, 0);
             this.tableLayoutPanel22.Controls.Add(this.radioButton99, 3, 0);
             this.tableLayoutPanel22.Controls.Add(this.radioButton100, 4, 0);
-            this.tableLayoutPanel22.Location = new System.Drawing.Point(219, 498);
+            this.tableLayoutPanel22.Location = new System.Drawing.Point(219, 503);
             this.tableLayoutPanel22.Name = "tableLayoutPanel22";
             this.tableLayoutPanel22.RowCount = 1;
             this.tableLayoutPanel22.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -2857,7 +3162,7 @@ namespace ManejoInventariosBD
             this.tableLayoutPanel23.Controls.Add(this.radioButton103, 2, 0);
             this.tableLayoutPanel23.Controls.Add(this.radioButton104, 3, 0);
             this.tableLayoutPanel23.Controls.Add(this.radioButton105, 4, 0);
-            this.tableLayoutPanel23.Location = new System.Drawing.Point(219, 473);
+            this.tableLayoutPanel23.Location = new System.Drawing.Point(219, 478);
             this.tableLayoutPanel23.Name = "tableLayoutPanel23";
             this.tableLayoutPanel23.RowCount = 1;
             this.tableLayoutPanel23.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -2933,7 +3238,7 @@ namespace ManejoInventariosBD
             this.tableLayoutPanel24.Controls.Add(this.radioButton108, 2, 0);
             this.tableLayoutPanel24.Controls.Add(this.radioButton109, 3, 0);
             this.tableLayoutPanel24.Controls.Add(this.radioButton110, 4, 0);
-            this.tableLayoutPanel24.Location = new System.Drawing.Point(219, 448);
+            this.tableLayoutPanel24.Location = new System.Drawing.Point(219, 453);
             this.tableLayoutPanel24.Name = "tableLayoutPanel24";
             this.tableLayoutPanel24.RowCount = 1;
             this.tableLayoutPanel24.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -3009,7 +3314,7 @@ namespace ManejoInventariosBD
             this.tableLayoutPanel25.Controls.Add(this.radioButton113, 2, 0);
             this.tableLayoutPanel25.Controls.Add(this.radioButton114, 3, 0);
             this.tableLayoutPanel25.Controls.Add(this.radioButton115, 4, 0);
-            this.tableLayoutPanel25.Location = new System.Drawing.Point(219, 423);
+            this.tableLayoutPanel25.Location = new System.Drawing.Point(219, 428);
             this.tableLayoutPanel25.Name = "tableLayoutPanel25";
             this.tableLayoutPanel25.RowCount = 1;
             this.tableLayoutPanel25.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -3085,7 +3390,7 @@ namespace ManejoInventariosBD
             this.tableLayoutPanel26.Controls.Add(this.radioButton118, 2, 0);
             this.tableLayoutPanel26.Controls.Add(this.radioButton119, 3, 0);
             this.tableLayoutPanel26.Controls.Add(this.radioButton120, 4, 0);
-            this.tableLayoutPanel26.Location = new System.Drawing.Point(219, 398);
+            this.tableLayoutPanel26.Location = new System.Drawing.Point(219, 403);
             this.tableLayoutPanel26.Name = "tableLayoutPanel26";
             this.tableLayoutPanel26.RowCount = 1;
             this.tableLayoutPanel26.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -3161,7 +3466,7 @@ namespace ManejoInventariosBD
             this.tableLayoutPanel27.Controls.Add(this.radioButton123, 2, 0);
             this.tableLayoutPanel27.Controls.Add(this.radioButton124, 3, 0);
             this.tableLayoutPanel27.Controls.Add(this.radioButton125, 4, 0);
-            this.tableLayoutPanel27.Location = new System.Drawing.Point(219, 373);
+            this.tableLayoutPanel27.Location = new System.Drawing.Point(219, 378);
             this.tableLayoutPanel27.Name = "tableLayoutPanel27";
             this.tableLayoutPanel27.RowCount = 1;
             this.tableLayoutPanel27.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -3237,7 +3542,7 @@ namespace ManejoInventariosBD
             this.tableLayoutPanel28.Controls.Add(this.radioButton128, 2, 0);
             this.tableLayoutPanel28.Controls.Add(this.radioButton129, 3, 0);
             this.tableLayoutPanel28.Controls.Add(this.radioButton130, 4, 0);
-            this.tableLayoutPanel28.Location = new System.Drawing.Point(219, 348);
+            this.tableLayoutPanel28.Location = new System.Drawing.Point(219, 353);
             this.tableLayoutPanel28.Name = "tableLayoutPanel28";
             this.tableLayoutPanel28.RowCount = 1;
             this.tableLayoutPanel28.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -3313,7 +3618,7 @@ namespace ManejoInventariosBD
             this.tableLayoutPanel29.Controls.Add(this.radioButton133, 2, 0);
             this.tableLayoutPanel29.Controls.Add(this.radioButton134, 3, 0);
             this.tableLayoutPanel29.Controls.Add(this.radioButton135, 4, 0);
-            this.tableLayoutPanel29.Location = new System.Drawing.Point(219, 323);
+            this.tableLayoutPanel29.Location = new System.Drawing.Point(219, 327);
             this.tableLayoutPanel29.Name = "tableLayoutPanel29";
             this.tableLayoutPanel29.RowCount = 1;
             this.tableLayoutPanel29.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -4276,210 +4581,133 @@ namespace ManejoInventariosBD
             // 
             this.label41.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label41.AutoSize = true;
-            this.label41.Location = new System.Drawing.Point(87, 51);
+            this.label41.Location = new System.Drawing.Point(36, 51);
             this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(41, 13);
+            this.label41.Size = new System.Drawing.Size(143, 13);
             this.label41.TabIndex = 6;
-            this.label41.Text = "Babero";
+            this.label41.Text = "Vidrio puerta trasera derecha";
             this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label42
             // 
             this.label42.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label42.AutoSize = true;
-            this.label42.Location = new System.Drawing.Point(93, 76);
+            this.label42.Location = new System.Drawing.Point(27, 76);
             this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(29, 13);
+            this.label42.Size = new System.Drawing.Size(161, 13);
             this.label42.TabIndex = 11;
-            this.label42.Text = "Pata";
+            this.label42.Text = "Guarda fango delantero derecho";
             this.label42.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label43
             // 
             this.label43.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label43.AutoSize = true;
-            this.label43.Location = new System.Drawing.Point(93, 101);
+            this.label43.Location = new System.Drawing.Point(44, 101);
             this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(30, 13);
+            this.label43.Size = new System.Drawing.Size(127, 13);
             this.label43.TabIndex = 20;
-            this.label43.Text = "Gato";
+            this.label43.Text = "Espejo retrovisor derecho";
             this.label43.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label44
             // 
             this.label44.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label44.AutoSize = true;
-            this.label44.Location = new System.Drawing.Point(51, 126);
+            this.label44.Location = new System.Drawing.Point(69, 126);
             this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(113, 13);
+            this.label44.Size = new System.Drawing.Size(78, 13);
             this.label44.TabIndex = 25;
-            this.label44.Text = "Tapa Lateral Izquierda";
+            this.label44.Text = "Farola derecha";
             this.label44.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label45
             // 
             this.label45.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label45.AutoSize = true;
-            this.label45.Location = new System.Drawing.Point(67, 151);
+            this.label45.Location = new System.Drawing.Point(33, 151);
             this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(82, 13);
+            this.label45.Size = new System.Drawing.Size(149, 13);
             this.label45.TabIndex = 26;
-            this.label45.Text = "Guarda Cadena";
+            this.label45.Text = "Direccional delantera derecha";
             this.label45.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label46
             // 
             this.label46.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label46.AutoSize = true;
-            this.label46.Location = new System.Drawing.Point(94, 176);
+            this.label46.Location = new System.Drawing.Point(48, 176);
             this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(28, 13);
+            this.label46.Size = new System.Drawing.Size(120, 13);
             this.label46.TabIndex = 27;
-            this.label46.Text = "Sillin";
+            this.label46.Text = "Exploradoras delanteras";
             this.label46.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label47
             // 
             this.label47.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label47.AutoSize = true;
-            this.label47.Location = new System.Drawing.Point(89, 201);
+            this.label47.Location = new System.Drawing.Point(32, 201);
             this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(38, 13);
+            this.label47.Size = new System.Drawing.Size(152, 13);
             this.label47.TabIndex = 28;
-            this.label47.Text = "Parrilla";
+            this.label47.Text = "Direccional delantera izquierda";
             this.label47.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label48
             // 
             this.label48.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label48.AutoSize = true;
-            this.label48.Location = new System.Drawing.Point(53, 226);
+            this.label48.Location = new System.Drawing.Point(61, 226);
             this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(109, 13);
+            this.label48.Size = new System.Drawing.Size(94, 13);
             this.label48.TabIndex = 29;
-            this.label48.Text = "Guarda Barro Trasero";
+            this.label48.Text = "Cojineria delantera";
             this.label48.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label49
             // 
             this.label49.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label49.AutoSize = true;
-            this.label49.Location = new System.Drawing.Point(35, 251);
+            this.label49.Location = new System.Drawing.Point(67, 251);
             this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(145, 13);
+            this.label49.Size = new System.Drawing.Size(82, 13);
             this.label49.TabIndex = 30;
-            this.label49.Text = "Direccional Trasera Izquierda";
+            this.label49.Text = "Cojineria trasera";
             this.label49.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label50
             // 
             this.label50.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label50.AutoSize = true;
-            this.label50.Location = new System.Drawing.Point(68, 276);
+            this.label50.Location = new System.Drawing.Point(71, 276);
             this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(80, 13);
+            this.label50.Size = new System.Drawing.Size(73, 13);
             this.label50.TabIndex = 31;
-            this.label50.Text = "Amortiguadores";
+            this.label50.Text = "Espejo interior";
             this.label50.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label51
-            // 
-            this.label51.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label51.AutoSize = true;
-            this.label51.Location = new System.Drawing.Point(88, 301);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(39, 13);
-            this.label51.TabIndex = 32;
-            this.label51.Text = "Exosto";
-            this.label51.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label52
-            // 
-            this.label52.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label52.AutoSize = true;
-            this.label52.Location = new System.Drawing.Point(91, 326);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(34, 13);
-            this.label52.TabIndex = 33;
-            this.label52.Text = "Placa";
-            this.label52.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label64
             // 
             this.label64.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label64.AutoSize = true;
-            this.label64.Location = new System.Drawing.Point(36, 351);
+            this.label64.Location = new System.Drawing.Point(47, 356);
             this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(143, 13);
+            this.label64.Size = new System.Drawing.Size(121, 13);
             this.label64.TabIndex = 34;
-            this.label64.Text = "Direccional Trasera Derecha";
+            this.label64.Text = "Antena radio-pasacintas";
             this.label64.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label65
-            // 
-            this.label65.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label65.AutoSize = true;
-            this.label65.Location = new System.Drawing.Point(52, 376);
-            this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(111, 13);
-            this.label65.TabIndex = 35;
-            this.label65.Text = "Tapa Lateral Derecha";
-            this.label65.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label66
-            // 
-            this.label66.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label66.AutoSize = true;
-            this.label66.Location = new System.Drawing.Point(88, 401);
-            this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(40, 13);
-            this.label66.TabIndex = 36;
-            this.label66.Text = "Bateria";
-            this.label66.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label67
             // 
             this.label67.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label67.AutoSize = true;
-            this.label67.Location = new System.Drawing.Point(89, 426);
+            this.label67.Location = new System.Drawing.Point(54, 431);
             this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(37, 13);
+            this.label67.Size = new System.Drawing.Size(108, 13);
             this.label67.TabIndex = 37;
-            this.label67.Text = "Tacos";
+            this.label67.Text = "Antena radio-teléfono";
             this.label67.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label68
-            // 
-            this.label68.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label68.AutoSize = true;
-            this.label68.Location = new System.Drawing.Point(61, 451);
-            this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(94, 13);
-            this.label68.TabIndex = 38;
-            this.label68.Text = "Palanca Freno Pie";
-            this.label68.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label69
-            // 
-            this.label69.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label69.AutoSize = true;
-            this.label69.Location = new System.Drawing.Point(93, 476);
-            this.label69.Name = "label69";
-            this.label69.Size = new System.Drawing.Size(29, 13);
-            this.label69.TabIndex = 39;
-            this.label69.Text = "Cran";
-            this.label69.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label70
-            // 
-            this.label70.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label70.AutoSize = true;
-            this.label70.Location = new System.Drawing.Point(92, 502);
-            this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(32, 13);
-            this.label70.TabIndex = 40;
-            this.label70.Text = "Otros";
-            this.label70.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label71
             // 
@@ -4491,33 +4719,273 @@ namespace ManejoInventariosBD
             this.label71.TabIndex = 47;
             this.label71.Text = "N/V";
             // 
-            // textBox10
+            // label68
             // 
-            this.textBox10.Location = new System.Drawing.Point(227, 167);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(100, 20);
-            this.textBox10.TabIndex = 66;
+            this.label68.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label68.AutoSize = true;
+            this.label68.Location = new System.Drawing.Point(88, 506);
+            this.label68.Name = "label68";
+            this.label68.Size = new System.Drawing.Size(40, 13);
+            this.label68.TabIndex = 38;
+            this.label68.Text = "Bateria";
+            this.label68.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label70
+            // 
+            this.label70.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label70.AutoSize = true;
+            this.label70.Location = new System.Drawing.Point(75, 381);
+            this.label70.Name = "label70";
+            this.label70.Size = new System.Drawing.Size(65, 13);
+            this.label70.TabIndex = 40;
+            this.label70.Text = "Encendedor";
+            this.label70.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label65
+            // 
+            this.label65.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label65.AutoSize = true;
+            this.label65.Location = new System.Drawing.Point(60, 456);
+            this.label65.Name = "label65";
+            this.label65.Size = new System.Drawing.Size(95, 13);
+            this.label65.TabIndex = 35;
+            this.label65.Text = "Llanta de repuesto";
+            this.label65.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label69
+            // 
+            this.label69.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label69.AutoSize = true;
+            this.label69.Location = new System.Drawing.Point(70, 406);
+            this.label69.Name = "label69";
+            this.label69.Size = new System.Drawing.Size(76, 13);
+            this.label69.TabIndex = 39;
+            this.label69.Text = "Radio teléfono";
+            this.label69.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label66
+            // 
+            this.label66.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label66.AutoSize = true;
+            this.label66.Location = new System.Drawing.Point(73, 481);
+            this.label66.Name = "label66";
+            this.label66.Size = new System.Drawing.Size(69, 13);
+            this.label66.TabIndex = 36;
+            this.label66.Text = "Herramientas";
+            this.label66.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label75
+            // 
+            this.label75.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label75.AutoSize = true;
+            this.label75.Location = new System.Drawing.Point(92, 562);
+            this.label75.Name = "label75";
+            this.label75.Size = new System.Drawing.Size(32, 13);
+            this.label75.TabIndex = 49;
+            this.label75.Text = "Otros";
+            this.label75.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // tableLayoutPanel43
+            // 
+            this.tableLayoutPanel43.ColumnCount = 2;
+            this.tableLayoutPanel43.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 74F));
+            this.tableLayoutPanel43.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 26F));
+            this.tableLayoutPanel43.Controls.Add(this.label74, 0, 0);
+            this.tableLayoutPanel43.Controls.Add(this.numlimp, 1, 0);
+            this.tableLayoutPanel43.Location = new System.Drawing.Point(3, 528);
+            this.tableLayoutPanel43.Name = "tableLayoutPanel43";
+            this.tableLayoutPanel43.RowCount = 1;
+            this.tableLayoutPanel43.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
+            this.tableLayoutPanel43.Size = new System.Drawing.Size(210, 24);
+            this.tableLayoutPanel43.TabIndex = 50;
+            // 
+            // label74
+            // 
+            this.label74.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label74.AutoSize = true;
+            this.label74.Location = new System.Drawing.Point(22, 5);
+            this.label74.Name = "label74";
+            this.label74.Size = new System.Drawing.Size(110, 13);
+            this.label74.TabIndex = 49;
+            this.label74.Text = "Limpia brisas Número:";
+            this.label74.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // numlimp
+            // 
+            this.numlimp.Location = new System.Drawing.Point(158, 3);
+            this.numlimp.Name = "numlimp";
+            this.numlimp.Size = new System.Drawing.Size(49, 20);
+            this.numlimp.TabIndex = 50;
+            // 
+            // tableLayoutPanel44
+            // 
+            this.tableLayoutPanel44.ColumnCount = 5;
+            this.tableLayoutPanel21.SetColumnSpan(this.tableLayoutPanel44, 5);
+            this.tableLayoutPanel44.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 19F));
+            this.tableLayoutPanel44.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 22F));
+            this.tableLayoutPanel44.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 22F));
+            this.tableLayoutPanel44.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 36F));
+            this.tableLayoutPanel44.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 33F));
+            this.tableLayoutPanel44.Controls.Add(this.radioButton205, 0, 0);
+            this.tableLayoutPanel44.Controls.Add(this.radioButton206, 1, 0);
+            this.tableLayoutPanel44.Controls.Add(this.radioButton207, 2, 0);
+            this.tableLayoutPanel44.Controls.Add(this.radioButton208, 3, 0);
+            this.tableLayoutPanel44.Controls.Add(this.radioButton209, 4, 0);
+            this.tableLayoutPanel44.Location = new System.Drawing.Point(219, 528);
+            this.tableLayoutPanel44.Name = "tableLayoutPanel44";
+            this.tableLayoutPanel44.RowCount = 1;
+            this.tableLayoutPanel44.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanel44.Size = new System.Drawing.Size(132, 23);
+            this.tableLayoutPanel44.TabIndex = 51;
+            // 
+            // radioButton205
+            // 
+            this.radioButton205.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.radioButton205.AutoSize = true;
+            this.radioButton205.Location = new System.Drawing.Point(3, 6);
+            this.radioButton205.Name = "radioButton205";
+            this.radioButton205.Size = new System.Drawing.Size(13, 13);
+            this.radioButton205.TabIndex = 12;
+            this.radioButton205.TabStop = true;
+            this.radioButton205.UseVisualStyleBackColor = true;
+            // 
+            // radioButton206
+            // 
+            this.radioButton206.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.radioButton206.AutoSize = true;
+            this.radioButton206.Location = new System.Drawing.Point(23, 6);
+            this.radioButton206.Name = "radioButton206";
+            this.radioButton206.Size = new System.Drawing.Size(14, 13);
+            this.radioButton206.TabIndex = 13;
+            this.radioButton206.TabStop = true;
+            this.radioButton206.UseVisualStyleBackColor = true;
+            // 
+            // radioButton207
+            // 
+            this.radioButton207.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.radioButton207.AutoSize = true;
+            this.radioButton207.Location = new System.Drawing.Point(45, 6);
+            this.radioButton207.Name = "radioButton207";
+            this.radioButton207.Size = new System.Drawing.Size(14, 13);
+            this.radioButton207.TabIndex = 14;
+            this.radioButton207.TabStop = true;
+            this.radioButton207.UseVisualStyleBackColor = true;
+            // 
+            // radioButton208
+            // 
+            this.radioButton208.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.radioButton208.AutoSize = true;
+            this.radioButton208.Location = new System.Drawing.Point(74, 6);
+            this.radioButton208.Name = "radioButton208";
+            this.radioButton208.Size = new System.Drawing.Size(14, 13);
+            this.radioButton208.TabIndex = 15;
+            this.radioButton208.TabStop = true;
+            this.radioButton208.UseVisualStyleBackColor = true;
+            // 
+            // radioButton209
+            // 
+            this.radioButton209.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.radioButton209.AutoSize = true;
+            this.radioButton209.Location = new System.Drawing.Point(108, 6);
+            this.radioButton209.Name = "radioButton209";
+            this.radioButton209.Size = new System.Drawing.Size(14, 13);
+            this.radioButton209.TabIndex = 16;
+            this.radioButton209.TabStop = true;
+            this.radioButton209.UseVisualStyleBackColor = true;
+            // 
+            // label51
+            // 
+            this.label51.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label51.AutoSize = true;
+            this.label51.Location = new System.Drawing.Point(63, 330);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(89, 13);
+            this.label51.TabIndex = 32;
+            this.label51.Text = "Radio pasacintas";
+            this.label51.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // tableLayoutPanel46
+            // 
+            this.tableLayoutPanel46.ColumnCount = 2;
+            this.tableLayoutPanel46.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 71.83099F));
+            this.tableLayoutPanel46.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 28.16901F));
+            this.tableLayoutPanel46.Controls.Add(this.numpar, 1, 0);
+            this.tableLayoutPanel46.Controls.Add(this.label52, 0, 0);
+            this.tableLayoutPanel46.Location = new System.Drawing.Point(3, 298);
+            this.tableLayoutPanel46.Name = "tableLayoutPanel46";
+            this.tableLayoutPanel46.RowCount = 1;
+            this.tableLayoutPanel46.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
+            this.tableLayoutPanel46.Size = new System.Drawing.Size(210, 23);
+            this.tableLayoutPanel46.TabIndex = 53;
+            // 
+            // numpar
+            // 
+            this.numpar.Location = new System.Drawing.Point(153, 3);
+            this.numpar.Name = "numpar";
+            this.numpar.Size = new System.Drawing.Size(54, 20);
+            this.numpar.TabIndex = 35;
+            // 
+            // label52
+            // 
+            this.label52.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label52.AutoSize = true;
+            this.label52.Location = new System.Drawing.Point(26, 6);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(97, 13);
+            this.label52.TabIndex = 34;
+            this.label52.Text = "Parlantes. Número:";
+            this.label52.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // numinvent
+            // 
+            this.numinvent.Location = new System.Drawing.Point(199, 142);
+            this.numinvent.Name = "numinvent";
+            this.numinvent.Size = new System.Drawing.Size(100, 20);
+            this.numinvent.TabIndex = 66;
+            // 
+            // label76
+            // 
+            this.label76.AutoSize = true;
+            this.label76.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label76.ForeColor = System.Drawing.Color.Red;
+            this.label76.Location = new System.Drawing.Point(184, 138);
+            this.label76.Name = "label76";
+            this.label76.Size = new System.Drawing.Size(0, 24);
+            this.label76.TabIndex = 68;
+            // 
+            // label77
+            // 
+            this.label77.AutoSize = true;
+            this.label77.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label77.ForeColor = System.Drawing.Color.Red;
+            this.label77.Location = new System.Drawing.Point(63, 138);
+            this.label77.Name = "label77";
+            this.label77.Size = new System.Drawing.Size(126, 24);
+            this.label77.TabIndex = 67;
+            this.label77.Text = "Inventario No.";
             // 
             // FormVehiculos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(838, 903);
-            this.Controls.Add(this.textBox10);
+            this.Controls.Add(this.label76);
+            this.Controls.Add(this.label77);
+            this.Controls.Add(this.numinvent);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label63);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label62);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.observaciones);
             this.Controls.Add(this.label61);
-            this.Controls.Add(this.comboBox3);
+            this.Controls.Add(this.patioscuenta);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.textBox9);
+            this.Controls.Add(this.propietario);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.comboBox4);
+            this.Controls.Add(this.motivo);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.dateTimePicker3);
@@ -4540,7 +5008,6 @@ namespace ManejoInventariosBD
             this.Name = "FormVehiculos";
             this.Text = "FormVehiculos";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormVehiculos_FormClosing);
-            this.Load += new System.EventHandler(this.FormVehiculos_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -4555,8 +5022,8 @@ namespace ManejoInventariosBD
             this.splitContainer1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            this.tableLayoutPanel20.ResumeLayout(false);
-            this.tableLayoutPanel20.PerformLayout();
+            this.tableLayoutPanel42.ResumeLayout(false);
+            this.tableLayoutPanel42.PerformLayout();
             this.tableLayoutPanel19.ResumeLayout(false);
             this.tableLayoutPanel19.PerformLayout();
             this.tableLayoutPanel18.ResumeLayout(false);
@@ -4593,8 +5060,14 @@ namespace ManejoInventariosBD
             this.tableLayoutPanel3.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
+            this.tableLayoutPanel41.ResumeLayout(false);
+            this.tableLayoutPanel41.PerformLayout();
+            this.tableLayoutPanel20.ResumeLayout(false);
+            this.tableLayoutPanel20.PerformLayout();
             this.tableLayoutPanel21.ResumeLayout(false);
             this.tableLayoutPanel21.PerformLayout();
+            this.tableLayoutPanel45.ResumeLayout(false);
+            this.tableLayoutPanel45.PerformLayout();
             this.tableLayoutPanel22.ResumeLayout(false);
             this.tableLayoutPanel22.PerformLayout();
             this.tableLayoutPanel23.ResumeLayout(false);
@@ -4633,6 +5106,12 @@ namespace ManejoInventariosBD
             this.tableLayoutPanel39.PerformLayout();
             this.tableLayoutPanel40.ResumeLayout(false);
             this.tableLayoutPanel40.PerformLayout();
+            this.tableLayoutPanel43.ResumeLayout(false);
+            this.tableLayoutPanel43.PerformLayout();
+            this.tableLayoutPanel44.ResumeLayout(false);
+            this.tableLayoutPanel44.PerformLayout();
+            this.tableLayoutPanel46.ResumeLayout(false);
+            this.tableLayoutPanel46.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -4669,21 +5148,21 @@ namespace ManejoInventariosBD
         private System.Windows.Forms.RadioButton radioButton192;
         private System.Windows.Forms.RadioButton radioButton191;
         private System.Windows.Forms.Label label62;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox observaciones;
         private System.Windows.Forms.Label label61;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox patioscuenta;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox telefono;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox direccion;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox cedula;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox propietario;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.ComboBox motivo;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.DateTimePicker dateTimePicker3;
@@ -4963,7 +5442,6 @@ namespace ManejoInventariosBD
         private System.Windows.Forms.Label label49;
         private System.Windows.Forms.Label label50;
         private System.Windows.Forms.Label label51;
-        private System.Windows.Forms.Label label52;
         private System.Windows.Forms.Label label64;
         private System.Windows.Forms.Label label65;
         private System.Windows.Forms.Label label66;
@@ -4972,6 +5450,41 @@ namespace ManejoInventariosBD
         private System.Windows.Forms.Label label69;
         private System.Windows.Forms.Label label70;
         private System.Windows.Forms.Label label71;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox numinvent;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel42;
+        private System.Windows.Forms.RadioButton radioButton200;
+        private System.Windows.Forms.RadioButton radioButton201;
+        private System.Windows.Forms.RadioButton radioButton202;
+        private System.Windows.Forms.RadioButton radioButton203;
+        private System.Windows.Forms.RadioButton radioButton204;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel41;
+        private System.Windows.Forms.RadioButton radioButton195;
+        private System.Windows.Forms.RadioButton radioButton196;
+        private System.Windows.Forms.RadioButton radioButton197;
+        private System.Windows.Forms.RadioButton radioButton198;
+        private System.Windows.Forms.RadioButton radioButton199;
+        private System.Windows.Forms.Label label73;
+        private System.Windows.Forms.Label label72;
+        private System.Windows.Forms.Label label75;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel45;
+        private System.Windows.Forms.RadioButton radioButton210;
+        private System.Windows.Forms.RadioButton radioButton211;
+        private System.Windows.Forms.RadioButton radioButton212;
+        private System.Windows.Forms.RadioButton radioButton213;
+        private System.Windows.Forms.RadioButton radioButton214;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel43;
+        private System.Windows.Forms.Label label74;
+        private System.Windows.Forms.TextBox numlimp;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel44;
+        private System.Windows.Forms.RadioButton radioButton205;
+        private System.Windows.Forms.RadioButton radioButton206;
+        private System.Windows.Forms.RadioButton radioButton207;
+        private System.Windows.Forms.RadioButton radioButton208;
+        private System.Windows.Forms.RadioButton radioButton209;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel46;
+        private System.Windows.Forms.TextBox numpar;
+        private System.Windows.Forms.Label label52;
+        private System.Windows.Forms.Label label76;
+        private System.Windows.Forms.Label label77;
     }
 }

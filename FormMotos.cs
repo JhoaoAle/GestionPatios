@@ -25,7 +25,7 @@ namespace ManejoInventariosBD
 
             InitializeComponent();
             this.tipo = tipo;
-            label66.Text = tipo;
+            
             
            
 
@@ -154,6 +154,12 @@ namespace ManejoInventariosBD
                 
                 
             }
+            
+            if (!int.TryParse(textBox6.Text, out parsedValue))
+            {
+                MessageBox.Show("El número de inventario no acepta caracteres");
+                return;
+            }
             else if((!(int.TryParse(textBox6.Text, out parsedValue))))
             {
                 int i = int.Parse(textBox6.Text);
@@ -167,20 +173,7 @@ namespace ManejoInventariosBD
             else
                 fail = false;
 
-            if (groupBox1.Visible == true)
-            {
-                if (textBox2.Text == "" || textBox3.Text == "" || textBox4.Text == "")
-                {
-                    MessageBox.Show("No ha ingresado información adicional del propietario");
-                    fail = true;
-                }
-                else
-                {
-                    textBox2.Text = "";
-                    textBox3.Text = "";
-                    textBox4.Text = "";
-                }
-            }
+            
 
 
             if (fail == false && cond1==false && cond2 == false && cond3 == false)
