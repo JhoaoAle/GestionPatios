@@ -153,6 +153,34 @@ namespace ManejoInventariosBD
         {
             return StopIzq;
         }
+        public static string LFreAux;
+        public void SetLFreAux(string x)
+        {
+            LFreAux = x;
+        }
+        public string GetLFreAux()
+        {
+            return LFreAux;
+        }
+        public static string ExpTra;
+        public void SetExpTra(string x)
+        {
+            ExpTra = x;
+        }
+        public string GetExpTra()
+        {
+            return ExpTra;
+        }
+
+        public static string StopDer;
+        public void SetStopDer(string x)
+        {
+            StopDer = x;
+        }
+        public string GetStopDer()
+        {
+            return StopDer;
+        }
 
         public static string PTraDer;
         public void SetPTraDer(string x)
@@ -168,6 +196,7 @@ namespace ManejoInventariosBD
         {
             GFTraDer = x;
         }
+
         public string GetGFTraDer()
         {
             return GFTraDer;
