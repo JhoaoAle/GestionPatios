@@ -282,7 +282,7 @@ namespace ManejoInventariosBD
 
         public string GetGBarTra()
         {
-            return GBarDel;
+            return GBarTra;
         }
         public static string DirTraIzq;
         public void SetDirTraIzq(string x)
