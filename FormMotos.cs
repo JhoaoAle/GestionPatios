@@ -676,7 +676,21 @@ namespace ManejoInventariosBD
         private void runQuery()
         {
             string texto = comboBox2.Text;
-            string query = "INSERT IGNORE INTO `invent_motos`(`Inventario`, `Farola`, `Exploradora`, `Carenaje`, `Pito`, `GB_Del`, `FrenoDisco`, `Tablero`, `DirDel_Izq`, `Esp_zq`, `ManDir_Izq`, `Man_Izq`, `ProtMan_Izq`, `DirDel_Der`, `Esp_Der`, `ManDir_Der`, `ManFre_Der`, `ProtMan_Der`, `TC`, `Tapa_TC`, `Babero`, `Pata`, `Gato`, `TapLat_Izq`, `GuardaCadena`, `Sillin`, `Parrilla`, `GB_Trasero`, `DirTra_Izq`, `Amortiguadores`, `Exosto`, `Placa`, `DirTra_Der`, `TapLat_Der`, `Bateria`, `Tacos`, `PalFre_Pie`, `Cran`, `Otros`, `Observaciones`, `Debe_Grua`, `Dejan_Llaves`, `Valor`, `Marca`, `PlacaNum`, `Color`) VALUES ('" + (Int32.Parse(textBox6.Text)) + "','" + motoreg.GetFarola() + "','" + motoreg.GetExploradora() + "','" + motoreg.GetCarenaje() + "','" + motoreg.GetPito() + "','" + motoreg.GetGBDel() + "','" + motoreg.GetFrenoDisco() + "','" + motoreg.GetTablero() + "','" + motoreg.GetDirDelIz() + "','" + motoreg.GetEspizq() + "','" + motoreg.GetManDirIzq() + "','" + motoreg.GetManIzq() + "','" + motoreg.GetPrManIzq() + "','" + motoreg.GetDirDelDer() + "','" + motoreg.GetEspDer() + "','" + motoreg.GetManDirDer() + "','" + motoreg.GetManFreDer() + "','" + motoreg.GetPrManFreDer() + "','" + motoreg.GetTanCom() + "','" + motoreg.GetTTanCom() + "','" + motoreg.GetBarbero() + "','" + motoreg.GetPata() + "','" + motoreg.GetGato() + "','" + motoreg.GetTapLatIzq() + "','" + motoreg.GetGCad() + "','" + motoreg.GetSillin() + "','" + motoreg.GetParrilla() + "','" + motoreg.GetGBarTra() + "','" + motoreg.GetDirTraIzq() + "','" + motoreg.GetAmortiguadores() + "','" + motoreg.GetExosto() + "','" + motoreg.GetPlaca() + "','" + motoreg.GetDirTraDer() + "','" + motoreg.GetTapLatDer() + "','" + motoreg.GetBateria() + "','" + motoreg.GetTacos() + "','" + motoreg.GetPalFrePie() + "','" + motoreg.GetCran() + "','" + motoreg.GetOtros() + "','" + textBox5.Text + "','" + motoreg.Getdebegrua() + "','" + motoreg.Getdejallaves() + "',NULL,'" + motoreg.GetMarca() + "','" + motoreg.GetPlacaNum() + "','" + motoreg.GetColor() + "'); INSERT IGNORE INTO `entrada`(`Inventario`, `Fecha_Entrada`, `Hora_Entrada`, `Fecha_Salida`, `Hora_Salida`, `Autoridad`, `Encargado DC`, `Tipo Vehiculo`, `Marca`, `Placa`) VALUES ('" + (Int32.Parse(textBox6.Text)) + "','" +dateTimePicker1.Value.ToShortDateString() + "','" + dateTimePicker2.Text + "',NULL,NULL,'" + comboBox2.Text + "','" + Form1.obtenervalor + "','" + this.tipo + "','" + textBoxmarca.Text + "','" + textBoxplaca.Text + "') ";
+            
+
+            string query = "INSERT IGNORE INTO `invent_motos`(`Inventario`, `Fecha_Entrada`, `Hora_Entrada`, `Fecha_Salida`, `Hora_Salida`, `Autoridad`, `Encargado DC`, `Tipo Vehiculo`, `Propietario`, `Direccion`, `CC`, `Telefono`, `Farola`, `Exploradora`, `Carenaje`, `Pito`, `GB_Del`, `FrenoDisco`, `Tablero`, `DirDel_Izq`, `Esp_zq`, `ManDir_Izq`, `Man_Izq`, `ProtMan_Izq`, `DirDel_Der`, `Esp_Der`, `ManDir_Der`, `ManFre_Der`, `ProtMan_Der`, `TC`, `Tapa_TC`, `Babero`, `Pata`, `Gato`, `TapLat_Izq`, `GuardaCadena`, `Sillin`, `Parrilla`, `GB_Trasero`, `DirTra_Izq`, `Amortiguadores`, `Exosto`, `Placa`, `DirTra_Der`, `TapLat_Der`, `Bateria`, `Tacos`, `PalFre_Pie`, `Cran`, `Otros`, `Observaciones`, `Debe_Grua`, `Dejan_Llaves`, `Valor`, `Marca`, `PlacaNum`, `Color`) VALUES ('" + (Int32.Parse(textBox6.Text)) 
+                + "','" + dateTimePicker1.Value.ToString("yyyy-MM-dd") + "','" + dateTimePicker2.Text + "',NULL,NULL,'" + comboBox2.Text + "','" + Form1.obtenervalor 
+                + "','" + this.tipo + "'," + (GetDbValue(textBox1.Text)) + "," + (GetDbValue(textBox2.Text)) + "," + (GetDbValue(textBox3.Text)) 
+                + "," + (GetDbValue(textBox4.Text)) + ",'" + motoreg.GetFarola() + "','" + motoreg.GetExploradora() + "','" + motoreg.GetCarenaje() 
+                + "','" + motoreg.GetPito() + "','" + motoreg.GetGBDel() + "','" + motoreg.GetFrenoDisco() + "','" + motoreg.GetTablero() + "','" + motoreg.GetDirDelIz() 
+                + "','" + motoreg.GetEspizq() + "','" + motoreg.GetManDirIzq() + "','" + motoreg.GetManIzq() + "','" + motoreg.GetPrManIzq() + "','" + motoreg.GetDirDelDer() 
+                + "','" + motoreg.GetEspDer() + "','" + motoreg.GetManDirDer() + "','" + motoreg.GetManFreDer() + "','" + motoreg.GetPrManFreDer() + "','" + motoreg.GetTanCom() 
+                + "','" + motoreg.GetTTanCom() + "','" + motoreg.GetBarbero() + "','" + motoreg.GetPata() + "','" + motoreg.GetGato() + "','" + motoreg.GetTapLatIzq() 
+                + "','" + motoreg.GetGCad() + "','" + motoreg.GetSillin() + "','" + motoreg.GetParrilla() + "','" + motoreg.GetGBarTra() + "','" + motoreg.GetDirTraIzq() 
+                + "','" + motoreg.GetAmortiguadores() + "','" + motoreg.GetExosto() + "','" + motoreg.GetPlaca() + "','" + motoreg.GetDirTraDer() + "','" + motoreg.GetTapLatDer() 
+                + "','" + motoreg.GetBateria() + "','" + motoreg.GetTacos() + "','" + motoreg.GetPalFrePie() + "','" + motoreg.GetCran() + "','" + motoreg.GetOtros() 
+                + "'," + (GetDbValue(textBox5.Text)) + ",'" + motoreg.Getdebegrua() + "','" + motoreg.Getdejallaves() + "',NULL,'" + motoreg.GetMarca() + "','" + motoreg.GetPlacaNum() 
+                + "','"+comboBoxColor.Text+"')"; 
             string MySqlConnectionString = "datasource=127.0.0.1;port=3306;username=root;password=;Database=patiosd1c";
             
             MySqlConnection databaseConnection = new MySqlConnection(MySqlConnectionString);
@@ -698,7 +712,14 @@ namespace ManejoInventariosBD
             }
             MySqlDataReader reader = commandDatabase.ExecuteReader();*/
         }
-        
+
+        private String GetDbValue(String data)
+        {
+            if (String.IsNullOrEmpty(data))
+                return "NULL";
+            else
+                return "'" + data + "'";
+        }
 
         private void Button2_Click(object sender, EventArgs e)
         {

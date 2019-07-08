@@ -660,6 +660,8 @@ namespace ManejoInventariosBD
                 if (this.radioButton214.Checked == true)
                     cochereg.SetVPDelDer("N/V");
 
+
+            
                 //IMPORTANTE: Modificar las superiores siguiendo el orden del documento
 
                 //De aquí hacia abajo todo funciona
