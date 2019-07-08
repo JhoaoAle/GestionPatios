@@ -120,7 +120,7 @@ namespace ManejoInventariosBD
             ManIzq = x;
         }
 
-        public string GetMainIzq()
+        public string GetManIzq()
         {
             return ManIzq;
         }
