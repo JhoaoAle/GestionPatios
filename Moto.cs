@@ -371,7 +371,7 @@ namespace ManejoInventariosBD
             PalFrePie = x;
         }
 
-        public string GetPalFrePuie()
+        public string GetPalFrePie()
         {
             return PalFrePie;
         }
