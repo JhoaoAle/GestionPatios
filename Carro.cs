@@ -144,22 +144,151 @@ namespace ManejoInventariosBD
             return StopIzq;
         }
 
-        public static string PTraDer { get; set; }
-        public static string GFTraDer { get; set; }
-        public static string PDelDer { get; set; }
-        public static string VPDelDer { get; set; }
-        public static string VPTraDer { get; set; }
-        public static string GFDelDer { get; set; }
-        public static string EspRetDer { get; set; }
-        public static string FarDer { get; set; }
-        public static string DirDelDer { get; set; }
-        public static string ExpDel { get; set; }
-        public static string DirDelIzq { get; set; }
-        public static string CojDel { get; set; }
-        public static string CojTra { get; set; }
-        public static string EspInt { get; set; }
-        public static string RadPas { get; set; }
-        public static string Par { get; set; }
+        public static string PTraDer;
+        public void SetPTraDer(string x)
+        {
+            PTraDer = x;
+        }
+        public string GetPTraDer()
+        {
+            return PTraDer;
+        }
+        public static string GFTraDer;
+        public void SetGFTraDer(string x)
+        {
+            GFTraDer = x;
+        }
+        public string GetGFTraDer()
+        {
+            return GFTraDer;
+        }
+        public static string PDelDer;
+        public void SetPDelDer(string x)
+        {
+            PDelDer = x;
+        }
+        public string GetPDelDer()
+        {
+            return PDelDer;
+        }
+        public static string VPDelDer;
+        public void SetVPDelDer(string x)
+        {
+            VPDelDer = x;
+        }
+        public string GetVPDelDer()
+        {
+            return VPDelDer;
+        }
+
+        public static string VPTraDer;
+        public void SetVPTraDer(string x)
+        {
+            VPTraDer = x;
+        }
+        public string GetVPTraDer()
+        {
+            return VPTraDer;
+        }
+        public static string GFDelDer;
+        public void SetGFDelDer(string x)
+        {
+            GFDelDer = x;
+        }
+        public string GetGFDelDer()
+        {
+            return GFDelDer;
+        }
+        public static string EspRetDer;
+        public void SetEspRetDer(string x)
+        {
+            EspRetDer = x;
+        }
+        public string GetEspRetDer()
+        {
+            return EspRetDer;
+        }
+        public static string FarDer;
+        public void SetFarDer(string x)
+        {
+            FarDer = x;
+        }
+        public string GetFarDer()
+        {
+            return FarDer;
+        }
+        public static string DirDelDer;
+        public void SetDirDelDer(string x)
+        {
+            DirDelDer = x;
+        }
+        public string GetDirDelDer()
+        {
+            return DirDelDer;
+        }
+        public static string ExpDel;
+        public void SetExpDel(string x)
+        {
+            ExpDel = x;
+        }
+        public string GetExpDel()
+        {
+            return ExpDel;
+        }
+        public static string DirDelIzq;
+        public void SetDirDelizq(string x)
+        {
+            DirDelIzq = x;
+        }
+        public string GetDirDelIzq()
+        {
+            return DirDelIzq;
+        }
+        public static string CojDel;
+        public void SetCojDel(string x)
+        {
+            CojDel = x;
+        }
+        public string GetCojDel()
+        {
+            return CojDel;
+        }
+        public static string CojTra;
+        public void SetCojTra(string x)
+        {
+            CojTra= x;
+        }
+        public string GetCojTra()
+        {
+            return CojTra;
+        }
+        public static string EspInt;
+        public void SetEspInt(string x)
+        {
+            EspInt = x;
+        }
+        public string GetEspInt()
+        {
+            return EspInt;
+        }
+        public static string RadPas;
+        public void SetRadPas(string x)
+        {
+            RadPas = x;
+        }
+        public string GetRadPas()
+        {
+            return RadPas;
+        }
+        public static string Par;
+        public void SetPar(string x)
+        {
+            Par = x;
+        }
+        public string GetPar()
+        {
+            return Par;
+        }
         public static string AntRadPas { get; set; }
         public static string Encendedor { get; set; }
         public static string RadTel { get; set; }
