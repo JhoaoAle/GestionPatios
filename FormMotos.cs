@@ -17,6 +17,8 @@ namespace ManejoInventariosBD
         private bool cond1;
         private bool cond2;
         private bool cond3;
+        private bool cond4;
+        private bool cond5;
 
         string tipo;
         public FormMotos(string tipo)
@@ -127,6 +129,38 @@ namespace ManejoInventariosBD
             else
                 cond1 = false;
 
+
+
+
+
+            string color = comboBoxColor.Text;
+            if (
+                (color == "Blanco" || color == "Negro" || color == "Rojo" || color == "Verde" || color == "Azul" || color == "Amarillo" || color == "Naranja")
+                )
+            {
+                motoreg.SetColor(color);
+                cond4 = false;
+            }
+            else
+            {
+                MessageBox.Show("Error al insertar color");
+                cond4 = true;
+            }
+
+            
+                
+            if ((textBoxplaca.Text.Length == 6 || textBoxplaca.Text.Length == 7) && (textBoxplaca.Text.Any(char.IsSymbol)))
+            {
+                cond5 = false;
+            }
+            else
+            {
+                MessageBox.Show("La placa que ha ingresado no es valida");
+                cond5 = true;
+            }
+
+
+
             if (comboBox1.Text != "Patios" && comboBox1.Text != "Accidente")
             {
                 MessageBox.Show("Motivo de ingreso no valido, intente nuevamente");
@@ -173,10 +207,12 @@ namespace ManejoInventariosBD
             else
                 fail = false;
 
+
+
             
 
 
-            if (fail == false && cond1==false && cond2 == false && cond3 == false)
+            if (fail == false && cond1==false && cond2 == false && cond3 == false && cond4 == false && cond5 == false)
             {
 
 
@@ -381,7 +417,7 @@ namespace ManejoInventariosBD
                     motoreg.SetTanCom("N/V");
 
                 if (this.radioButton91.Checked == true)
-                    motoreg.SetTTanComa("B");
+                    motoreg.SetTTanCom("B");
                 if (this.radioButton92.Checked == true)
                     motoreg.SetTTanCom("R");
                 if (this.radioButton93.Checked == true)
@@ -602,7 +638,25 @@ namespace ManejoInventariosBD
                 if (this.radioButton100.Checked == true)
                     motoreg.SetOtros("N/V");
 
-                //De aqui hacia arriba está la segunda mitad, hace falta modificarla según el documento
+
+
+                if (this.radioButton191.Checked == true)
+                    motoreg.Setdebegrua(1);
+                if (this.radioButton192.Checked == true)
+                    motoreg.Setdebegrua(0);
+
+                if (this.radioButton194.Checked == true)
+                    motoreg.Setdejallaves(1);
+                if (this.radioButton193.Checked == true)
+                    motoreg.Setdejallaves(0);
+
+                //Asignadas todas las variables asignables
+                
+
+                motoreg.SetPlacaNum(textBoxplaca.Text);
+                motoreg.SetMarca(textBoxmarca.Text);
+                
+
 
                 //De aquí hacia abajo todo funciona
                 runQuery();

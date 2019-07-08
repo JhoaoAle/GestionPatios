@@ -343,6 +343,12 @@
             this.label64 = new System.Windows.Forms.Label();
             this.label65 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBoxmarca = new System.Windows.Forms.TextBox();
+            this.textBoxplaca = new System.Windows.Forms.TextBox();
+            this.label66 = new System.Windows.Forms.Label();
+            this.label67 = new System.Windows.Forms.Label();
+            this.label68 = new System.Windows.Forms.Label();
+            this.comboBoxColor = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel20.SuspendLayout();
             this.tableLayoutPanel19.SuspendLayout();
@@ -4324,11 +4330,75 @@
             this.textBox6.Size = new System.Drawing.Size(100, 20);
             this.textBox6.TabIndex = 30;
             // 
+            // textBoxmarca
+            // 
+            this.textBoxmarca.Location = new System.Drawing.Point(342, 178);
+            this.textBoxmarca.Name = "textBoxmarca";
+            this.textBoxmarca.Size = new System.Drawing.Size(100, 20);
+            this.textBoxmarca.TabIndex = 31;
+            // 
+            // textBoxplaca
+            // 
+            this.textBoxplaca.Location = new System.Drawing.Point(527, 178);
+            this.textBoxplaca.Name = "textBoxplaca";
+            this.textBoxplaca.Size = new System.Drawing.Size(100, 20);
+            this.textBoxplaca.TabIndex = 32;
+            // 
+            // label66
+            // 
+            this.label66.AutoSize = true;
+            this.label66.Location = new System.Drawing.Point(296, 185);
+            this.label66.Name = "label66";
+            this.label66.Size = new System.Drawing.Size(40, 13);
+            this.label66.TabIndex = 34;
+            this.label66.Text = "Marca:";
+            // 
+            // label67
+            // 
+            this.label67.AutoSize = true;
+            this.label67.Location = new System.Drawing.Point(481, 185);
+            this.label67.Name = "label67";
+            this.label67.Size = new System.Drawing.Size(37, 13);
+            this.label67.TabIndex = 35;
+            this.label67.Text = "Placa:";
+            // 
+            // label68
+            // 
+            this.label68.AutoSize = true;
+            this.label68.Location = new System.Drawing.Point(652, 186);
+            this.label68.Name = "label68";
+            this.label68.Size = new System.Drawing.Size(34, 13);
+            this.label68.TabIndex = 36;
+            this.label68.Text = "Color:";
+            // 
+            // comboBoxColor
+            // 
+            this.comboBoxColor.FormattingEnabled = true;
+            this.comboBoxColor.ImeMode = System.Windows.Forms.ImeMode.Disable;
+            this.comboBoxColor.Items.AddRange(new object[] {
+            "Blanco",
+            "Negro",
+            "Rojo",
+            "Verde",
+            "Azul",
+            "Amarillo",
+            "Naranja"});
+            this.comboBoxColor.Location = new System.Drawing.Point(692, 178);
+            this.comboBoxColor.Name = "comboBoxColor";
+            this.comboBoxColor.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxColor.TabIndex = 37;
+            // 
             // FormMotos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(823, 944);
+            this.Controls.Add(this.comboBoxColor);
+            this.Controls.Add(this.label68);
+            this.Controls.Add(this.label67);
+            this.Controls.Add(this.label66);
+            this.Controls.Add(this.textBoxplaca);
+            this.Controls.Add(this.textBoxmarca);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.label65);
             this.Controls.Add(this.label64);
@@ -4768,5 +4838,11 @@
         private System.Windows.Forms.Label label64;
         private System.Windows.Forms.Label label65;
         private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox textBoxmarca;
+        private System.Windows.Forms.TextBox textBoxplaca;
+        private System.Windows.Forms.Label label66;
+        private System.Windows.Forms.Label label67;
+        private System.Windows.Forms.Label label68;
+        private System.Windows.Forms.ComboBox comboBoxColor;
     }
 }
