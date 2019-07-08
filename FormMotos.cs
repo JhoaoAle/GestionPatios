@@ -194,413 +194,413 @@ namespace ManejoInventariosBD
                     motoreg.SetFarola("N/V");
 
                 if (this.radioButton6.Checked == true)
-                    motoreg.SetFarola("B");
+                    motoreg.SetExploradora("B");
                 if (this.radioButton7.Checked == true)
-                    motoreg.SetFarola("R");
+                    motoreg.SetExploradora("R");
                 if (this.radioButton8.Checked == true)
-                    motoreg.SetFarola("M");
+                    motoreg.SetExploradora("M");
                 if (this.radioButton9.Checked == true)
-                    motoreg.SetFarola("N/A");
+                    motoreg.SetExploradora("N/A");
                 if (this.radioButton10.Checked == true)
-                    motoreg.SetFarola("N/V");
+                    motoreg.SetExploradora("N/V");
 
                 if (this.radioButton11.Checked == true)
-                    motoreg.SetFarola("B");
+                    motoreg.SetCarenaje("B");
                 if (this.radioButton12.Checked == true)
-                    motoreg.SetFarola("R");
+                    motoreg.SetCarenaje("R");
                 if (this.radioButton13.Checked == true)
-                    motoreg.SetFarola("M");
+                    motoreg.SetCarenaje("M");
                 if (this.radioButton14.Checked == true)
-                    motoreg.SetFarola("N/A");
+                    motoreg.SetCarenaje("N/A");
                 if (this.radioButton15.Checked == true)
-                    motoreg.SetFarola("N/V");
+                    motoreg.SetCarenaje("N/V");
 
                 if (this.radioButton16.Checked == true)
-                    motoreg.SetFarola("B");
+                    motoreg.SetPito("B");
                 if (this.radioButton17.Checked == true)
-                    motoreg.SetFarola("R");
+                    motoreg.SetPito("R");
                 if (this.radioButton18.Checked == true)
-                    motoreg.SetFarola("M");
+                    motoreg.SetPito("M");
                 if (this.radioButton19.Checked == true)
-                    motoreg.SetFarola("N/A");
+                    motoreg.SetPito("N/A");
                 if (this.radioButton20.Checked == true)
-                    motoreg.SetFarola("N/V");
+                    motoreg.SetPito("N/V");
 
                 if (this.radioButton21.Checked == true)
-                    motoreg.SetFarola("B");
+                    motoreg.SetGBDel("B");
                 if (this.radioButton22.Checked == true)
-                    motoreg.SetFarola("R");
+                    motoreg.SetGBDel("R");
                 if (this.radioButton23.Checked == true)
-                    motoreg.SetFarola("M");
+                    motoreg.SetGBDel("M");
                 if (this.radioButton24.Checked == true)
-                    motoreg.SetFarola("N/A");
+                    motoreg.SetGBDel("N/A");
                 if (this.radioButton25.Checked == true)
-                    motoreg.SetFarola("N/V");
+                    motoreg.SetGBDel("N/V");
 
                 if (this.radioButton26.Checked == true)
-                    motoreg.SetFarola("B");
+                    motoreg.SetFrenoDisco("B");
                 if (this.radioButton27.Checked == true)
-                    motoreg.SetFarola("R");
+                    motoreg.SetFrenoDisco("R");
                 if (this.radioButton28.Checked == true)
-                    motoreg.SetFarola("M");
+                    motoreg.SetFrenoDisco("M");
                 if (this.radioButton29.Checked == true)
-                    motoreg.SetFarola("N/A");
+                    motoreg.SetFrenoDisco("N/A");
                 if (this.radioButton30.Checked == true)
-                    motoreg.SetFarola("N/V");
+                    motoreg.SetFrenoDisco("N/V");
 
                 if (this.radioButton31.Checked == true)
-                    motoreg.SetFarola("B");
+                    motoreg.SetTablero("B");
                 if (this.radioButton32.Checked == true)
-                    motoreg.SetFarola("R");
+                    motoreg.SetTablero("R");
                 if (this.radioButton33.Checked == true)
-                    motoreg.SetFarola("M");
+                    motoreg.SetTablero("M");
                 if (this.radioButton34.Checked == true)
-                    motoreg.SetFarola("N/A");
+                    motoreg.SetTablero("N/A");
                 if (this.radioButton35.Checked == true)
-                    motoreg.SetFarola("N/V");
+                    motoreg.SetTablero("N/V");
 
                 if (this.radioButton36.Checked == true)
-                    motoreg.SetFarola("B");
+                    motoreg.SetDirDelIzq("B");
                 if (this.radioButton37.Checked == true)
-                    motoreg.SetFarola("R");
+                    motoreg.SetDirDelIzq("R");
                 if (this.radioButton38.Checked == true)
-                    motoreg.SetFarola("M");
+                    motoreg.SetDirDelIzq("M");
                 if (this.radioButton39.Checked == true)
-                    motoreg.SetFarola("N/A");
+                    motoreg.SetDirDelIzq("N/A");
                 if (this.radioButton40.Checked == true)
-                    motoreg.SetFarola("N/V");
+                    motoreg.SetDirDelIzq("N/V");
 
                 if (this.radioButton41.Checked == true)
-                    motoreg.SetFarola("B");
+                    motoreg.SetEspizq("B");
                 if (this.radioButton42.Checked == true)
-                    motoreg.SetFarola("R");
+                    motoreg.SetEspizq("R");
                 if (this.radioButton43.Checked == true)
-                    motoreg.SetFarola("M");
+                    motoreg.SetEspizq("M");
                 if (this.radioButton44.Checked == true)
-                    motoreg.SetFarola("N/A");
+                    motoreg.SetEspizq("N/A");
                 if (this.radioButton45.Checked == true)
-                    motoreg.SetFarola("N/V");
+                    motoreg.SetEspizq("N/V");
 
                 if (this.radioButton46.Checked == true)
-                    motoreg.SetFarola("B");
+                    motoreg.SetManDirIzq("B");
                 if (this.radioButton47.Checked == true)
-                    motoreg.SetFarola("R");
+                    motoreg.SetManDirIzq("R");
                 if (this.radioButton48.Checked == true)
-                    motoreg.SetFarola("M");
+                    motoreg.SetManDirIzq("M");
                 if (this.radioButton49.Checked == true)
-                    motoreg.SetFarola("N/A");
+                    motoreg.SetManDirIzq("N/A");
                 if (this.radioButton50.Checked == true)
-                    motoreg.SetFarola("N/V");
+                    motoreg.SetManDirIzq("N/V");
 
                 if (this.radioButton51.Checked == true)
-                    motoreg.SetFarola("B");
+                    motoreg.SetManIzq("B");
                 if (this.radioButton52.Checked == true)
-                    motoreg.SetFarola("R");
+                    motoreg.SetManIzq("R");
                 if (this.radioButton53.Checked == true)
-                    motoreg.SetFarola("M");
+                    motoreg.SetManIzq("M");
                 if (this.radioButton54.Checked == true)
-                    motoreg.SetFarola("N/A");
+                    motoreg.SetManIzq("N/A");
                 if (this.radioButton55.Checked == true)
-                    motoreg.SetFarola("N/V");
+                    motoreg.SetManIzq("N/V");
 
                 if (this.radioButton56.Checked == true)
-                    motoreg.SetFarola("B");
+                    motoreg.SetPrManIzq("B");
                 if (this.radioButton57.Checked == true)
-                    motoreg.SetFarola("R");
+                    motoreg.SetPrManIzq("R");
                 if (this.radioButton58.Checked == true)
-                    motoreg.SetFarola("M");
+                    motoreg.SetPrManIzq("M");
                 if (this.radioButton59.Checked == true)
-                    motoreg.SetFarola("N/A");
+                    motoreg.SetPrManIzq("N/A");
                 if (this.radioButton60.Checked == true)
-                    motoreg.SetFarola("N/V");
+                    motoreg.SetPrManIzq("N/V");
 
                 if (this.radioButton61.Checked == true)
-                    motoreg.SetFarola("B");
+                    motoreg.SetDirDelDer("B");
                 if (this.radioButton62.Checked == true)
-                    motoreg.SetFarola("R");
+                    motoreg.SetDirDelDer("R");
                 if (this.radioButton63.Checked == true)
-                    motoreg.SetFarola("M");
+                    motoreg.SetDirDelDer("M");
                 if (this.radioButton64.Checked == true)
-                    motoreg.SetFarola("N/A");
+                    motoreg.SetDirDelDer("N/A");
                 if (this.radioButton65.Checked == true)
-                    motoreg.SetFarola("N/V");
+                    motoreg.SetDirDelDer("N/V");
 
                 if (this.radioButton66.Checked == true)
-                    motoreg.SetFarola("B");
+                    motoreg.SetEspDer("B");
                 if (this.radioButton67.Checked == true)
-                    motoreg.SetFarola("R");
+                    motoreg.SetEspDer("R");
                 if (this.radioButton68.Checked == true)
-                    motoreg.SetFarola("M");
+                    motoreg.SetEspDer("M");
                 if (this.radioButton69.Checked == true)
-                    motoreg.SetFarola("N/A");
+                    motoreg.SetEspDer("N/A");
                 if (this.radioButton70.Checked == true)
-                    motoreg.SetFarola("N/V");
+                    motoreg.SetEspDer("N/V");
 
                 if (this.radioButton71.Checked == true)
-                    motoreg.SetFarola("B");
+                    motoreg.SetManDirDer("B");
                 if (this.radioButton72.Checked == true)
-                    motoreg.SetFarola("R");
+                    motoreg.SetManDirDer("R");
                 if (this.radioButton73.Checked == true)
-                    motoreg.SetFarola("M");
+                    motoreg.SetManDirDer("M");
                 if (this.radioButton74.Checked == true)
-                    motoreg.SetFarola("N/A");
+                    motoreg.SetManDirDer("N/A");
                 if (this.radioButton75.Checked == true)
-                    motoreg.SetFarola("N/V");
+                    motoreg.SetManDirDer("N/V");
 
                 if (this.radioButton76.Checked == true)
-                    motoreg.SetFarola("B");
+                    motoreg.SetManFreDer("B");
                 if (this.radioButton77.Checked == true)
-                    motoreg.SetFarola("R");
+                    motoreg.SetManFreDer("R");
                 if (this.radioButton78.Checked == true)
-                    motoreg.SetFarola("M");
+                    motoreg.SetManFreDer("M");
                 if (this.radioButton79.Checked == true)
-                    motoreg.SetFarola("N/A");
+                    motoreg.SetManFreDer("N/A");
                 if (this.radioButton80.Checked == true)
-                    motoreg.SetFarola("N/V");
+                    motoreg.SetManFreDer("N/V");
 
                 if (this.radioButton81.Checked == true)
-                    motoreg.SetFarola("B");
+                    motoreg.SetPrManFreDer("B");
                 if (this.radioButton82.Checked == true)
-                    motoreg.SetFarola("R");
+                    motoreg.SetPrManFreDer("R");
                 if (this.radioButton83.Checked == true)
-                    motoreg.SetFarola("M");
+                    motoreg.SetPrManFreDer("M");
                 if (this.radioButton84.Checked == true)
-                    motoreg.SetFarola("N/A");
+                    motoreg.SetPrManFreDer("N/A");
                 if (this.radioButton85.Checked == true)
-                    motoreg.SetFarola("N/V");
+                    motoreg.SetPrManFreDer("N/V");
 
                 if (this.radioButton86.Checked == true)
-                    motoreg.SetFarola("B");
+                    motoreg.SetTanCom("B");
                 if (this.radioButton87.Checked == true)
-                    motoreg.SetFarola("R");
+                    motoreg.SetTanCom("R");
                 if (this.radioButton88.Checked == true)
-                    motoreg.SetFarola("M");
+                    motoreg.SetTanCom("M");
                 if (this.radioButton89.Checked == true)
-                    motoreg.SetFarola("N/A");
+                    motoreg.SetTanCom("N/A");
                 if (this.radioButton90.Checked == true)
-                    motoreg.SetFarola("N/V");
+                    motoreg.SetTanCom("N/V");
 
                 if (this.radioButton91.Checked == true)
-                    motoreg.SetFarola("B");
+                    motoreg.SetTTanComa("B");
                 if (this.radioButton92.Checked == true)
-                    motoreg.SetFarola("R");
+                    motoreg.SetTTanCom("R");
                 if (this.radioButton93.Checked == true)
-                    motoreg.SetFarola("M");
+                    motoreg.SetTTanCom("M");
                 if (this.radioButton94.Checked == true)
-                    motoreg.SetFarola("N/A");
+                    motoreg.SetTTanCom("N/A");
                 if (this.radioButton95.Checked == true)
-                    motoreg.SetFarola("N/V");
+                    motoreg.SetTTanCom("N/V");
 
                 //De aquí hacia arriba es la primera mitad, falta modificarla acorde al documento
 
                 if (this.radioButton186.Checked == true)
-                    motoreg.SetFarola("B");
+                    motoreg.SetBarbero("B");
                 if (this.radioButton187.Checked == true)
-                    motoreg.SetFarola("R");
+                    motoreg.SetBarbero("R");
                 if (this.radioButton188.Checked == true)
-                    motoreg.SetFarola("M");
+                    motoreg.SetBarbero("M");
                 if (this.radioButton189.Checked == true)
-                    motoreg.SetFarola("N/A");
+                    motoreg.SetBarbero("N/A");
                 if (this.radioButton190.Checked == true)
-                    motoreg.SetFarola("N/V");
+                    motoreg.SetBarbero("N/V");
 
                 if (this.radioButton181.Checked == true)
-                    motoreg.SetFarola("B");
+                    motoreg.SetPata("B");
                 if (this.radioButton182.Checked == true)
-                    motoreg.SetFarola("R");
+                    motoreg.SetPata("R");
                 if (this.radioButton183.Checked == true)
-                    motoreg.SetFarola("M");
+                    motoreg.SetPata("M");
                 if (this.radioButton184.Checked == true)
-                    motoreg.SetFarola("N/A");
+                    motoreg.SetPata("N/A");
                 if (this.radioButton185.Checked == true)
-                    motoreg.SetFarola("N/V");
+                    motoreg.SetPata("N/V");
 
                 if (this.radioButton176.Checked == true)
-                    motoreg.SetFarola("B");
+                    motoreg.SetGato("B");
                 if (this.radioButton177.Checked == true)
-                    motoreg.SetFarola("R");
+                    motoreg.SetGato("R");
                 if (this.radioButton178.Checked == true)
-                    motoreg.SetFarola("M");
+                    motoreg.SetGato("M");
                 if (this.radioButton179.Checked == true)
-                    motoreg.SetFarola("N/A");
+                    motoreg.SetGato("N/A");
                 if (this.radioButton180.Checked == true)
-                    motoreg.SetFarola("N/V");
+                    motoreg.SetGato("N/V");
 
                 if (this.radioButton171.Checked == true)
-                    motoreg.SetFarola("B");
+                    motoreg.SetTapLatIzq("B");
                 if (this.radioButton172.Checked == true)
-                    motoreg.SetFarola("R");
+                    motoreg.SetTapLatIzq("R");
                 if (this.radioButton173.Checked == true)
-                    motoreg.SetFarola("M");
+                    motoreg.SetTapLatIzq("M");
                 if (this.radioButton174.Checked == true)
-                    motoreg.SetFarola("N/A");
+                    motoreg.SetTapLatIzq("N/A");
                 if (this.radioButton175.Checked == true)
-                    motoreg.SetFarola("N/V");
+                    motoreg.SetTapLatIzq("N/V");
 
                 if (this.radioButton166.Checked == true)
-                    motoreg.SetFarola("B");
+                    motoreg.SetGCad("B");
                 if (this.radioButton167.Checked == true)
-                    motoreg.SetFarola("R");
+                    motoreg.SetGCad("R");
                 if (this.radioButton168.Checked == true)
-                    motoreg.SetFarola("M");
+                    motoreg.SetGCad("M");
                 if (this.radioButton169.Checked == true)
-                    motoreg.SetFarola("N/A");
+                    motoreg.SetGCad("N/A");
                 if (this.radioButton170.Checked == true)
-                    motoreg.SetFarola("N/V");
+                    motoreg.SetGCad("N/V");
 
                 if (this.radioButton161.Checked == true)
-                    motoreg.SetFarola("B");
+                    motoreg.SetSillin("B");
                 if (this.radioButton162.Checked == true)
-                    motoreg.SetFarola("R");
+                    motoreg.SetSillin("R");
                 if (this.radioButton163.Checked == true)
-                    motoreg.SetFarola("M");
+                    motoreg.SetSillin("M");
                 if (this.radioButton164.Checked == true)
-                    motoreg.SetFarola("N/A");
+                    motoreg.SetSillin("N/A");
                 if (this.radioButton165.Checked == true)
-                    motoreg.SetFarola("N/V");
+                    motoreg.SetSillin("N/V");
 
                 if (this.radioButton156.Checked == true)
-                    motoreg.SetFarola("B");
+                    motoreg.SetParrilla("B");
                 if (this.radioButton157.Checked == true)
-                    motoreg.SetFarola("R");
+                    motoreg.SetParrilla("R");
                 if (this.radioButton158.Checked == true)
-                    motoreg.SetFarola("M");
+                    motoreg.SetParrilla("M");
                 if (this.radioButton159.Checked == true)
-                    motoreg.SetFarola("N/A");
+                    motoreg.SetParrilla("N/A");
                 if (this.radioButton160.Checked == true)
-                    motoreg.SetFarola("N/V");
+                    motoreg.SetParrilla("N/V");
 
                 if (this.radioButton151.Checked == true)
-                    motoreg.SetFarola("B");
+                    motoreg.SetGBarTra("B");
                 if (this.radioButton152.Checked == true)
-                    motoreg.SetFarola("R");
+                    motoreg.SetGBarTra("R");
                 if (this.radioButton153.Checked == true)
-                    motoreg.SetFarola("M");
+                    motoreg.SetGBarTra("M");
                 if (this.radioButton154.Checked == true)
-                    motoreg.SetFarola("N/A");
+                    motoreg.SetGBarTra("N/A");
                 if (this.radioButton155.Checked == true)
-                    motoreg.SetFarola("N/V");
+                    motoreg.SetGBarTra("N/V");
 
                 if (this.radioButton146.Checked == true)
-                    motoreg.SetFarola("B");
+                    motoreg.SetDirTraIzq("B");
                 if (this.radioButton147.Checked == true)
-                    motoreg.SetFarola("R");
+                    motoreg.SetDirTraIzq("R");
                 if (this.radioButton148.Checked == true)
-                    motoreg.SetFarola("M");
+                    motoreg.SetDirTraIzq("M");
                 if (this.radioButton149.Checked == true)
-                    motoreg.SetFarola("N/A");
+                    motoreg.SetDirTraIzq("N/A");
                 if (this.radioButton150.Checked == true)
-                    motoreg.SetFarola("N/V");
+                    motoreg.SetDirTraIzq("N/V");
 
                 if (this.radioButton141.Checked == true)
-                    motoreg.SetFarola("B");
+                    motoreg.SetAmortiguadores("B");
                 if (this.radioButton142.Checked == true)
-                    motoreg.SetFarola("R");
+                    motoreg.SetAmortiguadores("R");
                 if (this.radioButton143.Checked == true)
-                    motoreg.SetFarola("M");
+                    motoreg.SetAmortiguadores("M");
                 if (this.radioButton144.Checked == true)
-                    motoreg.SetFarola("N/A");
+                    motoreg.SetAmortiguadores("N/A");
                 if (this.radioButton145.Checked == true)
-                    motoreg.SetFarola("N/V");
+                    motoreg.SetAmortiguadores("N/V");
 
                 if (this.radioButton136.Checked == true)
-                    motoreg.SetFarola("B");
+                    motoreg.SetExosto("B");
                 if (this.radioButton137.Checked == true)
-                    motoreg.SetFarola("R");
+                    motoreg.SetExosto("R");
                 if (this.radioButton138.Checked == true)
-                    motoreg.SetFarola("M");
+                    motoreg.SetExosto("M");
                 if (this.radioButton139.Checked == true)
-                    motoreg.SetFarola("N/A");
+                    motoreg.SetExosto("N/A");
                 if (this.radioButton140.Checked == true)
-                    motoreg.SetFarola("N/V");
+                    motoreg.SetExosto("N/V");
 
                 if (this.radioButton131.Checked == true)
-                    motoreg.SetFarola("B");
+                    motoreg.SetPlaca("B");
                 if (this.radioButton132.Checked == true)
-                    motoreg.SetFarola("R");
+                    motoreg.SetPlaca("R");
                 if (this.radioButton133.Checked == true)
-                    motoreg.SetFarola("M");
+                    motoreg.SetPlaca("M");
                 if (this.radioButton134.Checked == true)
-                    motoreg.SetFarola("N/A");
+                    motoreg.SetPlaca("N/A");
                 if (this.radioButton135.Checked == true)
-                    motoreg.SetFarola("N/V");
+                    motoreg.SetPlaca("N/V");
 
                 if (this.radioButton126.Checked == true)
-                    motoreg.SetFarola("B");
+                    motoreg.SetDirTraDer("B");
                 if (this.radioButton127.Checked == true)
-                    motoreg.SetFarola("R");
+                    motoreg.SetDirTraDer("R");
                 if (this.radioButton128.Checked == true)
-                    motoreg.SetFarola("M");
+                    motoreg.SetDirTraDer("M");
                 if (this.radioButton129.Checked == true)
-                    motoreg.SetFarola("N/A");
+                    motoreg.SetDirTraDer("N/A");
                 if (this.radioButton130.Checked == true)
-                    motoreg.SetFarola("N/V");
+                    motoreg.SetDirTraDer("N/V");
 
                 if (this.radioButton121.Checked == true)
-                    motoreg.SetFarola("B");
+                    motoreg.SetTapLatDer("B");
                 if (this.radioButton122.Checked == true)
-                    motoreg.SetFarola("R");
+                    motoreg.SetTapLatDer("R");
                 if (this.radioButton123.Checked == true)
-                    motoreg.SetFarola("M");
+                    motoreg.SetTapLatDer("M");
                 if (this.radioButton124.Checked == true)
-                    motoreg.SetFarola("N/A");
+                    motoreg.SetTapLatDer("N/A");
                 if (this.radioButton125.Checked == true)
-                    motoreg.SetFarola("N/V");
+                    motoreg.SetTapLatDer("N/V");
 
                 if (this.radioButton116.Checked == true)
-                    motoreg.SetFarola("B");
+                    motoreg.SetBateriaa("B");
                 if (this.radioButton117.Checked == true)
-                    motoreg.SetFarola("R");
+                    motoreg.SetBateriaa("R");
                 if (this.radioButton118.Checked == true)
-                    motoreg.SetFarola("M");
+                    motoreg.SetBateriaa("M");
                 if (this.radioButton119.Checked == true)
-                    motoreg.SetFarola("N/A");
+                    motoreg.SetBateriaa("N/A");
                 if (this.radioButton120.Checked == true)
-                    motoreg.SetFarola("N/V");
+                    motoreg.SetBateriaa("N/V");
 
                 if (this.radioButton111.Checked == true)
-                    motoreg.SetFarola("B");
+                    motoreg.SetTacos("B");
                 if (this.radioButton112.Checked == true)
-                    motoreg.SetFarola("R");
+                    motoreg.SetTacos("R");
                 if (this.radioButton113.Checked == true)
-                    motoreg.SetFarola("M");
+                    motoreg.SetTacos("M");
                 if (this.radioButton114.Checked == true)
-                    motoreg.SetFarola("N/A");
+                    motoreg.SetTacos("N/A");
                 if (this.radioButton115.Checked == true)
-                    motoreg.SetFarola("N/V");
+                    motoreg.SetTacos("N/V");
 
                 if (this.radioButton106.Checked == true)
-                    motoreg.SetFarola("B");
+                    motoreg.SetPalFrePie("B");
                 if (this.radioButton107.Checked == true)
-                    motoreg.SetFarola("R");
+                    motoreg.SetPalFrePie("R");
                 if (this.radioButton108.Checked == true)
-                    motoreg.SetFarola("M");
+                    motoreg.SetPalFrePie("M");
                 if (this.radioButton109.Checked == true)
-                    motoreg.SetFarola("N/A");
+                    motoreg.SetPalFrePie("N/A");
                 if (this.radioButton110.Checked == true)
-                    motoreg.SetFarola("N/V");
+                    motoreg.SetPalFrePie("N/V");
 
                 if (this.radioButton101.Checked == true)
-                    motoreg.SetFarola("B");
+                    motoreg.SetCran("B");
                 if (this.radioButton102.Checked == true)
-                    motoreg.SetFarola("R");
+                    motoreg.SetCran("R");
                 if (this.radioButton103.Checked == true)
-                    motoreg.SetFarola("M");
+                    motoreg.SetCran("M");
                 if (this.radioButton104.Checked == true)
-                    motoreg.SetFarola("N/A");
+                    motoreg.SetCran("N/A");
                 if (this.radioButton105.Checked == true)
-                    motoreg.SetFarola("N/V");
+                    motoreg.SetCran("N/V");
 
                 if (this.radioButton96.Checked == true)
-                    motoreg.SetFarola("B");
+                    motoreg.SetOtros("B");
                 if (this.radioButton97.Checked == true)
-                    motoreg.SetFarola("R");
+                    motoreg.SetOtros("R");
                 if (this.radioButton98.Checked == true)
-                    motoreg.SetFarola("M");
+                    motoreg.SetOtros("M");
                 if (this.radioButton99.Checked == true)
-                    motoreg.SetFarola("N/A");
+                    motoreg.SetOtros("N/A");
                 if (this.radioButton100.Checked == true)
-                    motoreg.SetFarola("N/V");
+                    motoreg.SetOtros("N/V");
 
                 //De aqui hacia arriba está la segunda mitad, hace falta modificarla según el documento
 
