@@ -289,23 +289,151 @@ namespace ManejoInventariosBD
         {
             return Par;
         }
-        public static string AntRadPas { get; set; }
-        public static string Encendedor { get; set; }
-        public static string RadTel { get; set; }
-        public static string AntRadTel { get; set; }
-        public static string LlaRes { get; set; }
-        public static string Herramientas { get; set; }
-        public static string Bateria { get; set; }
-        public static string Limpiabrisas { get; set; }
-        public static string Otros { get; set; }
-        public static string Marca { get; set; }
-        public static string PlacaNum { get; set; }
-        public static string Color { get; set; }
-        public static Boolean debegrua { get; set; }
-        public static Boolean dejallaves { get; set; }
-        public static int NumPar { get; set; }
-        public static int NumParlantes { get; set; }
-        
+        public static string AntRadPas;
+        public void SetAntradPas(string x)
+        {
+            AntRadPas = x;
+        }
+        public string GetAntRadPas()
+        {
+            return AntRadPas;
+        }
+        public static string Enc;
+        public void SetEnc(string x)
+        {
+            Enc = x;
+        }
+        public string GetEnc()
+        {
+            return Enc;
+        }
+        public static string RadTel;
+        public void SetRadTel(string x)
+        {
+            RadTel = x;
+        }
+        public string GetRadTel()
+        {
+            return RadTel;
+        }
+        public static string AntRadTel;
+        public void SetAntRadTel(string x)
+        {
+            AntRadTel = x;
+        }
+        public string GetAntRadTel()
+        {
+            return AntRadTel;
+        }
+        public static string LlaRes;
+        public void SetLlaRes(string x)
+        {
+            LlaRes = x;
+        }
+        public string GetLlaRes()
+        {
+            return LlaRes;
+        }
+        public static string Her;
+        public void SetHer(string x)
+        {
+            Her = x;
+        }
+        public string GetHer()
+        {
+            return Her;
+        }
+        public static string Bat;
+        public void SetBat(string x)
+        {
+            Bat = x;
+        }
+        public string GetBat()
+        {
+            return Bat;
+        }
+        public static string Lim;
+        public void SetLim(string x)
+        {
+            Lim = x;
+        }
+        public string GetLim()
+        {
+            return Lim;
+        }
+        public static string Otros;
+        public void SetOtros(string x)
+        {
+            Otros = x;
+        }
+        public string GetOtros()
+        {
+            return Otros;
+        }
+        public static string Marca;
+        public void SetMarca(string x)
+        {
+            Marca = x;
+        }
+        public string GetMarca()
+        {
+            return Marca;
+        }
+        public static string PlacaNum;
+        public void SetPlacaNum(string x)
+        {
+            PlacaNum = x;
+        }
+        public string GetPlacaNum()
+        {
+            return PlacaNum;
+        }
+        public static string Color;
+        public void SetColor(string x)
+        {
+            Color = x;
+        }
+        public string GetColor()
+        {
+            return Color;
+        }
+        public static int debegrua;
+        public void Setdebegrua(int x)
+        {
+            debegrua = x;
+        }
+        public int Getdebegrua()
+        {
+            return debegrua;
+        }
+        public static int dejallaves;
+        public void Setdejallaves(int x)
+        {
+            dejallaves = x;
+        }
+        public int Getdejallaves()
+        {
+            return dejallaves;
+        }
+        public static int NumPar;
+        public void SetNumPar(int x)
+        {
+            NumPar = x;
+        }
+        public int GetNumPar()
+        {
+            return NumPar;
+        }
+        public static int NumParlantes;
+        public void SetNumParlantes(int x)
+        {
+            NumParlantes = x;
+        }
+        public int GetNumParlantes()
+        {
+            return NumParlantes;
+        }
+
 
 
 
