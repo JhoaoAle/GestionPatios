@@ -198,11 +198,202 @@ namespace ManejoInventariosBD
             {
                 //De aquí hacia arriba todo funciona
                 if (this.radioButton1.Checked == true)
-                {
                     cochereg.SetBomDel("B");
-                    
-                }
-                    
+                if (this.radioButton2.Checked == true)
+                    cochereg.SetBomDel("R");
+                if (this.radioButton3.Checked == true)
+                    cochereg.SetBomDel("M");
+                if (this.radioButton4.Checked == true)
+                    cochereg.SetBomDel("N/A");
+                if (this.radioButton5.Checked == true)
+                    cochereg.SetBomDel("N/V");
+
+                if (this.radioButton6.Checked == true)
+                    cochereg.SetPersiana("B");
+                if (this.radioButton7.Checked == true)
+                    cochereg.SetPersiana("R");
+                if (this.radioButton8.Checked == true)
+                    cochereg.SetPersiana("M");
+                if (this.radioButton9.Checked == true)
+                    cochereg.SetPersiana("N/A");
+                if (this.radioButton10.Checked == true)
+                    cochereg.SetPersiana("N/V");
+
+                if (this.radioButton11.Checked == true)
+                    cochereg.SetFarIzq("B");
+                if (this.radioButton12.Checked == true)
+                    cochereg.SetFarIzq("R");
+                if (this.radioButton13.Checked == true)
+                    cochereg.SetFarIzq("M");
+                if (this.radioButton14.Checked == true)
+                    cochereg.SetFarIzq("N/A");
+                if (this.radioButton15.Checked == true)
+                    cochereg.SetFarIzq("N/V");
+
+                if (this.radioButton16.Checked == true)
+                    cochereg.SetParDel("B");
+                if (this.radioButton17.Checked == true)
+                    cochereg.SetParDel("R");
+                if (this.radioButton18.Checked == true)
+                    cochereg.SetParDel("M");
+                if (this.radioButton19.Checked == true)
+                    cochereg.SetParDel("N/A");
+                if (this.radioButton20.Checked == true)
+                    cochereg.SetParDel("N/V");
+
+                if (this.radioButton21.Checked == true)
+                    cochereg.SetEspRetIzq("B");
+                if (this.radioButton22.Checked == true)
+                    cochereg.SetEspRetIzq("R");
+                if (this.radioButton23.Checked == true)
+                    cochereg.SetEspRetIzq("M");
+                if (this.radioButton24.Checked == true)
+                    cochereg.SetEspRetIzq("N/A");
+                if (this.radioButton25.Checked == true)
+                    cochereg.SetEspRetIzq("N/V");
+
+                if (this.radioButton26.Checked == true)
+                    cochereg.SetGFDelIzq("B");
+                if (this.radioButton27.Checked == true)
+                    cochereg.SetGFDelIzq("R");
+                if (this.radioButton28.Checked == true)
+                    cochereg.SetGFDelIzq("M");
+                if (this.radioButton29.Checked == true)
+                    cochereg.SetGFDelIzq("N/A");
+                if (this.radioButton30.Checked == true)
+                    cochereg.SetGFDelIzq("N/V");
+
+                if (this.radioButton31.Checked == true)
+                    cochereg.SetPDelIzq("B");
+                if (this.radioButton32.Checked == true)
+                    cochereg.SetPDelIzq("R");
+                if (this.radioButton33.Checked == true)
+                    cochereg.SetPDelIzq("M");
+                if (this.radioButton34.Checked == true)
+                    cochereg.SetPDelIzq("N/A");
+                if (this.radioButton35.Checked == true)
+                    cochereg.SetPDelIzq("N/V");
+
+                if (this.radioButton36.Checked == true)
+                    cochereg.SetPTraIzq("B");
+                if (this.radioButton37.Checked == true)
+                    cochereg.SetPTraIzq("R");
+                if (this.radioButton38.Checked == true)
+                    cochereg.SetPTraIzq("M");
+                if (this.radioButton39.Checked == true)
+                    cochereg.SetPTraIzq("N/A");
+                if (this.radioButton40.Checked == true)
+                    cochereg.SetPTraIzq("N/V");
+
+                if (this.radioButton41.Checked == true)
+                    cochereg.SetVPDelIzq("B");
+                if (this.radioButton42.Checked == true)
+                    cochereg.SetVPDelIzq("R");
+                if (this.radioButton43.Checked == true)
+                    cochereg.SetVPDelIzq("M");
+                if (this.radioButton44.Checked == true)
+                    cochereg.SetVPDelIzq("N/A");
+                if (this.radioButton45.Checked == true)
+                    cochereg.SetVPDelIzq("N/V");
+
+                if (this.radioButton46.Checked == true)
+                    cochereg.SetVPTraIzq("B");
+                if (this.radioButton47.Checked == true)
+                    cochereg.SetVPTraIzq("R");
+                if (this.radioButton48.Checked == true)
+                    cochereg.SetVPTraIzq("M");
+                if (this.radioButton49.Checked == true)
+                    cochereg.SetVPTraIzq("N/A");
+                if (this.radioButton50.Checked == true)
+                    cochereg.SetVPTraIzq("N/V");
+
+                if (this.radioButton51.Checked == true)
+                    cochereg.SetGFTraIzq("B");
+                if (this.radioButton52.Checked == true)
+                    cochereg.SetGFTraIzq("R");
+                if (this.radioButton53.Checked == true)
+                    cochereg.SetGFTraIzq("M");
+                if (this.radioButton54.Checked == true)
+                    cochereg.SetGFTraIzq("N/A");
+                if (this.radioButton55.Checked == true)
+                    cochereg.SetGFTraIzq("N/V");
+
+                if (this.radioButton56.Checked == true)
+                    cochereg.SetParTra("B");
+                if (this.radioButton57.Checked == true)
+                    cochereg.SetParTra("R");
+                if (this.radioButton58.Checked == true)
+                    cochereg.SetParTra("M");
+                if (this.radioButton59.Checked == true)
+                    cochereg.SetParTra("N/A");
+                if (this.radioButton60.Checked == true)
+                    cochereg.SetParTra("N/V");
+
+                if (this.radioButton61.Checked == true)
+                    cochereg.SetBomTra("B");
+                if (this.radioButton62.Checked == true)
+                    cochereg.SetBomTra("R");
+                if (this.radioButton63.Checked == true)
+                    cochereg.SetBomTra("M");
+                if (this.radioButton64.Checked == true)
+                    cochereg.SetBomTra("N/A");
+                if (this.radioButton65.Checked == true)
+                    cochereg.SetBomTra("N/V");
+
+                if (this.radioButton66.Checked == true)
+                    cochereg.SetGFDelIzq("B");
+                if (this.radioButton67.Checked == true)
+                    cochereg.SetGFDelIzq("R");
+                if (this.radioButton68.Checked == true)
+                    cochereg.SetGFDelIzq("M");
+                if (this.radioButton69.Checked == true)
+                    cochereg.SetGFDelIzq("N/A");
+                if (this.radioButton70.Checked == true)
+                    cochereg.SetGFDelIzq("N/V");
+
+                if (this.radioButton71.Checked == true)
+                    cochereg.SetPDelIzq("B");
+                if (this.radioButton72.Checked == true)
+                    cochereg.SetPDelIzq("R");
+                if (this.radioButton73.Checked == true)
+                    cochereg.SetPDelIzq("M");
+                if (this.radioButton74.Checked == true)
+                    cochereg.SetPDelIzq("N/A");
+                if (this.radioButton75.Checked == true)
+                    cochereg.SetPDelIzq("N/V");
+
+                if (this.radioButton76.Checked == true)
+                    cochereg.SetPTraIzq("B");
+                if (this.radioButton77.Checked == true)
+                    cochereg.SetPTraIzq("R");
+                if (this.radioButton78.Checked == true)
+                    cochereg.SetPTraIzq("M");
+                if (this.radioButton79.Checked == true)
+                    cochereg.SetPTraIzq("N/A");
+                if (this.radioButton80.Checked == true)
+                    cochereg.SetPTraIzq("N/V");
+
+                if (this.radioButton81.Checked == true)
+                    cochereg.SetVPDelIzq("B");
+                if (this.radioButton82.Checked == true)
+                    cochereg.SetVPDelIzq("R");
+                if (this.radioButton83.Checked == true)
+                    cochereg.SetVPDelIzq("M");
+                if (this.radioButton84.Checked == true)
+                    cochereg.SetVPDelIzq("N/A");
+                if (this.radioButton85.Checked == true)
+                    cochereg.SetVPDelIzq("N/V");
+
+                if (this.radioButton86.Checked == true)
+                    cochereg.SetVPTraIzq("B");
+                if (this.radioButton87.Checked == true)
+                    cochereg.SetVPTraIzq("R");
+                if (this.radioButton88.Checked == true)
+                    cochereg.SetVPTraIzq("M");
+                if (this.radioButton89.Checked == true)
+                    cochereg.SetVPTraIzq("N/A");
+                if (this.radioButton90.Checked == true)
+                    cochereg.SetVPTraIzq("N/V");
 
 
 

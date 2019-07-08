@@ -17,6 +17,7 @@ namespace ManejoInventariosBD
         public static string EspRetIzq;
         public static string GFDelIzq;
         public static string PDelIzq;
+        public static string PTraIzq;
         public static string VPDelIzq;
         public void SetBomDel(string x)
         {
@@ -56,7 +57,7 @@ namespace ManejoInventariosBD
             return ParDel;
         }
 
-        public void SetEsptretIzq(string x)
+        public void SetEspRetIzq(string x)
         {
             EspRetIzq = x;
         }
@@ -82,6 +83,15 @@ namespace ManejoInventariosBD
         public string GetPDelIzq()
         {
             return PDelIzq; ;
+        }
+
+        public void SetPTraIzq(string x)
+        {
+            PTraIzq = x;
+        }
+        public string GetPTraIzq()
+        {
+            return PTraIzq; ;
         }
 
         public void SetVPDelIzq(string x)
