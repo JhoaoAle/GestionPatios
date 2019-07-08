@@ -274,13 +274,13 @@ namespace ManejoInventariosBD
         {
             return Parrilla;
         }
-        public static string GBarDel;
-        public void SetGBarDel(string x)
+        public static string GBarTra;
+        public void SetGBarTra(string x)
         {
-            GBarDel = x;
+            GBarTra = x;
         }
 
-        public string GetGBarDel()
+        public string GetGBarTra()
         {
             return GBarDel;
         }
