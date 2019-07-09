@@ -396,6 +396,12 @@ namespace ManejoInventariosBD
             this.numinvent = new System.Windows.Forms.TextBox();
             this.label76 = new System.Windows.Forms.Label();
             this.label77 = new System.Windows.Forms.Label();
+            this.label78 = new System.Windows.Forms.Label();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.label79 = new System.Windows.Forms.Label();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.label80 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -767,7 +773,7 @@ namespace ManejoInventariosBD
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.cedula);
             this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Location = new System.Drawing.Point(458, 62);
+            this.groupBox2.Location = new System.Drawing.Point(458, 47);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(271, 100);
             this.groupBox2.TabIndex = 56;
@@ -841,7 +847,7 @@ namespace ManejoInventariosBD
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(720, 30);
+            this.button4.Location = new System.Drawing.Point(679, 14);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 23);
             this.button4.TabIndex = 53;
@@ -855,7 +861,7 @@ namespace ManejoInventariosBD
             this.motivo.Items.AddRange(new object[] {
             "Patios",
             "Accidente"});
-            this.motivo.Location = new System.Drawing.Point(523, 32);
+            this.motivo.Location = new System.Drawing.Point(508, 16);
             this.motivo.Name = "motivo";
             this.motivo.Size = new System.Drawing.Size(121, 21);
             this.motivo.TabIndex = 52;
@@ -863,7 +869,7 @@ namespace ManejoInventariosBD
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(445, 32);
+            this.label6.Location = new System.Drawing.Point(444, 20);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(66, 13);
             this.label6.TabIndex = 51;
@@ -4964,11 +4970,65 @@ namespace ManejoInventariosBD
             this.label77.TabIndex = 67;
             this.label77.Text = "Inventario No.";
             // 
+            // label78
+            // 
+            this.label78.AutoSize = true;
+            this.label78.Location = new System.Drawing.Point(542, 156);
+            this.label78.Name = "label78";
+            this.label78.Size = new System.Drawing.Size(40, 13);
+            this.label78.TabIndex = 69;
+            this.label78.Text = "Placa: ";
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(581, 153);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(100, 20);
+            this.textBox5.TabIndex = 70;
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(727, 153);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(100, 20);
+            this.textBox6.TabIndex = 72;
+            // 
+            // label79
+            // 
+            this.label79.AutoSize = true;
+            this.label79.Location = new System.Drawing.Point(688, 156);
+            this.label79.Name = "label79";
+            this.label79.Size = new System.Drawing.Size(34, 13);
+            this.label79.TabIndex = 71;
+            this.label79.Text = "Color:";
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(436, 153);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(100, 20);
+            this.textBox7.TabIndex = 74;
+            // 
+            // label80
+            // 
+            this.label80.AutoSize = true;
+            this.label80.Location = new System.Drawing.Point(397, 156);
+            this.label80.Name = "label80";
+            this.label80.Size = new System.Drawing.Size(43, 13);
+            this.label80.TabIndex = 73;
+            this.label80.Text = "Marca: ";
+            // 
             // FormVehiculos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(838, 903);
+            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.label80);
+            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.label79);
+            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.label78);
             this.Controls.Add(this.label76);
             this.Controls.Add(this.label77);
             this.Controls.Add(this.numinvent);
@@ -5486,5 +5546,11 @@ namespace ManejoInventariosBD
         private System.Windows.Forms.Label label52;
         private System.Windows.Forms.Label label76;
         private System.Windows.Forms.Label label77;
+        private System.Windows.Forms.Label label78;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Label label79;
+        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.Label label80;
     }
 }
