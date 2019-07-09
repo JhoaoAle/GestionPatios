@@ -39,5 +39,12 @@ namespace ManejoInventariosBD
             Application.Exit();
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormSalida f = new FormSalida();
+            f.Show();
+        }
     }
 }
