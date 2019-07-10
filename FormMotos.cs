@@ -675,7 +675,7 @@ namespace ManejoInventariosBD
 
         private void runQuery()
         {
-            string texto = comboBox2.Text;
+            
             
 
             string query = "INSERT IGNORE INTO `invent_motos`(`Inventario`, `Fecha_Entrada`, `Hora_Entrada`, `Fecha_Salida`, `Hora_Salida`, `Autoridad`, `Encargado DC`, `Tipo Vehiculo`, `Propietario`, `Direccion`, `CC`, `Telefono`, `Farola`, `Exploradora`, `Carenaje`, `Pito`, `GB_Del`, `FrenoDisco`, `Tablero`, `DirDel_Izq`, `Esp_zq`, `ManDir_Izq`, `Man_Izq`, `ProtMan_Izq`, `DirDel_Der`, `Esp_Der`, `ManDir_Der`, `ManFre_Der`, `ProtMan_Der`, `TC`, `Tapa_TC`, `Babero`, `Pata`, `Gato`, `TapLat_Izq`, `GuardaCadena`, `Sillin`, `Parrilla`, `GB_Trasero`, `DirTra_Izq`, `Amortiguadores`, `Exosto`, `Placa`, `DirTra_Der`, `TapLat_Der`, `Bateria`, `Tacos`, `PalFre_Pie`, `Cran`, `Otros`, `Observaciones`, `Debe_Grua`, `Dejan_Llaves`, `Valor`, `Marca`, `PlacaNum`, `Color`) VALUES ('" + (Int32.Parse(textBox6.Text)) 

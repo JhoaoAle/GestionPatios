@@ -638,7 +638,7 @@ namespace ManejoInventariosBD
             // 
             this.panel2.Controls.Add(this.radioButton193);
             this.panel2.Controls.Add(this.radioButton194);
-            this.panel2.Location = new System.Drawing.Point(638, 851);
+            this.panel2.Location = new System.Drawing.Point(692, 818);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(92, 30);
             this.panel2.TabIndex = 65;
@@ -668,7 +668,7 @@ namespace ManejoInventariosBD
             // label63
             // 
             this.label63.AutoSize = true;
-            this.label63.Location = new System.Drawing.Point(564, 859);
+            this.label63.Location = new System.Drawing.Point(618, 826);
             this.label63.Name = "label63";
             this.label63.Size = new System.Drawing.Size(68, 13);
             this.label63.TabIndex = 64;
@@ -688,7 +688,7 @@ namespace ManejoInventariosBD
             // 
             this.panel1.Controls.Add(this.radioButton192);
             this.panel1.Controls.Add(this.radioButton191);
-            this.panel1.Location = new System.Drawing.Point(113, 851);
+            this.panel1.Location = new System.Drawing.Point(167, 818);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(92, 30);
             this.panel1.TabIndex = 62;
@@ -718,7 +718,7 @@ namespace ManejoInventariosBD
             // label62
             // 
             this.label62.AutoSize = true;
-            this.label62.Location = new System.Drawing.Point(39, 859);
+            this.label62.Location = new System.Drawing.Point(93, 826);
             this.label62.Name = "label62";
             this.label62.Size = new System.Drawing.Size(63, 13);
             this.label62.TabIndex = 61;
@@ -726,16 +726,16 @@ namespace ManejoInventariosBD
             // 
             // observaciones
             // 
-            this.observaciones.Location = new System.Drawing.Point(168, 784);
+            this.observaciones.Location = new System.Drawing.Point(173, 773);
             this.observaciones.Multiline = true;
             this.observaciones.Name = "observaciones";
-            this.observaciones.Size = new System.Drawing.Size(614, 54);
+            this.observaciones.Size = new System.Drawing.Size(614, 39);
             this.observaciones.TabIndex = 60;
             // 
             // label61
             // 
             this.label61.AutoSize = true;
-            this.label61.Location = new System.Drawing.Point(39, 787);
+            this.label61.Location = new System.Drawing.Point(44, 776);
             this.label61.Name = "label61";
             this.label61.Size = new System.Drawing.Size(81, 13);
             this.label61.TabIndex = 59;
@@ -911,7 +911,7 @@ namespace ManejoInventariosBD
             // 
             // splitContainer1
             // 
-            this.splitContainer1.Location = new System.Drawing.Point(17, 193);
+            this.splitContainer1.Location = new System.Drawing.Point(12, 179);
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
@@ -5022,7 +5022,7 @@ namespace ManejoInventariosBD
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(838, 903);
+            this.ClientSize = new System.Drawing.Size(833, 852);
             this.Controls.Add(this.textBox7);
             this.Controls.Add(this.label80);
             this.Controls.Add(this.textBox6);
