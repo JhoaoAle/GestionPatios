@@ -61,12 +61,31 @@ namespace ManejoInventariosBD.Properties {
         }
         
         /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Icon similar a (Icono).
+        /// </summary>
+        internal static System.Drawing.Icon _41HXUK8edZL {
+            get {
+                object obj = ResourceManager.GetObject("_41HXUK8edZL", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap attention {
             get {
                 object obj = ResourceManager.GetObject("attention", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.IO.UnmanagedMemoryStream similar a System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream chasquido {
+            get {
+                return ResourceManager.GetStream("chasquido", resourceCulture);
             }
         }
         

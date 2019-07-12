@@ -28,6 +28,7 @@
         /// </summary>
         public void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ChooseInsertType));
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -63,7 +64,6 @@
             this.label1.Size = new System.Drawing.Size(189, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "¿Qué tipo de vehiculo desea ingresar?";
-           
             // 
             // label2
             // 
@@ -82,6 +82,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ChooseInsertType";
             this.Text = "ChooseInsertType";
             this.Load += new System.EventHandler(this.ChooseInsertType_Load);

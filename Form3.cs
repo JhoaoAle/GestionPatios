@@ -22,7 +22,7 @@ namespace ManejoInventariosBD
 
         private void Form3_Load(object sender, EventArgs e)
         {
-            SoundPlayer my_wave_file = new SoundPlayer("C:/Users/PC/Desktop/ProyectoBD/ManejoInventariosBD/177507__snapper4298__snap-6.wav");
+            SoundPlayer my_wave_file = new SoundPlayer("C/Desktop/ProyectoBD/ManejoInventariosBD/177507__snapper4298__snap-6.wav");
             my_wave_file.PlaySync();
 
         }

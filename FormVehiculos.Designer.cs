@@ -30,6 +30,7 @@ namespace ManejoInventariosBD
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormVehiculos));
             this.button2 = new System.Windows.Forms.Button();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label60 = new System.Windows.Forms.Label();
@@ -5020,8 +5021,9 @@ namespace ManejoInventariosBD
             // 
             // FormVehiculos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(833, 852);
             this.Controls.Add(this.textBox7);
             this.Controls.Add(this.label80);
@@ -5065,6 +5067,7 @@ namespace ManejoInventariosBD
             this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label53);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormVehiculos";
             this.Text = "FormVehiculos";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormVehiculos_FormClosing);

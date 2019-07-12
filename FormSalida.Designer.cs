@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormSalida));
             this.invnum = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label54 = new System.Windows.Forms.Label();
@@ -131,8 +132,8 @@
             // 
             // FormSalida
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(492, 241);
             this.Controls.Add(this.tipo);
             this.Controls.Add(this.label2);
@@ -143,6 +144,7 @@
             this.Controls.Add(this.label53);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.invnum);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormSalida";
             this.Text = "FormSalida";
             this.ResumeLayout(false);

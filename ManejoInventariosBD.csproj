@@ -34,7 +34,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>41HXUK8edZL.ico</ApplicationIcon>
+    <ApplicationIcon>Resources\41HXUK8edZL.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="MySql.Data, Version=8.0.16.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
@@ -162,7 +162,10 @@
     <None Include="Imagenes\snap.gif" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="177507__snapper4298__snap-6.wav" />
     <Content Include="41HXUK8edZL.ico" />
+    <None Include="Resources\41HXUK8edZL.ico" />
+    <None Include="Resources\Icono.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
