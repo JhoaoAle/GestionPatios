@@ -86,6 +86,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ChooseInsertType";
             this.Text = "ChooseInsertType";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ChooseInsertType_FormClosing);
             this.Load += new System.EventHandler(this.ChooseInsertType_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

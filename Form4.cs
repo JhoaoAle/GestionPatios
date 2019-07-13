@@ -15,8 +15,8 @@ namespace ManejoInventariosBD
         public Form4()
         {
             InitializeComponent();
-            label2.Text = Form1.obtenervalor;
-            label2.Visible = true;
+            label4.Text = Form1.obtenervalor;
+            label4.Visible = true;
 
 
         }

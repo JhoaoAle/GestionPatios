@@ -73,7 +73,11 @@ namespace ManejoInventariosBD
             
         }
 
-        
-       
+        private void ChooseInsertType_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Form4 f = new Form4();
+            this.Dispose();
+            f.Show();
+        }
     }
 }

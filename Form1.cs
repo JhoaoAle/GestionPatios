@@ -27,15 +27,13 @@ namespace ManejoInventariosBD
             
 
             InitializeComponent();
-            // Set to no text.  
+ 
             textContraseña.Text = "";
-            // The password character is an asterisk.  
             textContraseña.PasswordChar = '*';
-            // The control will allow no more than 14 characters.  
-            textContraseña.MaxLength = 14;
+            textContraseña.MaxLength = 13;
 
             
-    }
+        }
 
         
 

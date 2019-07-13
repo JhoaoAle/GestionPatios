@@ -148,6 +148,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormSalida";
             this.Text = "FormSalida";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormSalida_FormClosing);
             this.Load += new System.EventHandler(this.FormSalida_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

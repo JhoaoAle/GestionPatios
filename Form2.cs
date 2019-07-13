@@ -23,38 +23,7 @@ namespace ManejoInventariosBD
         }
 
 
-        private void Button1_Click(object sender, EventArgs e)
-        {
-            
-            Form3 f = new Form3();
-            f.Show();
-            runQuery();
-
-        }
-        private void runQuery()
-        {
-            string query = "DROP TABLE `invent_carros`, `invent_motos`;";
-            string MySqlConnectionString = "datasource=127.0.0.1;port=3306;username=root;password=;Database=patiosd1c";
-
-            MySqlConnection databaseConnection = new MySqlConnection(MySqlConnectionString);
-            MySqlCommand commandDatabase = databaseConnection.CreateCommand();
-            commandDatabase.CommandText = query;
-            databaseConnection.Open();
-            commandDatabase.ExecuteNonQuery();
-            databaseConnection.Close();
-
-            /*
-            try
-            {
-                databaseConnection.Open();
-
-                
-            }catch(Exception e)
-            {
-                MessageBox.Show("Query Error: " + e.Message);
-            }
-            MySqlDataReader reader = commandDatabase.ExecuteReader();*/
-        }
+       
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -101,7 +70,7 @@ namespace ManejoInventariosBD
             commandDatabase.CommandText = query;
 
 
-            /*
+            
             try
             {
                 MySqlDataAdapter sda = new MySqlDataAdapter();
@@ -122,7 +91,7 @@ namespace ManejoInventariosBD
             catch (Exception exc)
             {
                 MessageBox.Show("Query Error: " + exc.Message);
-            }*/
+            }
             
         }
 
@@ -169,6 +138,18 @@ namespace ManejoInventariosBD
             da.Fill(table);
             comboBox1.DataSource = table;
             comboBox1.DisplayMember = "Usuario";
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            RegistroUsuario f = new RegistroUsuario();
+            this.Hide();
+            f.Show();
+        }
+
+        private void Form2_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

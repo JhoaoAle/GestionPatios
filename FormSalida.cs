@@ -81,5 +81,12 @@ namespace ManejoInventariosBD
             tipo.DataSource = table;
             tipo.DisplayMember = "Tipo";
         }
+
+        private void FormSalida_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Form4 f = new Form4();
+            this.Dispose();
+            f.Show();
+        }
     }
 }
