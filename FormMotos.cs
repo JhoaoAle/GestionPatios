@@ -19,6 +19,8 @@ namespace ManejoInventariosBD
         private bool cond3;
         private bool cond4;
         private bool cond5;
+       
+        public static MySqlConnection databaseConnection = new MySqlConnection("datasource=127.0.0.1;port=3306;username=root;password=;Database=patiosd1c");
 
         string tipo;
         public FormMotos(string tipo)
@@ -27,6 +29,7 @@ namespace ManejoInventariosBD
 
             InitializeComponent();
             this.tipo = tipo;
+            MessageBox.Show(this.tipo);
             
             
            
@@ -38,9 +41,27 @@ namespace ManejoInventariosBD
 
         private void FormMotos_Load(object sender, EventArgs e)
         {
+            
+            MySqlCommand cmd;
+            cmd = new MySqlCommand("SELECT `Motivo` FROM `motivos`", databaseConnection);
+            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+            DataTable table = new DataTable("myTable");
+            da.Fill(table);
+            comboBox1.DataSource = table;
+            comboBox1.DisplayMember = "Motivo";
+
+
+            MySqlCommand cmd1;
+            cmd1 = new MySqlCommand("SELECT * FROM `autoridad` WHERE `Formulario_Asociado` = 'Moto' OR `Formulario_Asociado` = 'Ambos'", databaseConnection);
+            da = new MySqlDataAdapter(cmd1);
+            DataTable table1 = new DataTable("myTable");
+            da.Fill(table1);
+            comboBox2.DataSource = table1;
+            comboBox2.DisplayMember = "Autoridad";
+
         }
 
-        
+
 
         private void Button1_Click(object sender, EventArgs e)
         {
@@ -690,10 +711,10 @@ namespace ManejoInventariosBD
                 + "','" + motoreg.GetAmortiguadores() + "','" + motoreg.GetExosto() + "','" + motoreg.GetPlaca() + "','" + motoreg.GetDirTraDer() + "','" + motoreg.GetTapLatDer() 
                 + "','" + motoreg.GetBateria() + "','" + motoreg.GetTacos() + "','" + motoreg.GetPalFrePie() + "','" + motoreg.GetCran() + "','" + motoreg.GetOtros() 
                 + "'," + (GetDbValue(textBox5.Text)) + ",'" + motoreg.Getdebegrua() + "','" + motoreg.Getdejallaves() + "',NULL,'" + motoreg.GetMarca() + "','" + motoreg.GetPlacaNum() 
-                + "','"+comboBoxColor.Text+"')"; 
-            string MySqlConnectionString = "datasource=127.0.0.1;port=3306;username=root;password=;Database=patiosd1c";
+                + "','"+comboBoxColor.Text+ "');"; 
             
-            MySqlConnection databaseConnection = new MySqlConnection(MySqlConnectionString);
+            
+            
             MySqlCommand commandDatabase = databaseConnection.CreateCommand();
             commandDatabase.CommandText = query;
             databaseConnection.Open();

@@ -1,5 +1,8 @@
-﻿namespace ManejoInventariosBD
+﻿
+
+namespace ManejoInventariosBD
 {
+
     partial class FormMotos
     {
         /// <summary>
@@ -4178,13 +4181,6 @@
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "Policía",
-            "Transito",
-            "Policia de Tránsito y Transporte",
-            "Juzgado",
-            "Fiscalía",
-            "Otro"});
             this.comboBox2.Location = new System.Drawing.Point(152, 112);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(204, 21);

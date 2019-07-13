@@ -128,6 +128,7 @@
             this.tipo.Location = new System.Drawing.Point(264, 27);
             this.tipo.Name = "tipo";
             this.tipo.Size = new System.Drawing.Size(216, 21);
+            this.tipo.Sorted = true;
             this.tipo.TabIndex = 13;
             // 
             // FormSalida
@@ -147,6 +148,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormSalida";
             this.Text = "FormSalida";
+            this.Load += new System.EventHandler(this.FormSalida_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

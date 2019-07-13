@@ -13,6 +13,8 @@ namespace ManejoInventariosBD
 {
     public partial class FormSalida : Form
     {
+        public static MySqlConnection databaseConnection = new MySqlConnection("datasource=127.0.0.1;port=3306;username=root;password=;Database=patiosd1c");
+
         public FormSalida()
         {
             InitializeComponent();
@@ -23,6 +25,10 @@ namespace ManejoInventariosBD
             if (invnum.Text == "")
             {
                 MessageBox.Show("No ha ingresado un número de inventario");
+            }
+            if(tipo.Text=="")
+            {
+                MessageBox.Show("No ha ingresado un tipo de vehiculo");
             }
             else
             {
@@ -63,6 +69,17 @@ namespace ManejoInventariosBD
                 MessageBox.Show("Query Error: " + e.Message);
             }
             MySqlDataReader reader = commandDatabase.ExecuteReader();*/
+        }
+
+        private void FormSalida_Load(object sender, EventArgs e)
+        {
+            MySqlCommand cmd;
+            cmd = new MySqlCommand("SELECT * FROM `tipos_veh`", databaseConnection);
+            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+            DataTable table = new DataTable("myTable");
+            da.Fill(table);
+            tipo.DataSource = table;
+            tipo.DisplayMember = "Tipo";
         }
     }
 }

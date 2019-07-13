@@ -22,7 +22,8 @@ namespace ManejoInventariosBD
         private bool p5;
         private bool p6;
         private bool p7;
-   
+        public static MySqlConnection databaseConnection = new MySqlConnection("datasource=127.0.0.1;port=3306;username=root;password=;Database=patiosd1c");
+
 
         string tipo;
         public FormVehiculos(string tipo)
@@ -690,7 +691,7 @@ namespace ManejoInventariosBD
         {
             string texto = comboBox2.Text;
             string query = "INSERT IGNORE INTO `invent_carros`(`Inventario`, `Fecha_Entrada`, `Hora_Entrada`, `Fecha_Salida`, `Hora_Salida`, `Autoridad`, `Encargado DC`, `Tipo Vehiculo`, `Propietario`, `Direccion`, `CC`, `Telefono`, `BomperDel`, `Persiana`, `Far_Izq`, `Par_Del`, `EspRet_Izq`, `GF_Del_Izq`, `P_Del_Izq`, `P_Tra_Izq`, `VidP_Del_Izq`, `VidP_Tra_Izq`, `GF_Tra_Izq`, `Par_Tra`, `Bom_Tra`, `Stop_Izq`, `LuzFre_Aux`, `Exp_Tra`, `Stop_Der`, `P_Tra_Der`, `GF_Tra_Der`, `P_Del_Der`, `VidP_Del_Der`, `VidP_Tra_Der`, `GF_Del_Der`, `EspRet_Der`, `Far_Del`, `Dir_Del_Der`, `Exp_Der`, `Dir_Del_Izq`, `Coj_Del`, `Coj_Tra`, `Esp_Int`, `Rad_Pas`, `Parlantes`, `No_Par`, `Ant_Rad_Pas`, `Encendedor`, `Rad_tel`, `Ant_Rad_Tel`, `Lla_Res`, `Herramientas`, `Bateria`, `No_Lim_Par`, `Lim_Par`, `Otros`, `Observaciones`, `Debe_Grua`, `Dejan_Llaves`, `ValorPatios`, `Marca`, `PlacaNum`, `Color`)  VALUES ('" + (Int32.Parse(numinvent.Text)) + "','" 
-                + dateTimePicker4.Value.ToString("yyyy-MM-dd") + "','" + dateTimePicker3.Text + "',NULL,NULL,'" + patioscuenta.Text + "','" + Form1.obtenervalor 
+                + dateTimePicker4.Value.ToString("yyyy-MM-dd") + "','" + dateTimePicker3.Value.ToString("H:mm:ss") + "',NULL,NULL,'" + patioscuenta.Text + "','" + Form1.obtenervalor 
                 + "','" + this.tipo + "'," + (GetDbValue(propietario.Text)) + "," + (GetDbValue(direccion.Text)) + "," + (GetDbValue(cedula.Text)) 
                 + "," + (GetDbValue(telefono.Text)) + ",'" + cochereg.GetBomDel() + "','" + cochereg.GetPersiana() + "','" + cochereg.GetFarIzq() 
                 + "','" + cochereg.GetParDel() + "','" + cochereg.GetEspRetIzq() + "','" + cochereg.GetGFDelIzq() + "','" + cochereg.GetPDelIzq() 
@@ -703,7 +704,7 @@ namespace ManejoInventariosBD
                 + "','" + cochereg.GetRadPas() + "','" + cochereg.GetPar() + "','" + cochereg.GetNumParlantes() + "','" + cochereg.GetAntRadPas() + "','" + cochereg.GetEnc() 
                 + "','" + cochereg.GetRadTel() + "','" + cochereg.GetAntRadTel() + "','" + cochereg.GetLlaRes() + "','" + cochereg.GetHer() 
                 + "','" + cochereg.GetBat() + "','" + cochereg.GetNumPar() + "','" + cochereg.GetLim() + "','" + cochereg.GetOtros() + "',"+(GetDbValue(observaciones.Text))+ ",'" + cochereg.Getdebegrua() 
-                + "','" + cochereg.Getdejallaves() + "',NULL," + (GetDbValue(textBox7.Text)) + "," + (GetDbValue(textBox5.Text)) + "," + (GetDbValue(textBox6.Text)) + ")";
+                + "','" + cochereg.Getdejallaves() + "',NULL," + (GetDbValue(textBox7.Text)) + "," + (GetDbValue(textBox5.Text)) + "," + (GetDbValue(comboBox3.Text)) + ")";
             string MySqlConnectionString = "datasource=127.0.0.1;port=3306;username=root;password=;Database=patiosd1c";
             MySqlConnection databaseConnection = new MySqlConnection(MySqlConnectionString);
             MySqlCommand commandDatabase = databaseConnection.CreateCommand();
@@ -760,6 +761,33 @@ namespace ManejoInventariosBD
             Form4 f = new Form4();
             this.Dispose();
             f.Show();
+        }
+
+        private void FormVehiculos_Load(object sender, EventArgs e)
+        {
+            MySqlCommand cmd;
+            cmd = new MySqlCommand("SELECT `Motivo` FROM `motivos`", databaseConnection);
+            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+            DataTable table = new DataTable("myTable");
+            da.Fill(table);
+            motivo.DataSource = table;
+            motivo.DisplayMember = "Motivo";
+
+            MySqlCommand cmd1;
+            cmd1 = new MySqlCommand("SELECT `Autoridad` FROM `autoridad` WHERE `Formulario_Asociado` = 'Carro' OR `Formulario_Asociado` = 'Ambos'", databaseConnection);
+            MySqlDataAdapter da1 = new MySqlDataAdapter(cmd1);
+            DataTable table1 = new DataTable("myTable");
+            da1.Fill(table1);
+            patioscuenta.DataSource = table1;
+            patioscuenta.DisplayMember = "Autoridad";
+
+            MySqlCommand cmd2;
+            cmd2 = new MySqlCommand("SELECT `Color` FROM `colores` WHERE `Form_Asociado` = 'Carro' OR `Form_Asociado` = 'Ambos'", databaseConnection);
+            MySqlDataAdapter da2 = new MySqlDataAdapter(cmd2);
+            DataTable table2 = new DataTable("myTable");
+            da2.Fill(table2);
+            comboBox3.DataSource = table2;
+            comboBox3.DisplayMember = "Color";
         }
     }
 }       
