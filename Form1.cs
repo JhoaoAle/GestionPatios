@@ -15,10 +15,13 @@ using MySql.Data.MySqlClient;
 
 namespace ManejoInventariosBD
 {
+
     
     public partial class Form1 : Form
     {
-
+        public static MySqlConnection databaseConnection = new MySqlConnection("datasource=127.0.0.1;port=3306;username=root;password=;Database=patiosd1c");
+        int i;
+        public string rol;
         public Form1()
         {
             
@@ -34,105 +37,64 @@ namespace ManejoInventariosBD
             
     }
 
-        public int GenerateRandomNo()
-        {
-            int _min = 1000;
-            int _max = 9999;
-            Random _rdm = new Random();
-            return _rdm.Next(_min, _max);
-        }
+        
 
         public static string obtenervalor;
 
         private void Login_Click(object sender, EventArgs e)
         {
-            if((textUsuario.Text == "caos") ^ (textUsuario.Text == "CAOS"))
+            obtenervalor = textUsuario.Text;
+            i = 0;
+            databaseConnection.Open();
+            MySqlCommand cmd = databaseConnection.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "SELECT * FROM `usuarios` WHERE `Usuario`='"+textUsuario.Text+"' AND `Clave`='"+textContraseña.Text+"'";
+            cmd.ExecuteNonQuery();
+            DataTable dt = new DataTable();
+            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+            da.Fill(dt);
+            i = Convert.ToInt32(dt.Rows.Count.ToString());
+            databaseConnection.Close();
+            if (i == 0)
             {
-                if(textContraseña.Text == "soac")
+                label4.Visible = true;
+            }
+            else
+            {
+
+                
+                MySqlCommand cmd1;
+                cmd1 = new MySqlCommand("SELECT `Rol` FROM `usuarios` where `Usuario`='"+textUsuario.Text+"' AND `Clave`='"+textContraseña.Text+"'", databaseConnection);
+                databaseConnection.Open();
+                rol = cmd1.ExecuteScalar().ToString();
+                databaseConnection.Close();
+
+                if (rol == "admin")
                 {
                     this.Hide();
                     Form2 f = new Form2();
                     f.Show();
-                    
 
                 }
-                else
-                {
-                    MessageBox.Show("Contraseña incorrecta para usuario caos");
-                }
-            }
 
-            else if (textUsuario.Text == "Encargado1")
-            {
-                if (textContraseña.Text == "clave1")
+                if (rol == "encargado")
                 {
-                    obtenervalor = textUsuario.Text;
                     this.Hide();
                     Form4 f = new Form4();
                     f.Show();
-                    
+
                 }
-                else
-                {
-                    MessageBox.Show("Contraseña incorrecta para usuario Encargado1");
-                }
+                databaseConnection.Close();
 
             }
 
-            else if (textUsuario.Text == "Encargado2")
-            {
-                if (textContraseña.Text == "clave2")
-                {
-                    obtenervalor = textUsuario.Text;
-                    this.Hide();
-                    Form4 f = new Form4();
-                    f.Show();
-                    
-                }
-                else
-                {
-                    MessageBox.Show("Contraseña incorrecta para usuario Encargado2");
-                }
-            }
 
-            else if (textUsuario.Text == "Encargado2")
-            {
-                if (textContraseña.Text == "clave2")
-                {
-                    obtenervalor = textUsuario.Text;
-                    this.Hide();
-                    Form4 f = new Form4();
-                    f.Show();
-                    
-                }
-                else
-                {
-                    MessageBox.Show("Contraseña incorrecta para usuario Encargado2");
-                }
-            }
 
-            else if (textUsuario.Text == "Contador")
-            {
-                if (textContraseña.Text != "")
-                {
-                    
-                }
-                else
-                {
-                    MessageBox.Show("El usuario Contador no requiere contraseña");
-                }
-            }
+            
+
 
         }
 
-        private void label3_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

@@ -14,6 +14,7 @@ namespace ManejoInventariosBD
 {
     public partial class Form2 : Form
     {
+        public static MySqlConnection databaseConnection = new MySqlConnection("datasource=127.0.0.1;port=3306;username=root;password=;Database=patiosd1c");
         public Form2()
         {
            
@@ -42,7 +43,7 @@ namespace ManejoInventariosBD
             commandDatabase.ExecuteNonQuery();
             databaseConnection.Close();
 
-            
+            /*
             try
             {
                 databaseConnection.Open();
@@ -52,12 +53,12 @@ namespace ManejoInventariosBD
             {
                 MessageBox.Show("Query Error: " + e.Message);
             }
-            MySqlDataReader reader = commandDatabase.ExecuteReader();
+            MySqlDataReader reader = commandDatabase.ExecuteReader();*/
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            string query = "SELECT `Inventario`,`Tipo Vehiculo`,`PlacaNum` FROM `invent_carros` WHERE `Encargado DC`='Encargado1' UNION SELECT `Inventario`,`Tipo Vehiculo`,`PlacaNum` FROM `invent_motos` WHERE `Encargado DC`='Encargado1'";
+            string query = "SELECT `Inventario`,`Tipo Vehiculo`,`PlacaNum` FROM `invent_carros` WHERE `Encargado DC`='" + comboBox1.Text + "' UNION SELECT `Inventario`,`Tipo Vehiculo`,`PlacaNum` FROM `invent_motos` WHERE `Encargado DC`='" + comboBox1.Text+"'";
             string MySqlConnectionString = "datasource=127.0.0.1;port=3306;username=root;password=;Database=patiosd1c";
             MySqlConnection databaseConnection = new MySqlConnection(MySqlConnectionString);
             MySqlCommand commandDatabase = databaseConnection.CreateCommand();
@@ -89,38 +90,7 @@ namespace ManejoInventariosBD
             
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            string query = "SELECT `Inventario`,`Tipo Vehiculo`,`PlacaNum` FROM `invent_carros` WHERE `Encargado DC`='Encargado2' UNION SELECT `Inventario`,`Tipo Vehiculo`,`PlacaNum` FROM `invent_motos` WHERE `Encargado DC`='Encargado2'";
-            string MySqlConnectionString = "datasource=127.0.0.1;port=3306;username=root;password=;Database=patiosd1c";
-            MySqlConnection databaseConnection = new MySqlConnection(MySqlConnectionString);
-            MySqlCommand commandDatabase = databaseConnection.CreateCommand();
-            commandDatabase.CommandText = query;
-
-
-
-            try
-            {
-                MySqlDataAdapter sda = new MySqlDataAdapter();
-                sda.SelectCommand = commandDatabase;
-                DataTable dbdataset = new DataTable();
-                sda.Fill(dbdataset);
-                BindingSource bSource = new BindingSource();
-
-                bSource.DataSource = dbdataset;
-                dataGridView1.DataSource = bSource;
-                sda.Update(dbdataset);
-
-
-
-
-
-            }
-            catch (Exception exc)
-            {
-                MessageBox.Show("Query Error: " + exc.Message);
-            }
-        }
+       
 
         private void button4_Click(object sender, EventArgs e)
         {
@@ -131,7 +101,7 @@ namespace ManejoInventariosBD
             commandDatabase.CommandText = query;
 
 
-
+            /*
             try
             {
                 MySqlDataAdapter sda = new MySqlDataAdapter();
@@ -152,7 +122,7 @@ namespace ManejoInventariosBD
             catch (Exception exc)
             {
                 MessageBox.Show("Query Error: " + exc.Message);
-            }
+            }*/
             
         }
 
@@ -188,6 +158,17 @@ namespace ManejoInventariosBD
             {
                 MessageBox.Show("Query Error: " + exc.Message);
             }
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+            MySqlCommand cmd;
+            cmd = new MySqlCommand("SELECT `Usuario` FROM `usuarios` WHERE `Rol`='Encargado'", databaseConnection);
+            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+            DataTable table = new DataTable("myTable");
+            da.Fill(table);
+            comboBox1.DataSource = table;
+            comboBox1.DisplayMember = "Usuario";
         }
     }
 }

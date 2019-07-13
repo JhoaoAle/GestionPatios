@@ -29,7 +29,7 @@ namespace ManejoInventariosBD
 
             InitializeComponent();
             this.tipo = tipo;
-            MessageBox.Show(this.tipo);
+            
             
             
            

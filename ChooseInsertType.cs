@@ -39,6 +39,7 @@ namespace ManejoInventariosBD
             da.Fill(table);
             comboBox1.DataSource = table;
             comboBox1.DisplayMember = "Tipo";
+            
         }
 
         public void ComboBox1_SelectedIndexChanged(object sender, EventArgs e)

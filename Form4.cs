@@ -46,5 +46,10 @@ namespace ManejoInventariosBD
             FormSalida f = new FormSalida();
             f.Show();
         }
+
+        private void Form4_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
