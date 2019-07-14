@@ -68,6 +68,12 @@
     <Compile Include="FormSalida.Designer.cs">
       <DependentUpon>FormSalida.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormTipo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTipo.Designer.cs">
+      <DependentUpon>FormTipo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Moto.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -124,6 +130,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormSalida.resx">
       <DependentUpon>FormSalida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTipo.resx">
+      <DependentUpon>FormTipo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormVehiculos.resx">
       <DependentUpon>FormVehiculos.cs</DependentUpon>

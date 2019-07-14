@@ -67,7 +67,7 @@ namespace ManejoInventariosBD
                     databaseConnection.Open();
                     commandDatabase.ExecuteNonQuery();
                     databaseConnection.Close();
-                    MessageBox.Show("operación completada");
+                    MessageBox.Show("Operación completada");
                 }
                 else if (dialogResult == DialogResult.No)
                 {

@@ -36,7 +36,7 @@ namespace ManejoInventariosBD
 
         private void Form4_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Application.Exit();
+            System.Windows.Forms.Application.Exit();
 
         }
 
