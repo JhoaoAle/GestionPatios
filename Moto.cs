@@ -3,21 +3,27 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MySql.Data.MySqlClient;
+
 
 namespace ManejoInventariosBD
 {
     public class Moto
     {
-        
+
+        public static MySqlConnection databaseConnection = new MySqlConnection("datasource=127.0.0.1;port=3306;username=root;password=;Database=patiosd1c");
 
 
 
         public Moto() { }
 
+        public Propietario propietario;
+
+
         public static string Farola;
         public void SetFarola(string x)
         {
-            Farola= x;
+            Farola = x;
         }
 
         public string GetFarola()
@@ -187,7 +193,7 @@ namespace ManejoInventariosBD
         public static string TanCom;
         public void SetTanCom(string x)
         {
-            TanCom= x;
+            TanCom = x;
         }
 
         public string GetTanCom()
@@ -227,7 +233,7 @@ namespace ManejoInventariosBD
         public static string Gato;
         public void SetGato(string x)
         {
-            Gato= x;
+            Gato = x;
         }
 
         public string GetGato()
@@ -287,7 +293,7 @@ namespace ManejoInventariosBD
         public static string DirTraIzq;
         public void SetDirTraIzq(string x)
         {
-            DirTraIzq= x;
+            DirTraIzq = x;
         }
 
         public string GetDirTraIzq()
@@ -297,7 +303,7 @@ namespace ManejoInventariosBD
         public static string Amortiguadores;
         public void SetAmortiguadores(string x)
         {
-            Amortiguadores= x;
+            Amortiguadores = x;
         }
 
         public string GetAmortiguadores()
@@ -437,9 +443,119 @@ namespace ManejoInventariosBD
         {
             dejallaves = x;
         }
+
+        public static DateTime fechaentrada;
+        public static DateTime horaentrada;
+
+        public void setHoraEntrada(DateTime x)
+        {
+            horaentrada = x;
+        }
+
+        public void setFechaEntrada(DateTime x)
+        {
+            fechaentrada = x;
+        }
+
+        public DateTime getHoraEntrada(DateTime x)
+        {
+            return horaentrada;
+        }
+
+        public DateTime getFechaEntrada(DateTime x)
+        {
+            return fechaentrada;
+        }
+
+
         public int Getdejallaves()
         {
             return dejallaves;
+        }
+
+        public int inventario;
+        public void setInventario(int x)
+        {
+            inventario = x;
+        }
+
+        public int getInventario()
+        {
+            return inventario;
+        }
+
+        public string autoridad;
+        public void setAutoridad(string x)
+        {
+            autoridad = x;
+        }
+
+        public string getAutoridad()
+        {
+            return autoridad;
+        }
+
+        public string motivo;
+        public void setMotivo(string x)
+        {
+            motivo = x;
+        }
+
+        public string getMotivo()
+        {
+            return motivo;
+        }
+
+
+
+        public void runQuery(string tipo, string encargadodc, Propietario p1, string observaciones)
+        {
+            
+
+
+
+            string query = "INSERT IGNORE INTO `invent_motos`(`Inventario`, `Fecha_Entrada`, `Hora_Entrada`, `Fecha_Salida`, `Hora_Salida`, `Autoridad`,`Motivo`, `Encargado DC`, `Tipo Vehiculo`, `Propietario`, `Direccion`, `CC`, `Telefono`, `Farola`, `Exploradora`, " +
+                "`Carenaje`, `Pito`, `GB_Del`, `FrenoDisco`, `Tablero`, `DirDel_Izq`, `Esp_zq`, `ManDir_Izq`, `Man_Izq`, `ProtMan_Izq`, `DirDel_Der`, `Esp_Der`, `ManDir_Der`, `ManFre_Der`, `ProtMan_Der`, `TC`, `Tapa_TC`, `Babero`, `Pata`, `Gato`, `TapLat_Izq`, `GuardaCadena`, `Sillin`, `Parrilla`, `GB_Trasero`, `DirTra_Izq`, `Amortiguadores`, `Exosto`, `Placa`, `DirTra_Der`, `TapLat_Der`, `Bateria`, `Tacos`, `PalFre_Pie`, `Cran`, `Otros`, `Observaciones`, `Debe_Grua`, `Dejan_Llaves`, `Valor`, `Marca`, `PlacaNum`, `Color`) VALUES ('" + inventario
+                + "','" + fechaentrada.ToString("yyyy-MM-dd") + "','" + horaentrada.ToString("H:mm:ss") + "',NULL,NULL,'" + autoridad + "','"+motivo+"','" + encargadodc
+                + "','" + tipo + "'," + (GetDbValue(p1.nombre)) + "," + (GetDbValue(p1.direccion)) + "," + (GetDbValue(p1.cedula.ToString()))
+                + "," + (GetDbValue(p1.telefono.ToString())) + ",'" + Farola + "','" + Exploradora + "','" + Carenaje
+                + "','" + Pito + "','" + GBDel + "','" + FrenoDisco + "','" + Tablero + "','" + DirDelIzq
+                + "','" + EspIzq + "','" + ManDirIzq + "','" + ManIzq + "','" + PrManIzq + "','" + DirDelDer
+                + "','" + EspDer + "','" + ManDirDer + "','" + ManFreDer + "','" + PrManFreDer + "','" + TanCom
+                + "','" + TTanCom + "','" + Barbero+ "','" + Pata + "','" + Gato + "','" + TapLatIzq
+                + "','" + GCad + "','" + Sillin + "','" + Parrilla+ "','" + GBarTra + "','" + DirTraIzq
+                + "','" + Amortiguadores+ "','" + Exosto + "','" + Placa + "','" + DirTraDer + "','" + TapLatDer
+                + "','" + Bateria+ "','" + Tacos+ "','" + PalFrePie + "','" + Cran + "','" + Otros
+                + "'," + (GetDbValue(observaciones)) + ",'" + debegrua+ "','" + dejallaves+ "',NULL,'" + Marca + "','" + PlacaNum
+                + "','" + Color + "');";
+
+
+
+            MySqlCommand commandDatabase = databaseConnection.CreateCommand();
+            commandDatabase.CommandText = query;
+            databaseConnection.Open();
+            commandDatabase.ExecuteNonQuery();
+            databaseConnection.Close();
+
+            /*
+            try
+            {
+                databaseConnection.Open();
+
+                
+            }catch(Exception e)
+            {
+                MessageBox.Show("Query Error: " + e.Message);
+            }
+            MySqlDataReader reader = commandDatabase.ExecuteReader();*/
+        }
+
+        private String GetDbValue(String data)
+        {
+            if (String.IsNullOrEmpty(data))
+                return "NULL";
+            else
+                return "'" + data + "'";
         }
 
     }

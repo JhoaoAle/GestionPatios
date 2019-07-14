@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MySql.Data.MySqlClient;
 
 namespace ManejoInventariosBD
 {
     public class Carro
     {
+        public static MySqlConnection databaseConnection = new MySqlConnection("datasource=127.0.0.1;port=3306;username=root;password=;Database=patiosd1c");
         public Carro() { }
 
         public static string BomDel;
@@ -427,14 +429,14 @@ namespace ManejoInventariosBD
         {
             return PlacaNum;
         }
-        public static string Color;
+        public static string color;
         public void SetColor(string x)
         {
-            Color = x;
+            color = x;
         }
         public string GetColor()
         {
-            return Color;
+            return color;
         }
         public static int debegrua;
         public void Setdebegrua(int x)
@@ -473,8 +475,112 @@ namespace ManejoInventariosBD
             return NumParlantes;
         }
 
+        public int inventario;
+        public void setInventario(int x)
+        {
+            inventario = x;
+        }
+
+        public int getInventario()
+        {
+            return inventario;
+        }
+
+        public string autoridad;
+        public void setAutoridad(string x)
+        {
+            autoridad = x;
+        }
+
+        public string getAutoridad()
+        {
+            return autoridad;
+        }
+
+        public string motivo;
+        public void setMotivo(string x)
+        {
+            motivo = x;
+        }
+
+        public string getMotivo()
+        {
+            return motivo;
+        }
+
+        public static DateTime fechaentrada;
+        public static DateTime horaentrada;
+
+        public void setHoraEntrada(DateTime x)
+        {
+            horaentrada = x;
+        }
+
+        public void setFechaEntrada(DateTime x)
+        {
+            fechaentrada = x;
+        }
+
+        public DateTime getHoraEntrada(DateTime x)
+        {
+            return horaentrada;
+        }
+
+        public DateTime getFechaEntrada(DateTime x)
+        {
+            return fechaentrada;
+        }
 
 
+
+        Propietario p;
+
+        public void runQuery(string tipo, string encargadodc, Propietario p1, string observaciones)
+        {
+            
+            string query = "INSERT IGNORE INTO `invent_carros`(`Inventario`, `Fecha_Entrada`, `Hora_Entrada`, `Fecha_Salida`, `Hora_Salida`, `Autoridad`,`Motivo`, `Encargado DC`, `Tipo Vehiculo`, `Propietario`, `Direccion`, `CC`, `Telefono`, `BomperDel`, `Persiana`, `Far_Izq`, `Par_Del`, `EspRet_Izq`, `GF_Del_Izq`, `P_Del_Izq`, `P_Tra_Izq`, `VidP_Del_Izq`, `VidP_Tra_Izq`, `GF_Tra_Izq`, `Par_Tra`, `Bom_Tra`, `Stop_Izq`, `LuzFre_Aux`, `Exp_Tra`, `Stop_Der`, `P_Tra_Der`, `GF_Tra_Der`, `P_Del_Der`, `VidP_Del_Der`, `VidP_Tra_Der`, `GF_Del_Der`, `EspRet_Der`, `Far_Del`, `Dir_Del_Der`, `Exp_Der`, `Dir_Del_Izq`, `Coj_Del`, `Coj_Tra`, `Esp_Int`, `Rad_Pas`, `Parlantes`, `No_Par`, `Ant_Rad_Pas`, `Encendedor`, `Rad_tel`, `Ant_Rad_Tel`, `Lla_Res`, `Herramientas`, `Bateria`, `No_Lim_Par`, `Lim_Par`, `Otros`, `Observaciones`, `Debe_Grua`, `Dejan_Llaves`, `ValorPatios`, `Marca`, `PlacaNum`, `Color`)  VALUES ('" + inventario + "','"
+                + fechaentrada.ToString("yyyy-MM-dd") + "','" + horaentrada.ToString("H:mm:ss") + "',NULL,NULL,'" + autoridad + "','" + motivo + "','" + encargadodc
+                + "','" + tipo + "'," + (GetDbValue(p1.nombre)) + "," + (GetDbValue(p1.direccion)) + "," + (GetDbValue(p1.cedula.ToString()))
+                + "," + (GetDbValue(p1.telefono.ToString())) + ",'" + BomDel + "','" + Persiana + "','" + FarIzq
+                + "','" + ParDel + "','" + EspRetIzq + "','" + GFDelIzq + "','" + PDelIzq
+                + "','" + PTraIzq + "','" + VPDelIzq + "','" + VPTraIzq + "','" + GFTraIzq
+                + "','" + ParTra+ "','" + BomTra + "','" + StopIzq + "','" + LFreAux
+                + "','" + ExpTra + "','" + StopDer + "','" + PTraDer + "','" + GFTraDer
+                + "','" + PDelDer + "','" + VPDelDer+ "','" + VPTraDer + "','" + GFDelDer
+                + "','" + EspRetDer + "','" + FarDer + "','" + DirDelDer + "','" + ExpDel
+                + "','" + DirDelIzq + "','" + CojDel + "','" + CojTra + "','" + EspInt
+                + "','" + RadPas+ "','" + Par + "','" + NumParlantes + "','" + AntRadPas+ "','" + Enc
+                + "','" + RadTel + "','" + AntRadTel + "','" + LlaRes+ "','" + Her
+                + "','" + Bat+ "','" + NumPar + "','" + Lim + "','" + Otros + "'," + (GetDbValue(observaciones)) + ",'" + debegrua
+                + "','" + dejallaves + "',NULL," + (GetDbValue(Marca)) + "," + (GetDbValue(PlacaNum)) + ",'" + color + "');";
+            string MySqlConnectionString = "datasource=127.0.0.1;port=3306;username=root;password=;Database=patiosd1c";
+            MySqlConnection databaseConnection = new MySqlConnection(MySqlConnectionString);
+            MySqlCommand commandDatabase = databaseConnection.CreateCommand();
+            commandDatabase.CommandText = query;
+            databaseConnection.Open();
+            commandDatabase.ExecuteNonQuery();
+            databaseConnection.Close();
+
+            /*
+            try
+            {
+                databaseConnection.Open();
+
+                
+            }catch(Exception e)
+            {
+                MessageBox.Show("Query Error: " + e.Message);
+            }
+            MySqlDataReader reader = commandDatabase.ExecuteReader();*/
+        }
+
+        private String GetDbValue(String data)
+        {
+            if (String.IsNullOrEmpty(data))
+                return "NULL";
+            else
+                return "'" + data + "'";
+        }
 
 
 

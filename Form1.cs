@@ -42,17 +42,11 @@ namespace ManejoInventariosBD
         private void Login_Click(object sender, EventArgs e)
         {
             obtenervalor = textUsuario.Text;
-            i = 0;
-            databaseConnection.Open();
-            MySqlCommand cmd = databaseConnection.CreateCommand();
-            cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "SELECT * FROM `usuarios` WHERE `Usuario`='"+textUsuario.Text+"' AND `Clave`='"+textContraseña.Text+"'";
-            cmd.ExecuteNonQuery();
-            DataTable dt = new DataTable();
-            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
-            da.Fill(dt);
-            i = Convert.ToInt32(dt.Rows.Count.ToString());
-            databaseConnection.Close();
+            Usuario user = new Usuario();
+            user.Seti(textUsuario.Text, textContraseña.Text);
+            i = user.geti();
+            
+            
             if (i == 0)
             {
                 label4.Visible = true;
@@ -60,14 +54,7 @@ namespace ManejoInventariosBD
             else
             {
 
-                
-                MySqlCommand cmd1;
-                cmd1 = new MySqlCommand("SELECT `Rol` FROM `usuarios` where `Usuario`='"+textUsuario.Text+"' AND `Clave`='"+textContraseña.Text+"'", databaseConnection);
-                databaseConnection.Open();
-                rol = cmd1.ExecuteScalar().ToString();
-                databaseConnection.Close();
-
-                if (rol == "admin")
+                if (user.getrol(textUsuario.Text, textContraseña.Text) == "Admin")
                 {
                     this.Hide();
                     Form2 f = new Form2();
@@ -75,7 +62,7 @@ namespace ManejoInventariosBD
 
                 }
 
-                if (rol == "encargado")
+                if (user.getrol(textUsuario.Text, textContraseña.Text) == "Encargado")
                 {
                     this.Hide();
                     Form4 f = new Form4();

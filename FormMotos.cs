@@ -22,13 +22,13 @@ namespace ManejoInventariosBD
        
         public static MySqlConnection databaseConnection = new MySqlConnection("datasource=127.0.0.1;port=3306;username=root;password=;Database=patiosd1c");
 
-        string tipo;
+        string tipo1;
         public FormMotos(string tipo)
         {
             
 
             InitializeComponent();
-            this.tipo = tipo;
+            this.tipo1 = tipo;
             
             
             
@@ -58,6 +58,14 @@ namespace ManejoInventariosBD
             da.Fill(table1);
             comboBox2.DataSource = table1;
             comboBox2.DisplayMember = "Autoridad";
+
+            MySqlCommand cmd2;
+            cmd1 = new MySqlCommand("SELECT * FROM `colores` WHERE `Form_Asociado` = 'Moto' OR `Form_Asociado` = 'Ambos'", databaseConnection);
+            da = new MySqlDataAdapter(cmd1);
+            DataTable table2 = new DataTable("myTable");
+            da.Fill(table2);
+            comboBoxColor.DataSource = table1;
+            comboBoxColor.DisplayMember = "Color";
 
         }
 
@@ -173,6 +181,7 @@ namespace ManejoInventariosBD
             if (textBoxplaca.Text.Length == 6 || textBoxplaca.Text.Length == 7 )
             {
                 cond5 = false;
+                
             }
             else
             {
@@ -676,11 +685,34 @@ namespace ManejoInventariosBD
 
                 motoreg.SetPlacaNum(textBoxplaca.Text);
                 motoreg.SetMarca(textBoxmarca.Text);
-                
+                Propietario p1 = new Propietario();
+                if (textBox1.Text.Length != 0)
+                    p1.nombre = textBox1.Text;
+                else
+                    p1.nombre = null;
+                if (textBox2.Text.Length != 0)
+                    p1.cedula = Int32.Parse(textBox2.Text);
+                else
+                    p1.cedula = null;
+                if(textBox3.Text.Length!=0)
+                    p1.direccion =(textBox3.Text);
+                else
+                    p1.direccion = null;
+                if (textBox4.Text.Length != 0)
+                    p1.telefono = Int32.Parse(textBox4.Text);
+                else p1.telefono = null;
+                motoreg.setInventario(Int32.Parse(textBox6.Text));
+                motoreg.setAutoridad(comboBox2.Text);
+                motoreg.setFechaEntrada(dateTimePicker1.Value);
+                motoreg.setHoraEntrada(dateTimePicker1.Value);
+                motoreg.setMotivo(comboBox1.Text);
+
+
+
 
 
                 //De aquí hacia abajo todo funciona
-                runQuery();
+                motoreg.runQuery(tipo1,Form1.obtenervalor,p1,textBox5.Text);
                 MessageBox.Show("Registro exitoso");
                 
                 Form4 f = new Form4();
@@ -694,53 +726,7 @@ namespace ManejoInventariosBD
 
         }
 
-        private void runQuery()
-        {
-            
-            
-
-            string query = "INSERT IGNORE INTO `invent_motos`(`Inventario`, `Fecha_Entrada`, `Hora_Entrada`, `Fecha_Salida`, `Hora_Salida`, `Autoridad`, `Encargado DC`, `Tipo Vehiculo`, `Propietario`, `Direccion`, `CC`, `Telefono`, `Farola`, `Exploradora`, `Carenaje`, `Pito`, `GB_Del`, `FrenoDisco`, `Tablero`, `DirDel_Izq`, `Esp_zq`, `ManDir_Izq`, `Man_Izq`, `ProtMan_Izq`, `DirDel_Der`, `Esp_Der`, `ManDir_Der`, `ManFre_Der`, `ProtMan_Der`, `TC`, `Tapa_TC`, `Babero`, `Pata`, `Gato`, `TapLat_Izq`, `GuardaCadena`, `Sillin`, `Parrilla`, `GB_Trasero`, `DirTra_Izq`, `Amortiguadores`, `Exosto`, `Placa`, `DirTra_Der`, `TapLat_Der`, `Bateria`, `Tacos`, `PalFre_Pie`, `Cran`, `Otros`, `Observaciones`, `Debe_Grua`, `Dejan_Llaves`, `Valor`, `Marca`, `PlacaNum`, `Color`) VALUES ('" + (Int32.Parse(textBox6.Text)) 
-                + "','" + dateTimePicker1.Value.ToString("yyyy-MM-dd") + "','" + dateTimePicker2.Text + "',NULL,NULL,'" + comboBox2.Text + "','" + Form1.obtenervalor 
-                + "','" + this.tipo + "'," + (GetDbValue(textBox1.Text)) + "," + (GetDbValue(textBox3.Text)) + "," + (GetDbValue(textBox2.Text)) 
-                + "," + (GetDbValue(textBox4.Text)) + ",'" + motoreg.GetFarola() + "','" + motoreg.GetExploradora() + "','" + motoreg.GetCarenaje() 
-                + "','" + motoreg.GetPito() + "','" + motoreg.GetGBDel() + "','" + motoreg.GetFrenoDisco() + "','" + motoreg.GetTablero() + "','" + motoreg.GetDirDelIz() 
-                + "','" + motoreg.GetEspizq() + "','" + motoreg.GetManDirIzq() + "','" + motoreg.GetManIzq() + "','" + motoreg.GetPrManIzq() + "','" + motoreg.GetDirDelDer() 
-                + "','" + motoreg.GetEspDer() + "','" + motoreg.GetManDirDer() + "','" + motoreg.GetManFreDer() + "','" + motoreg.GetPrManFreDer() + "','" + motoreg.GetTanCom() 
-                + "','" + motoreg.GetTTanCom() + "','" + motoreg.GetBarbero() + "','" + motoreg.GetPata() + "','" + motoreg.GetGato() + "','" + motoreg.GetTapLatIzq() 
-                + "','" + motoreg.GetGCad() + "','" + motoreg.GetSillin() + "','" + motoreg.GetParrilla() + "','" + motoreg.GetGBarTra() + "','" + motoreg.GetDirTraIzq() 
-                + "','" + motoreg.GetAmortiguadores() + "','" + motoreg.GetExosto() + "','" + motoreg.GetPlaca() + "','" + motoreg.GetDirTraDer() + "','" + motoreg.GetTapLatDer() 
-                + "','" + motoreg.GetBateria() + "','" + motoreg.GetTacos() + "','" + motoreg.GetPalFrePie() + "','" + motoreg.GetCran() + "','" + motoreg.GetOtros() 
-                + "'," + (GetDbValue(textBox5.Text)) + ",'" + motoreg.Getdebegrua() + "','" + motoreg.Getdejallaves() + "',NULL,'" + motoreg.GetMarca() + "','" + motoreg.GetPlacaNum() 
-                + "','"+comboBoxColor.Text+ "');"; 
-            
-            
-            
-            MySqlCommand commandDatabase = databaseConnection.CreateCommand();
-            commandDatabase.CommandText = query;
-            databaseConnection.Open();
-            commandDatabase.ExecuteNonQuery();
-            databaseConnection.Close();
-
-            /*
-            try
-            {
-                databaseConnection.Open();
-
-                
-            }catch(Exception e)
-            {
-                MessageBox.Show("Query Error: " + e.Message);
-            }
-            MySqlDataReader reader = commandDatabase.ExecuteReader();*/
-        }
-
-        private String GetDbValue(String data)
-        {
-            if (String.IsNullOrEmpty(data))
-                return "NULL";
-            else
-                return "'" + data + "'";
-        }
+        
 
         private void Button2_Click(object sender, EventArgs e)
         {

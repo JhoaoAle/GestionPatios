@@ -25,11 +25,11 @@ namespace ManejoInventariosBD
         public static MySqlConnection databaseConnection = new MySqlConnection("datasource=127.0.0.1;port=3306;username=root;password=;Database=patiosd1c");
 
 
-        string tipo;
+        string tipo1;
         public FormVehiculos(string tipo)
         {
             InitializeComponent();
-            this.tipo = tipo;
+            this.tipo1 = tipo;
             
 
 
@@ -671,14 +671,35 @@ namespace ManejoInventariosBD
                 if (this.radioButton193.Checked == true)
                     cochereg.Setdejallaves(0);
 
+
+                cochereg.setFechaEntrada(dateTimePicker4.Value);
+                cochereg.setHoraEntrada(dateTimePicker3.Value);
+
+
                 cochereg.SetNumParlantes(Int32.Parse(numpar.Text));
                 cochereg.SetNumPar(Int32.Parse(numlimp.Text));
+
+                Propietario p1 = new Propietario();
+
+                if (cedula.Text.Length != 0)
+                    p1.cedula = Int32.Parse(cedula.Text);
+                else
+                    p1.cedula = null;
+
+                if (telefono.Text.Length != 0)
+                    p1.telefono = Int32.Parse(telefono.Text);
+                else
+                    p1.telefono = null;
+
+                cochereg.setMotivo(motivo.Text);
+                cochereg.setInventario(Int32.Parse(numinvent.Text));
+                cochereg.SetMarca(textBox7.Text);
+                cochereg.SetPlacaNum(textBox5.Text);
+                cochereg.SetColor(comboBox3.Text);
+                cochereg.setAutoridad(patioscuenta.Text);
                 
 
-                //IMPORTANTE: Modificar las superiores siguiendo el orden del documento
-
-                //De aquí hacia abajo todo funciona
-                runQueryVeh();
+                cochereg.runQuery(tipo1,Form1.obtenervalor,p1,observaciones.Text);
                 
                 MessageBox.Show("Registro exitoso");
                 Form4 f = new Form4();
@@ -687,52 +708,7 @@ namespace ManejoInventariosBD
             }
 
         }
-        private void runQueryVeh()
-        {
-            string texto = comboBox2.Text;
-            string query = "INSERT IGNORE INTO `invent_carros`(`Inventario`, `Fecha_Entrada`, `Hora_Entrada`, `Fecha_Salida`, `Hora_Salida`, `Autoridad`, `Encargado DC`, `Tipo Vehiculo`, `Propietario`, `Direccion`, `CC`, `Telefono`, `BomperDel`, `Persiana`, `Far_Izq`, `Par_Del`, `EspRet_Izq`, `GF_Del_Izq`, `P_Del_Izq`, `P_Tra_Izq`, `VidP_Del_Izq`, `VidP_Tra_Izq`, `GF_Tra_Izq`, `Par_Tra`, `Bom_Tra`, `Stop_Izq`, `LuzFre_Aux`, `Exp_Tra`, `Stop_Der`, `P_Tra_Der`, `GF_Tra_Der`, `P_Del_Der`, `VidP_Del_Der`, `VidP_Tra_Der`, `GF_Del_Der`, `EspRet_Der`, `Far_Del`, `Dir_Del_Der`, `Exp_Der`, `Dir_Del_Izq`, `Coj_Del`, `Coj_Tra`, `Esp_Int`, `Rad_Pas`, `Parlantes`, `No_Par`, `Ant_Rad_Pas`, `Encendedor`, `Rad_tel`, `Ant_Rad_Tel`, `Lla_Res`, `Herramientas`, `Bateria`, `No_Lim_Par`, `Lim_Par`, `Otros`, `Observaciones`, `Debe_Grua`, `Dejan_Llaves`, `ValorPatios`, `Marca`, `PlacaNum`, `Color`)  VALUES ('" + (Int32.Parse(numinvent.Text)) + "','" 
-                + dateTimePicker4.Value.ToString("yyyy-MM-dd") + "','" + dateTimePicker3.Value.ToString("H:mm:ss") + "',NULL,NULL,'" + patioscuenta.Text + "','" + Form1.obtenervalor 
-                + "','" + this.tipo + "'," + (GetDbValue(propietario.Text)) + "," + (GetDbValue(direccion.Text)) + "," + (GetDbValue(cedula.Text)) 
-                + "," + (GetDbValue(telefono.Text)) + ",'" + cochereg.GetBomDel() + "','" + cochereg.GetPersiana() + "','" + cochereg.GetFarIzq() 
-                + "','" + cochereg.GetParDel() + "','" + cochereg.GetEspRetIzq() + "','" + cochereg.GetGFDelIzq() + "','" + cochereg.GetPDelIzq() 
-                + "','" + cochereg.GetPTraIzq() + "','" + cochereg.GetVPDelIzq() + "','" + cochereg.GetVPTraIzq() + "','" + cochereg.GetGFTraIzq() 
-                + "','" + cochereg.GetParTra() + "','" + cochereg.GetBomTra() + "','" + cochereg.GetStopIzq() + "','" + cochereg.GetLFreAux() 
-                + "','" + cochereg.GetExpTra() + "','" + cochereg.GetStopDer() + "','" + cochereg.GetPTraDer() + "','" + cochereg.GetGFTraDer() 
-                + "','" + cochereg.GetPDelDer() + "','" + cochereg.GetVPDelDer() + "','" + cochereg.GetVPTraDer() + "','" + cochereg.GetGFDelDer() 
-                + "','" + cochereg.GetEspRetDer() + "','" + cochereg.GetFarDer() + "','" + cochereg.GetDirDelDer() + "','" + cochereg.GetExpDel() 
-                + "','" + cochereg.GetDirDelIzq() + "','" + cochereg.GetCojDel() + "','" + cochereg.GetCojTra() + "','" + cochereg.GetEspInt() 
-                + "','" + cochereg.GetRadPas() + "','" + cochereg.GetPar() + "','" + cochereg.GetNumParlantes() + "','" + cochereg.GetAntRadPas() + "','" + cochereg.GetEnc() 
-                + "','" + cochereg.GetRadTel() + "','" + cochereg.GetAntRadTel() + "','" + cochereg.GetLlaRes() + "','" + cochereg.GetHer() 
-                + "','" + cochereg.GetBat() + "','" + cochereg.GetNumPar() + "','" + cochereg.GetLim() + "','" + cochereg.GetOtros() + "',"+(GetDbValue(observaciones.Text))+ ",'" + cochereg.Getdebegrua() 
-                + "','" + cochereg.Getdejallaves() + "',NULL," + (GetDbValue(textBox7.Text)) + "," + (GetDbValue(textBox5.Text)) + "," + (GetDbValue(comboBox3.Text)) + ")";
-            string MySqlConnectionString = "datasource=127.0.0.1;port=3306;username=root;password=;Database=patiosd1c";
-            MySqlConnection databaseConnection = new MySqlConnection(MySqlConnectionString);
-            MySqlCommand commandDatabase = databaseConnection.CreateCommand();
-            commandDatabase.CommandText = query;
-            databaseConnection.Open();
-            commandDatabase.ExecuteNonQuery();
-            databaseConnection.Close();
-
-            /*
-            try
-            {
-                databaseConnection.Open();
-
-                
-            }catch(Exception e)
-            {
-                MessageBox.Show("Query Error: " + e.Message);
-            }
-            MySqlDataReader reader = commandDatabase.ExecuteReader();*/
-        }
-
-        private String GetDbValue(String data)
-        {
-            if (String.IsNullOrEmpty(data))
-                return "NULL";
-            else
-                return "'" + data + "'";
-        }
+        
 
 
 

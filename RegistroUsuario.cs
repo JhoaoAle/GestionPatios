@@ -61,12 +61,12 @@ namespace ManejoInventariosBD
                 DialogResult dialogResult = MessageBox.Show("Esta operación no se puede deshacer. ¿Desea continuar?", "Confirmación", MessageBoxButtons.YesNo);
                 if (dialogResult == DialogResult.Yes)
                 {
-                    string query = "INSERT IGNORE INTO `usuarios`(`Usuario`, `Clave`, `Rol`) VALUES ('" + textBox1.Text + "','" + textBox2.Text + "','" + rol + "')";
-                    MySqlCommand commandDatabase = databaseConnection.CreateCommand();
-                    commandDatabase.CommandText = query;
-                    databaseConnection.Open();
-                    commandDatabase.ExecuteNonQuery();
-                    databaseConnection.Close();
+                    Usuario usuario = new Usuario();
+                    usuario.setUsuario(textBox1.Text);
+                    usuario.setClave(textBox2.Text);
+                    usuario.setRol(comboBox1.Text);
+
+                    usuario.runQuery();
                     MessageBox.Show("Operación completada");
                 }
                 else if (dialogResult == DialogResult.No)
