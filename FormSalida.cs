@@ -20,6 +20,7 @@ namespace ManejoInventariosBD
             InitializeComponent();
         }
 
+        Actualizador act = new Actualizador();
         private void button1_Click(object sender, EventArgs e)
         {
             if (invnum.Text == "")
@@ -32,44 +33,13 @@ namespace ManejoInventariosBD
             }
             else
             {
-                runQuery();
+                act.updatequery(tipo.Text, (Int32.Parse(invnum.Text)), dateTimePicker1.Value,dateTimePicker2.Value);
             }
         }
 
-        private void runQuery()
-        {
-            string query;
-
-            if(tipo.Text=="Moto" || tipo.Text == "Motocarro")
-            {
-                query = "UPDATE `invent_motos` SET `Fecha_Salida`='"+ dateTimePicker1.Value.ToString("yyyy-MM-dd") + "', `Hora_Salida`='" + dateTimePicker2.Text + "' WHERE (`Inventario`='"+ (Int32.Parse(invnum.Text)) + "' AND `Tipo Vehiculo`='"+tipo.Text+"')";
-            }
-            else
-            {
-                query = "UPDATE `invent_carros` SET `Fecha_Salida`='" + dateTimePicker1.Value.ToString("yyyy-MM-dd") + "', `Hora_Salida`='" + dateTimePicker2.Text + "' WHERE (`Inventario`='" + (Int32.Parse(invnum.Text)) + "' AND `Tipo Vehiculo`='" + tipo.Text + "')";
-            }
-                
-            string MySqlConnectionString = "datasource=127.0.0.1;port=3306;username=root;password=;Database=patiosd1c";
-
-            MySqlConnection databaseConnection = new MySqlConnection(MySqlConnectionString);
-            MySqlCommand commandDatabase = databaseConnection.CreateCommand();
-            commandDatabase.CommandText = query;
-            databaseConnection.Open();
-            commandDatabase.ExecuteNonQuery();
-            databaseConnection.Close();
-
-            /*
-            try
-            {
-                databaseConnection.Open();
-
-                
-            }catch(Exception e)
-            {
-                MessageBox.Show("Query Error: " + e.Message);
-            }
-            MySqlDataReader reader = commandDatabase.ExecuteReader();*/
-        }
+        
+        
+            
 
         private void FormSalida_Load(object sender, EventArgs e)
         {

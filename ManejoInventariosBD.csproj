@@ -55,6 +55,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Actualizador.cs" />
     <Compile Include="Carro.cs" />
     <Compile Include="ChooseInsertType.cs">
       <SubType>Form</SubType>
