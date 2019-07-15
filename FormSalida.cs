@@ -43,12 +43,8 @@ namespace ManejoInventariosBD
 
         private void FormSalida_Load(object sender, EventArgs e)
         {
-            MySqlCommand cmd;
-            cmd = new MySqlCommand("SELECT * FROM `tipos_veh`", databaseConnection);
-            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
-            DataTable table = new DataTable("myTable");
-            da.Fill(table);
-            tipo.DataSource = table;
+            CrearTabla tabla = new CrearTabla();
+            tipo.DataSource = tabla.recibetabla("tipos_veh");
             tipo.DisplayMember = "Tipo";
         }
 

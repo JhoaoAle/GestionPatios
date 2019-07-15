@@ -19,6 +19,7 @@ namespace ManejoInventariosBD
         private bool cond3;
         private bool cond4;
         private bool cond5;
+        CrearTabla ctm = new CrearTabla();
        
         public static MySqlConnection databaseConnection = new MySqlConnection("datasource=127.0.0.1;port=3306;username=root;password=;Database=patiosd1c");
 
@@ -41,72 +42,20 @@ namespace ManejoInventariosBD
 
         private void FormMotos_Load(object sender, EventArgs e)
         {
-            
-            MySqlCommand cmd;
-            cmd = new MySqlCommand("SELECT `Motivo` FROM `motivos`", databaseConnection);
-            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
-            DataTable table = new DataTable("myTable");
-            da.Fill(table);
-            comboBox1.DataSource = table;
+            comboBox1.DataSource = ctm.recibetabla("motivos");
             comboBox1.DisplayMember = "Motivo";
 
-
-            MySqlCommand cmd1;
-            cmd1 = new MySqlCommand("SELECT * FROM `autoridad` WHERE `Formulario_Asociado` = 'Moto' OR `Formulario_Asociado` = 'Ambos'", databaseConnection);
-            da = new MySqlDataAdapter(cmd1);
-            DataTable table1 = new DataTable("myTable");
-            da.Fill(table1);
-            comboBox2.DataSource = table1;
+            comboBox2.DataSource = ctm.tablaor("autoridad", "Autoridad", "Formulario_Asociado", "Ambos", "Moto");
             comboBox2.DisplayMember = "Autoridad";
 
-            MySqlCommand cmd2;
-            cmd1 = new MySqlCommand("SELECT * FROM `colores` WHERE `Form_Asociado` = 'Moto' OR `Form_Asociado` = 'Ambos'", databaseConnection);
-            da = new MySqlDataAdapter(cmd1);
-            DataTable table2 = new DataTable("myTable");
-            da.Fill(table2);
-            comboBoxColor.DataSource = table1;
+            comboBoxColor.DataSource = ctm.tablaor("colores", "Color", "Form_Asociado", "Ambos", "Moto");
             comboBoxColor.DisplayMember = "Color";
-
         }
 
 
-
-        private void Button1_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void TableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void TableLayoutPanel1_Paint_1(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void Panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
 
         
 
-        private void TableLayoutPanel1_Paint_2(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void SplitContainer1_Panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void Button1_Click_1(object sender, EventArgs e)
         {

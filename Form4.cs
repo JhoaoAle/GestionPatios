@@ -17,16 +17,8 @@ namespace ManejoInventariosBD
             InitializeComponent();
             label4.Text = Form1.obtenervalor;
             label4.Visible = true;
-
-
         }
 
-        private void Label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        
         private void Button1_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -47,9 +39,6 @@ namespace ManejoInventariosBD
             f.Show();
         }
 
-        private void Form4_Load(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }

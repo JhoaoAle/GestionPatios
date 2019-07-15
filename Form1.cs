@@ -69,7 +69,7 @@ namespace ManejoInventariosBD
                     f.Show();
 
                 }
-                databaseConnection.Close();
+                
 
             }
 

@@ -14,7 +14,7 @@ namespace ManejoInventariosBD
 {
     public partial class ChooseInsertType : Form
     {
-        public string formres;
+        
 
         public static MySqlConnection databaseConnection = new MySqlConnection("datasource=127.0.0.1;port=3306;username=root;password=;Database=patiosd1c");
         public ChooseInsertType()
@@ -23,7 +23,7 @@ namespace ManejoInventariosBD
             label2.Text = Form1.obtenervalor;
             
 
-    }
+        }
 
 
 
@@ -32,12 +32,8 @@ namespace ManejoInventariosBD
 
     private void ChooseInsertType_Load(object sender, EventArgs e)
         {
-            MySqlCommand cmd;
-            cmd = new MySqlCommand("SELECT * FROM `tipos_veh`", databaseConnection);
-            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
-            DataTable table = new DataTable("myTable");
-            da.Fill(table);
-            comboBox1.DataSource = table;
+            CrearTabla tabla1=new CrearTabla();
+            comboBox1.DataSource = tabla1.recibetabla("tipos_veh");
             comboBox1.DisplayMember = "Tipo";
             
         }
@@ -46,31 +42,25 @@ namespace ManejoInventariosBD
         {
             if (comboBox1.Text != "")
             {
-                MySqlCommand cmd1;
-                cmd1 = new MySqlCommand("SELECT `Form_Asociado` FROM `tipos_veh` WHERE `Tipo` = '" + comboBox1.Text + "'", databaseConnection);
-                databaseConnection.Open();
-                formres = cmd1.ExecuteScalar().ToString();
-                databaseConnection.Close();
+                CrearConsulta cons = new CrearConsulta();
+
+                if (cons.resultquery1cond("tipos_veh", "Form_Asociado", "Tipo", comboBox1.Text) == "Moto")
+                {
+                    this.Hide();
+                    FormMotos f = new FormMotos(this.comboBox1.Text.ToString());
+                    f.Show();
+                }
+
+                if (cons.resultquery1cond("tipos_veh", "Form_Asociado", "Tipo", comboBox1.Text) == "Carro")
+                {
+                    this.Hide();
+                    FormVehiculos f = new FormVehiculos(this.comboBox1.Text.ToString());
+
+                    f.Show();
+                    this.Hide();
+
+                }
             }
-
-
-            if (formres=="Moto")
-            {
-                this.Hide();
-                FormMotos f = new FormMotos(this.comboBox1.Text.ToString());
-                f.Show();
-            }
-
-            if (formres == "Carro")
-            {
-                this.Hide();
-                FormVehiculos f = new FormVehiculos(this.comboBox1.Text.ToString());
-
-                f.Show();
-                this.Hide();
-              
-            }
-            
         }
 
         private void ChooseInsertType_FormClosing(object sender, FormClosingEventArgs e)

@@ -22,6 +22,7 @@ namespace ManejoInventariosBD
         private bool p5;
         private bool p6;
         private bool p7;
+        CrearTabla ctc = new CrearTabla();
         public static MySqlConnection databaseConnection = new MySqlConnection("datasource=127.0.0.1;port=3306;username=root;password=;Database=patiosd1c");
 
 
@@ -741,28 +742,13 @@ namespace ManejoInventariosBD
 
         private void FormVehiculos_Load(object sender, EventArgs e)
         {
-            MySqlCommand cmd;
-            cmd = new MySqlCommand("SELECT `Motivo` FROM `motivos`", databaseConnection);
-            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
-            DataTable table = new DataTable("myTable");
-            da.Fill(table);
-            motivo.DataSource = table;
+            motivo.DataSource = ctc.recibetabla("motivos");
             motivo.DisplayMember = "Motivo";
 
-            MySqlCommand cmd1;
-            cmd1 = new MySqlCommand("SELECT `Autoridad` FROM `autoridad` WHERE `Formulario_Asociado` = 'Carro' OR `Formulario_Asociado` = 'Ambos'", databaseConnection);
-            MySqlDataAdapter da1 = new MySqlDataAdapter(cmd1);
-            DataTable table1 = new DataTable("myTable");
-            da1.Fill(table1);
-            patioscuenta.DataSource = table1;
+            patioscuenta.DataSource = ctc.tablaor("autoridad", "Autoridad", "Formulario_Asociado", "Ambos", "Carro");
             patioscuenta.DisplayMember = "Autoridad";
 
-            MySqlCommand cmd2;
-            cmd2 = new MySqlCommand("SELECT `Color` FROM `colores` WHERE `Form_Asociado` = 'Carro' OR `Form_Asociado` = 'Ambos'", databaseConnection);
-            MySqlDataAdapter da2 = new MySqlDataAdapter(cmd2);
-            DataTable table2 = new DataTable("myTable");
-            da2.Fill(table2);
-            comboBox3.DataSource = table2;
+            comboBox3.DataSource = ctc.tablaor("colores", "Color", "Form_Asociado", "Ambos", "Carro");
             comboBox3.DisplayMember = "Color";
         }
     }

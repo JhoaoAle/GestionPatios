@@ -45,7 +45,7 @@
             this.label1.Size = new System.Drawing.Size(63, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Bienvenido ";
-            this.label1.Click += new System.EventHandler(this.Label1_Click);
+       
             // 
             // label2
             // 
@@ -108,7 +108,7 @@
             this.Name = "Form4";
             this.Text = "Registros";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form4_FormClosing);
-            this.Load += new System.EventHandler(this.Form4_Load);
+
             this.ResumeLayout(false);
             this.PerformLayout();
 

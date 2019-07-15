@@ -63,6 +63,8 @@
     <Compile Include="ChooseInsertType.Designer.cs">
       <DependentUpon>ChooseInsertType.cs</DependentUpon>
     </Compile>
+    <Compile Include="CrearConsulta.cs" />
+    <Compile Include="CrearTabla.cs" />
     <Compile Include="FormSalida.cs">
       <SubType>Form</SubType>
     </Compile>

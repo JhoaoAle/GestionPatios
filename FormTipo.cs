@@ -15,7 +15,8 @@ namespace ManejoInventariosBD
     {
         private bool fail1;
         private bool fail2;
-        private string forma;
+        CrearConsulta cst = new CrearConsulta();
+        
         public static MySqlConnection databaseConnection = new MySqlConnection("datasource=127.0.0.1;port=3306;username=root;password=;Database=patiosd1c");
 
         public FormTipo()
@@ -43,12 +44,7 @@ namespace ManejoInventariosBD
                 DialogResult dialogResult = MessageBox.Show("Esta operación no se puede deshacer. ¿Desea continuar?", "Confirmación", MessageBoxButtons.YesNo);
                 if (dialogResult == DialogResult.Yes)
                 {
-                    string query = "INSERT IGNORE INTO `tipos_veh`(`Tipo`, `Form_Asociado`) VALUES ('"+textBox1.Text+"','"+comboBox1.Text+"')";
-                    MySqlCommand commandDatabase = databaseConnection.CreateCommand();
-                    commandDatabase.CommandText = query;
-                    databaseConnection.Open();
-                    commandDatabase.ExecuteNonQuery();
-                    databaseConnection.Close();
+                    cst.insertTipo(textBox1.Text,comboBox1.Text);
                     MessageBox.Show("Operación completada");
                 }
                 else if (dialogResult == DialogResult.No)
