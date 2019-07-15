@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 namespace ManejoInventariosBD
 {
+    //Lo mismo que con FormVehiculos pero ahora con formMotos
     public partial class FormMotos : Form
     {
         public int rdbChecked;
@@ -195,8 +196,7 @@ namespace ManejoInventariosBD
             {
 
 
-                //De aquí hacia arriba todo funciona
-
+                
                 if (this.radioButton1.Checked == true)
                     motoreg.SetFarola("B");
                 if (this.radioButton2.Checked == true)
@@ -406,7 +406,7 @@ namespace ManejoInventariosBD
                 if (this.radioButton95.Checked == true)
                     motoreg.SetTTanCom("N/V");
 
-                //De aquí hacia arriba es la primera mitad, falta modificarla acorde al documento
+               
 
                 if (this.radioButton186.Checked == true)
                     motoreg.SetBarbero("B");
@@ -660,7 +660,7 @@ namespace ManejoInventariosBD
 
 
 
-                //De aquí hacia abajo todo funciona
+              
                 motoreg.runQuery(tipo1,Form1.obtenervalor,p1,textBox5.Text);
                 MessageBox.Show("Registro exitoso");
                 

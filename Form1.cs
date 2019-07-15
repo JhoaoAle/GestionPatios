@@ -15,8 +15,6 @@ using MySql.Data.MySqlClient;
 
 namespace ManejoInventariosBD
 {
-
-    
     public partial class Form1 : Form
     {
         public static MySqlConnection databaseConnection = new MySqlConnection("datasource=127.0.0.1;port=3306;username=root;password=;Database=patiosd1c");
@@ -24,15 +22,10 @@ namespace ManejoInventariosBD
         public string rol;
         public Form1()
         {
-            
-
             InitializeComponent();
- 
             textContraseña.Text = "";
             textContraseña.PasswordChar = '*';
             textContraseña.MaxLength = 13;
-
-            
         }
 
         
@@ -45,15 +38,13 @@ namespace ManejoInventariosBD
             Usuario user = new Usuario();
             user.Seti(textUsuario.Text, textContraseña.Text);
             i = user.geti();
-            
-            
+
             if (i == 0)
             {
                 label4.Visible = true;
             }
             else
             {
-
                 if (user.getrol(textUsuario.Text, textContraseña.Text) == "Admin")
                 {
                     this.Hide();
@@ -61,7 +52,6 @@ namespace ManejoInventariosBD
                     f.Show();
 
                 }
-
                 if (user.getrol(textUsuario.Text, textContraseña.Text) == "Encargado")
                 {
                     this.Hide();
@@ -69,17 +59,9 @@ namespace ManejoInventariosBD
                     f.Show();
 
                 }
-                
-
             }
-
-
-
-            
-
-
         }
 
-
     }
+
 }

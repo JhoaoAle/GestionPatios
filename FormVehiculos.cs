@@ -37,8 +37,10 @@ namespace ManejoInventariosBD
             
 
         }
+        //Guarda todo en la clase carro
         Carro cochereg = new Carro();
 
+        //Verificacion de que al menos un radiobutton esté seleccionado por campo
         private void Button4_Click(object sender, EventArgs e)
         {
             if (!((tableLayoutPanel2.Controls.OfType<RadioButton>().Any(x => x.Checked)) &&
@@ -90,9 +92,10 @@ namespace ManejoInventariosBD
             }
             else
                 p1 = false;
+
             int parsedValue;
 
-
+            //Ve si el campo de parlantes tiene un numero valido
             if (numpar.Text == "")
             {
                 bool1 = true;
@@ -119,7 +122,7 @@ namespace ManejoInventariosBD
                 }
             }
 
-
+            //Lo mismo que con los parlantes pero ahora para el numero de limpiaparabrisas
             if (numlimp.Text == "")
             {
                 p6 = true;
@@ -147,7 +150,7 @@ namespace ManejoInventariosBD
             }
 
 
-
+            //verifica que el motivo sea valido
             if (motivo.Text != "Patios" && motivo.Text != "Accidente")
             {
                 MessageBox.Show("Motivo de ingreso no valido, intente nuevamente");
@@ -167,7 +170,7 @@ namespace ManejoInventariosBD
 
 
 
-
+            //Verifica que el número de inventario sea valido
             if (numinvent.Text == "")
             {
                 p3 = true;
@@ -195,10 +198,10 @@ namespace ManejoInventariosBD
             }
 
 
-
+            //Una vez se han hecho todas las verificaciones se procerde a asignar los valores correspondientes...
             if (bool1 == false && p1 == false && p2 == false && p3 == false && p4 == false && p5 == false && p6 == false && p7 == false)
             {
-                //De aquí hacia arriba todo funciona
+              
                 if (this.radioButton1.Checked == true)
                     cochereg.SetBomDel("B");
                 if (this.radioButton2.Checked == true)
@@ -430,7 +433,7 @@ namespace ManejoInventariosBD
                 if (this.radioButton95.Checked == true)
                     cochereg.SetVPDelDer("N/V");
 
-                //A partir de aqui no están corregidas
+              
                 if (this.radioButton186.Checked == true)
                     cochereg.SetVPTraDer("B");
                 if (this.radioButton187.Checked == true)
@@ -675,11 +678,16 @@ namespace ManejoInventariosBD
 
                 cochereg.setFechaEntrada(dateTimePicker4.Value);
                 cochereg.setHoraEntrada(dateTimePicker3.Value);
-
-
                 cochereg.SetNumParlantes(Int32.Parse(numpar.Text));
                 cochereg.SetNumPar(Int32.Parse(numlimp.Text));
+                cochereg.setMotivo(motivo.Text);
+                cochereg.setInventario(Int32.Parse(numinvent.Text));
+                cochereg.SetMarca(textBox7.Text);
+                cochereg.SetPlacaNum(textBox5.Text);
+                cochereg.SetColor(comboBox3.Text);
+                cochereg.setAutoridad(patioscuenta.Text);
 
+                //Se crea un objeto de la clase Propietario para los datos del susodicho
                 Propietario p1 = new Propietario();
 
                 if (cedula.Text.Length != 0)
@@ -692,14 +700,9 @@ namespace ManejoInventariosBD
                 else
                     p1.telefono = null;
 
-                cochereg.setMotivo(motivo.Text);
-                cochereg.setInventario(Int32.Parse(numinvent.Text));
-                cochereg.SetMarca(textBox7.Text);
-                cochereg.SetPlacaNum(textBox5.Text);
-                cochereg.SetColor(comboBox3.Text);
-                cochereg.setAutoridad(patioscuenta.Text);
                 
-
+                
+                //...Y se inserta en la base de datos
                 cochereg.runQuery(tipo1,Form1.obtenervalor,p1,observaciones.Text);
                 
                 MessageBox.Show("Registro exitoso");
@@ -716,7 +719,7 @@ namespace ManejoInventariosBD
         private void button3_Click(object sender, EventArgs e)
         {
             int parsedValue;
-
+            //Verificacion de propietario, ve si el nombre no está vacio par ahabilitar los otros campos
             if (int.TryParse(propietario.Text, out parsedValue))
             {
                 MessageBox.Show("El campo 'Propietario' solo acepta caracteres, intente nuevamente");
@@ -735,6 +738,7 @@ namespace ManejoInventariosBD
 
         private void FormVehiculos_FormClosing(object sender, FormClosingEventArgs e)
         {
+            //Al cerrarlo vuelve a la opción de elegir registrar entrada o salida
             Form4 f = new Form4();
             this.Dispose();
             f.Show();
@@ -742,6 +746,8 @@ namespace ManejoInventariosBD
 
         private void FormVehiculos_Load(object sender, EventArgs e)
         {
+            //Al cargar asigna los valores de los comboBox
+
             motivo.DataSource = ctc.recibetabla("motivos");
             motivo.DisplayMember = "Motivo";
 

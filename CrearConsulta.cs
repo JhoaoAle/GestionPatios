@@ -17,6 +17,7 @@ namespace ManejoInventariosBD
 
         public CrearConsulta() { }
 
+        //Realiza una consulta donde se tenga una condición
         public string resultquery1cond(string tabla, string campod, string campoc, string cond1)
         {
             string res;
@@ -28,6 +29,7 @@ namespace ManejoInventariosBD
             return res;
         }
 
+        //Consulta de inserción para los tipos de vehiculo (añadir nuevo tipo)
         public void insertTipo(string nuevotipo, string asociado)
         {
             string query = "INSERT IGNORE INTO `tipos_veh`(`Tipo`, `Form_Asociado`) VALUES ('" + nuevotipo + "','" + asociado + "')";

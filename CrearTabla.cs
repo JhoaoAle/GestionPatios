@@ -11,11 +11,13 @@ using MySql.Data.MySqlClient;
 
 namespace ManejoInventariosBD
 {
+    //Desde aquí se gestiona lac reacion de tablas con consultas SELECT
     public class CrearTabla
     {
         public static MySqlConnection databaseConnection = new MySqlConnection("datasource=127.0.0.1;port=3306;username=root;password=;Database=patiosd1c");
         public CrearTabla() { }
 
+        //Simplemente obtiene la tabla, sin filtros ni condiciones
         public DataTable recibetabla(string tablabase)
         {
             MySqlCommand cmd;
@@ -25,6 +27,7 @@ namespace ManejoInventariosBD
             da.Fill(tabla);
             return tabla;
         }
+        //Obtiene los elemento de la tabla donde cierto valor de columna cumpla con la condición dada
         public DataTable recibetabla1cond(string tablabase, string campod, string campoc, string cond1)
         {
             MySqlCommand cmd;
@@ -35,6 +38,7 @@ namespace ManejoInventariosBD
             return tabla;
         }
 
+        //Retorna el resultado de buscar por numero de inventario en las tablas de inventario, unicamente con los campos que el programador (o sease mi persona) consideró adecuados
         public DataTable tablaforinvent(string inv_num)
         {
             MySqlCommand cmd1;
@@ -48,6 +52,7 @@ namespace ManejoInventariosBD
             return tabla;
         }
 
+        //Retorna el resultado de buscar por encargado en las tablas de inventario, unicamente con los campos que el programador (o sease mi persona) consideró adecuados
         public DataTable tablaforenc(string enc)
         {
             MySqlCommand cmd1;
@@ -60,7 +65,7 @@ namespace ManejoInventariosBD
             sda.Fill(tabla);
             return tabla;
         }
-
+        //Retorna el resultado de buscar por fecha de entrada en las tablas de inventario, unicamente con los campos que el programador (o sease mi persona) consideró adecuados
         public DataTable tablaforfecha(DateTime fecha)
         {
             MySqlCommand cmd1;
@@ -71,6 +76,7 @@ namespace ManejoInventariosBD
             return tabla;
         }
 
+        //Esta consulta se usa para ver si el color y autoridad cortresponde a un carro, moto, o ambos. Se puede usar para procesos más generales pero no le vi necesidad
         public DataTable tablaor(string tablaor, string campod,string campoc, string cond1, string cond2)
         {
             MySqlCommand cmd1;
