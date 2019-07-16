@@ -14,6 +14,7 @@ namespace ManejoInventariosBD
         public void updatequery(string tipo, int inventario, DateTime fechasal, DateTime horasal)
         {
             string query;
+            CrearConsulta cons = new CrearConsulta();
 
             if (cons.resultquery1cond("tipos_veh", "Form_Asociado", "Tipo", tipo) == "Moto")
             {
