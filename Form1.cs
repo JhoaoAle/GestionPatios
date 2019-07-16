@@ -45,7 +45,7 @@ namespace ManejoInventariosBD
             }
             else
             {
-                if (user.getrol(textUsuario.Text, textContraseña.Text) == "Admin")
+                if (user.getrol(textUsuario.Text, textContraseña.Text) == "Administrador")
                 {
                     this.Hide();
                     Form2 f = new Form2();
