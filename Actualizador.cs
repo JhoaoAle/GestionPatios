@@ -15,7 +15,7 @@ namespace ManejoInventariosBD
         {
             string query;
 
-            if (tipo == "Moto" || tipo == "Motocarro")
+            if (cons.resultquery1cond("tipos_veh", "Form_Asociado", "Tipo", tipo) == "Moto")
             {
                 query = "UPDATE `invent_motos` SET `Fecha_Salida`='" + fechasal.ToString("yyyy-MM-dd") + "', `Hora_Salida`='" + horasal.ToString("H:mm:ss") + "' WHERE (`Inventario`='" + inventario + "' AND `Tipo Vehiculo`='" + tipo + "')";
             }
